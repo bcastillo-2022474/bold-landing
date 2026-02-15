@@ -66,7 +66,10 @@ export function SolutionSection() {
           Stop hiring expensive agencies for one-off tools. We are your
           dedicated software factory inside Slack.
         </p>
-        <button className="font-grotesk text-black bg-yellow-300 px-3 py-2 rounded-xl font-semibold">
+        <button
+          type="button"
+          className="font-grotesk text-black bg-yellow-300 px-3 py-2 rounded-xl font-semibold"
+        >
           Explore our process
         </button>
       </div>

@@ -9,37 +9,42 @@ export function Footer() {
         <div className="grid grid-cols-2 gap-10">
           <div>
             <ul className="flex flex-col">
-              <a className="hover:underline" href="">
+              <a className="hover:underline" href="#">
                 Home
               </a>
-              <a className="hover:underline" href="">
+              <a className="hover:underline" href="#">
                 Design
               </a>
-              <a className="hover:underline" href="">
+              <a className="hover:underline" href="#">
                 About
               </a>
-              <a className="hover:underline" href="">
+              <a className="hover:underline" href="#">
                 Careers
               </a>
             </ul>
           </div>
           <div>
             <ul className="flex flex-col">
-              <a className="hover:underline" href="">
+              <a className="hover:underline" href="#">
                 Privacy Policy
               </a>
-              <a className="hover:underline" href="">
+              <a className="hover:underline" href="#">
                 Terms Of Service
               </a>
-              <a className="hover:underline" href="">
+              <a className="hover:underline" href="#">
                 Cookies
               </a>
             </ul>
           </div>
         </div>
       </div>
-      <div className="text-sm border-t text-[#9CA3AF] border-gray-200 w-full py-5">
-        © 2026 Bold Studio. All rights reserved.
+      <div className="text-sm border-t text-[#9CA3AF] border-gray-200 w-full py-5 flex justify-between">
+        <span>© 2026 Bold Studio. All rights reserved.</span>
+        <span>
+          <a href="#" className="hover:underline">
+            Linkedin
+          </a>
+        </span>
       </div>
     </div>
   );

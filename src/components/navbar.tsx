@@ -4,7 +4,7 @@ import logo from "../../public/logo.svg";
 
 export function Navbar() {
   return (
-    <nav className="flex w-full justify-between items-center px-10 py-5 shadow overflow-hidden">
+    <nav className="flex w-full justify-between items-center px-10 py-5 shadow overflow-hidden sticky bg-white top-0 z-10">
       <div className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
         <div className="absolute right-5 scale-75 top-1/2 blur shadow w-full h-full">
           <div className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
@@ -18,9 +18,9 @@ export function Navbar() {
       </div>
       <div className="px-2">
         <ul className="flex font-inter gap-5 items-center">
-          <a href="">Home</a>
-          <a href="">Design</a>
-          <a href="">About</a>
+          <a href="#">Home</a>
+          <a href="#">Design</a>
+          <a href="#">About</a>
           <Button>Start Building</Button>
         </ul>
       </div>
