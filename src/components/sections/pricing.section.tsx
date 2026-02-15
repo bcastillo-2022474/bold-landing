@@ -21,11 +21,11 @@ export function CustomersSection() {
   ];
 
   return (
-    <div className="w-full gap-5 bg-[#F8F9FA] flex flex-col items-center pb-10">
-      <h3 className="uppercase text-[#9CA3AF] font-bold text-sm">
+    <div className="w-full gap-3 md:gap-5 bg-[#F8F9FA] flex flex-col items-center pb-10 px-4">
+      <h3 className="uppercase text-[#9CA3AF] font-bold text-xs md:text-sm text-center">
         Helping Industry leaders to automate
       </h3>
-      <div className="flex gap-5">
+      <div className="flex flex-wrap justify-center gap-3 md:gap-5">
         {chips.map((chip) => (
           <Chip title={chip} key={chip} />
         ))}
@@ -65,8 +65,8 @@ function Icon({ isAvailable }: { isAvailable: boolean }) {
 
 function Card({ title, pricePerMonth, features, isPopular }: Plan) {
   const normal =
-    "aspect-39/43 p-10 flex flex-col gap-5 justify-around shadow rounded-2xl bg-white min-w-[300px]";
-  const popular = "scale-120 border-2 border-yellow-300";
+    "w-full max-w-[500px] lg:max-w-none lg:min-w-[320px] lg:aspect-39/43 p-6 md:p-10 flex flex-col gap-5 justify-around shadow rounded-2xl bg-white relative";
+  const popular = "lg:scale-120 border-2 border-yellow-300";
 
   return (
     <article className={cn(normal, isPopular && popular)}>
@@ -78,12 +78,12 @@ function Card({ title, pricePerMonth, features, isPopular }: Plan) {
         </div>
       )}
       <div>
-        <h3 className="font-grotesk font-bold">{title}</h3>
+        <h3 className="font-grotesk font-bold text-base md:text-lg">{title}</h3>
         {pricePerMonth}
       </div>
-      <div>
+      <div className="flex flex-col gap-2">
         {features.map(([feature, isAvailable]: Feature) => (
-          <div className="flex gap-3">
+          <div className="flex gap-3" key={feature}>
             <Icon isAvailable={isAvailable} />
             <span className="text-sm">{feature}</span>
           </div>
@@ -106,9 +106,9 @@ export function PricingSection() {
     {
       title: "Starter",
       pricePerMonth: (
-        <h3 className="font-inter font-bold text-4xl">
+        <h3 className="font-inter font-bold text-3xl md:text-4xl">
           <span>$1,499</span>
-          <span className="text-lg text-[#6B7280] font-normal">/mo</span>
+          <span className="text-base md:text-lg text-[#6B7280] font-normal">/mo</span>
         </h3>
       ),
       features: [
@@ -122,9 +122,9 @@ export function PricingSection() {
     {
       title: "Growth",
       pricePerMonth: (
-        <h3 className="font-inter font-bold text-4xl">
+        <h3 className="font-inter font-bold text-3xl md:text-4xl">
           <span>$3,499</span>
-          <span className="text-lg text-[#6B7280] font-normal">/mo</span>
+          <span className="text-base md:text-lg text-[#6B7280] font-normal">/mo</span>
         </h3>
       ),
       features: [
@@ -137,7 +137,7 @@ export function PricingSection() {
     },
     {
       title: "Enterprise",
-      pricePerMonth: <h3 className="font-inter font-bold text-4xl">Custom</h3>,
+      pricePerMonth: <h3 className="font-inter font-bold text-3xl md:text-4xl">Custom</h3>,
       features: [
         ["Multiple workspaces", true],
         ["Custom SLA", true],
@@ -149,15 +149,15 @@ export function PricingSection() {
   ];
 
   return (
-    <section className="py-20 w-full gap-10 px-30 bg-[#F8F9FA] flex flex-col items-center">
+    <section className="py-10 md:py-20 w-full gap-6 md:gap-10 px-4 md:px-10 lg:px-30 bg-[#F8F9FA] flex flex-col items-center">
       <CustomersSection />
       <div className="border-t w-full border-[#E5E7EB]"></div>
-      <div className="flex flex-col gap-10 items-center w-full px-30 py-10">
-        <div className="flex flex-col gap-1 items-center">
-          <h2 className="font-bold text-4xl">Simple, predictable pricing.</h2>
-          <h4 className="text-[#6B7280]">cancel or pause at any time</h4>
+      <div className="flex flex-col gap-6 md:gap-10 items-center w-full px-4 md:px-10 lg:px-30 py-10">
+        <div className="flex flex-col gap-1 items-center text-center">
+          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">Simple, predictable pricing.</h2>
+          <h4 className="text-[#6B7280] text-sm md:text-base">cancel or pause at any time</h4>
         </div>
-        <div className="flex gap-20 pt-10">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 xl:gap-20 pt-6 md:pt-10 w-full lg:w-auto items-center lg:items-stretch">
           {plans.map((plan, i) => (
             <Card
               isPopular={plan.isPopular}
