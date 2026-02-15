@@ -63,8 +63,8 @@ export const META = {
     "custom Slack bots",
     "business automation",
     "SaaS",
-  ],
+  ] as string[],
   ogImage: "/og-image.png", // TODO: Create this image
   favicon: "/favicon.ico",
   appleTouchIcon: "/apple-touch-icon.png",
-} as const;
+};
