@@ -8,6 +8,10 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-muted: #6B7280;
+  --color-muted-light: #9CA3AF;
+  --color-section-bg: #F8F9FA;
+  --color-border-light: #E5E7EB;
   --font-grotesk: var(--font-space-grotesk);
   --font-inter: var(--font-inter);
 }

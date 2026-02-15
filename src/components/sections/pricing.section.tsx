@@ -4,7 +4,7 @@ import { cn } from "@/utils/cn";
 
 function Chip({ title }: { title: string }) {
   return (
-    <span className="rounded-full px-5 py-2 border border-[#6B7280]/30">
+    <span className="rounded-full px-5 py-2 border border-muted/30">
       {title}
     </span>
   );
@@ -21,8 +21,8 @@ export function CustomersSection() {
   ];
 
   return (
-    <div className="w-full gap-3 md:gap-5 bg-[#F8F9FA] flex flex-col items-center pb-10 px-4">
-      <h3 className="uppercase text-[#9CA3AF] font-bold text-xs md:text-sm text-center">
+    <div className="w-full gap-3 md:gap-5 bg-section-bg flex flex-col items-center pb-10 px-4">
+      <h3 className="uppercase text-muted-light font-bold text-xs md:text-sm text-center">
         Helping Industry leaders to automate
       </h3>
       <div className="flex flex-wrap justify-center gap-3 md:gap-5">
@@ -108,7 +108,7 @@ export function PricingSection() {
       pricePerMonth: (
         <h3 className="font-inter font-bold text-3xl md:text-4xl">
           <span>$1,499</span>
-          <span className="text-base md:text-lg text-[#6B7280] font-normal">
+          <span className="text-base md:text-lg text-muted font-normal">
             /mo
           </span>
         </h3>
@@ -126,7 +126,7 @@ export function PricingSection() {
       pricePerMonth: (
         <h3 className="font-inter font-bold text-3xl md:text-4xl">
           <span>$3,499</span>
-          <span className="text-base md:text-lg text-[#6B7280] font-normal">
+          <span className="text-base md:text-lg text-muted font-normal">
             /mo
           </span>
         </h3>
@@ -155,15 +155,15 @@ export function PricingSection() {
   ];
 
   return (
-    <section className="py-10 md:py-20 w-full gap-6 md:gap-10 px-4 md:px-10 lg:px-30 bg-[#F8F9FA] flex flex-col items-center">
+    <section className="py-10 md:py-20 w-full gap-6 md:gap-10 px-4 md:px-10 lg:px-30 bg-section-bg flex flex-col items-center">
       <CustomersSection />
-      <div className="border-t w-full border-[#E5E7EB]"></div>
+      <div className="border-t w-full border-border-light"></div>
       <div className="flex flex-col gap-6 md:gap-10 items-center w-full px-4 md:px-10 lg:px-30 py-10">
         <div className="flex flex-col gap-1 items-center text-center">
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
             Simple, predictable pricing.
           </h2>
-          <h4 className="text-[#6B7280] text-sm md:text-base">
+          <h4 className="text-muted text-sm md:text-base">
             cancel or pause at any time
           </h4>
         </div>

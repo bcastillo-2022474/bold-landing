@@ -16,7 +16,7 @@ function Card(card: Card) {
     <article className="flex bg-white flex-col items-start gap-3 p-5 rounded-2xl">
       <Image alt={card.altImage} src={card.image} height={20} />
       <h3 className="font-bold">{card.title}</h3>
-      <p className="text-sm text-[#6B7280]">{card.description}</p>
+      <p className="text-sm text-muted">{card.description}</p>
     </article>
   );
 }
@@ -51,7 +51,7 @@ export function SolutionSection() {
   ];
 
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 items-center py-10 md:py-20 w-full gap-8 md:gap-5 px-4 md:px-10 lg:px-30 bg-[#F8F9FA]">
+    <section className="grid grid-cols-1 md:grid-cols-2 items-center py-10 md:py-20 w-full gap-8 md:gap-5 px-4 md:px-10 lg:px-30 bg-section-bg">
       <div className="flex flex-col gap-5 items-start">
         <div className="flex flex-col gap-1">
           <h3 className="text-yellow-300 uppercase font-semibold text-sm md:text-base">
@@ -62,7 +62,7 @@ export function SolutionSection() {
             <span>Unlimited possibilities.</span>
           </h2>
         </div>
-        <p className="text-[#6B7280] text-sm md:text-base">
+        <p className="text-muted text-sm md:text-base">
           Stop hiring expensive agencies for one-off tools. We are your
           dedicated software factory inside Slack.
         </p>

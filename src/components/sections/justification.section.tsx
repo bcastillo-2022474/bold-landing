@@ -4,7 +4,7 @@ export function JustificationSection() {
       <h2 className="font-grotesk text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
         Your team is drowning in repetitive tasks.
       </h2>
-      <p className="text-[#6B7280] px-4 md:px-0 max-w-[65ch]">
+      <p className="text-muted px-4 md:px-0 max-w-[65ch]">
         Too much time is wasted on manual data entry, chasing approvals, and
         switching between tools. We turn your Slack workspace into a mission
         control center that does the heavy lifting for you.

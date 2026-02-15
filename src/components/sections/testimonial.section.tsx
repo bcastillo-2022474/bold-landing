@@ -15,10 +15,10 @@ function Person({ name, position, photo }: Person) {
 
   return (
     <div className="flex gap-3 items-center">
-      {!hasPhoto && <div className="size-12 rounded-full bg-[#E5E7EB]" />}
+      {!hasPhoto && <div className="size-12 rounded-full bg-border-light" />}
       <div className="flex flex-col">
         <span className="text-nowrap font-bold">{name}</span>
-        <span className="text-nowrap text-[#6B7280] text-sm">{position}</span>
+        <span className="text-nowrap text-muted text-sm">{position}</span>
       </div>
     </div>
   );

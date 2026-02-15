@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { SITE, NAVIGATION } from "@/constants/site";
 import logo from "../../public/logo.svg";
 
 export function Navbar() {
@@ -18,8 +19,8 @@ export function Navbar() {
             <span className="font-bold">Bold Studio</span>
           </div>
         </div>
-        <Image className="z-10" src={logo} alt="Bolt Studios Logo" width={50} />
-        <span className="z-10 font-bold">Bold Studio</span>
+        <Image className="z-10" src={logo} alt={`${SITE.name} Logo`} width={50} />
+        <span className="z-10 font-bold">{SITE.name}</span>
       </div>
 
       {/* Mobile menu button */}
@@ -49,9 +50,11 @@ export function Navbar() {
       {/* Desktop menu */}
       <div className="hidden md:block px-2">
         <ul className="flex font-inter gap-5 items-center">
-          <a href="#">Home</a>
-          <a href="#">Design</a>
-          <a href="#">About</a>
+          {NAVIGATION.main.map((link) => (
+            <a key={link.label} href={link.href}>
+              {link.label}
+            </a>
+          ))}
           <Button>Start Building</Button>
         </ul>
       </div>
@@ -60,15 +63,11 @@ export function Navbar() {
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden z-50 border-t">
           <ul className="flex flex-col font-inter py-4">
-            <a href="#" className="px-6 py-3 hover:bg-gray-50">
-              Home
-            </a>
-            <a href="#" className="px-6 py-3 hover:bg-gray-50">
-              Design
-            </a>
-            <a href="#" className="px-6 py-3 hover:bg-gray-50">
-              About
-            </a>
+            {NAVIGATION.main.map((link) => (
+              <a key={link.label} href={link.href} className="px-6 py-3 hover:bg-gray-50">
+                {link.label}
+              </a>
+            ))}
             <div className="px-6 py-3">
               <Button className="w-full">Start Building</Button>
             </div>

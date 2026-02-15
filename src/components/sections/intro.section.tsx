@@ -5,7 +5,7 @@ import plant from "../../../public/plant.svg";
 
 export function IntroSection() {
   return (
-    <section className="flex flex-col items-center py-10 md:py-20 w-full gap-5 px-4 md:px-10 lg:px-30 bg-[#F8F9FA]">
+    <section className="flex flex-col items-center py-10 md:py-20 w-full gap-5 px-4 md:px-10 lg:px-30 bg-section-bg">
       <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-12 flex flex-col text-center">
         <span>Build Faster.</span>
         <span className="relative isolate">
@@ -13,7 +13,7 @@ export function IntroSection() {
           <span className="z-10 relative">Scale Smarter.</span>
         </span>
       </h1>
-      <p className="text-center font-inter text-[#6B7280] items-center max-w-[60ch] px-4 text-sm md:text-base">
+      <p className="text-center font-inter text-muted items-center max-w-[60ch] px-4 text-sm md:text-base">
         Custom Slack apps that automate your workflows — delivered through a
         simple monthly subscription. No contracts. No per-project chaos.
       </p>

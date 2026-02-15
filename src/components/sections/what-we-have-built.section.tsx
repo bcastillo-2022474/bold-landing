@@ -16,7 +16,7 @@ type Card = {
 function Card(card: Card) {
   const onHover =
     "hover:bg-linear-to-br hover:from-yellow-300 hover:to-orange-400";
-  const normal = "bg-[#6B7280]/30";
+  const normal = "bg-muted/30";
 
   return (
     <article
@@ -29,7 +29,7 @@ function Card(card: Card) {
       <div className="bg-white p-6 md:p-10 flex flex-col items-start gap-5 w-full rounded-[calc(1.5rem-3px)]">
         <Image alt={card.altImage} src={card.image} width={50} />
         <h3 className="font-bold text-lg md:text-xl">{card.title}</h3>
-        <p className="text-sm text-[#6B7280]">{card.description}</p>
+        <p className="text-sm text-muted">{card.description}</p>
         <a
           className="text-yellow-300 underline flex items-center gap-3 hover:scale-110"
           href={card.route}
