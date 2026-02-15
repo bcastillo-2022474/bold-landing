@@ -51,29 +51,29 @@ export function SolutionSection() {
   ];
 
   return (
-    <section className="grid grid-cols-2 items-center py-20 w-full gap-5 px-30 bg-[#F8F9FA]">
+    <section className="grid grid-cols-1 md:grid-cols-2 items-center py-10 md:py-20 w-full gap-8 md:gap-5 px-4 md:px-10 lg:px-30 bg-[#F8F9FA]">
       <div className="flex flex-col gap-5 items-start">
         <div className="flex flex-col gap-1">
-          <h3 className="text-yellow-300 uppercase font-semibold">
+          <h3 className="text-yellow-300 uppercase font-semibold text-sm md:text-base">
             The Solution
           </h3>
-          <h2 className="flex flex-col text-3xl font-bold">
+          <h2 className="flex flex-col text-2xl md:text-3xl font-bold">
             <span>One Subscription.</span>
             <span>Unlimited possibilities.</span>
           </h2>
         </div>
-        <p className="text-[#6B7280]">
+        <p className="text-[#6B7280] text-sm md:text-base">
           Stop hiring expensive agencies for one-off tools. We are your
           dedicated software factory inside Slack.
         </p>
         <button
           type="button"
-          className="font-grotesk text-black bg-yellow-300 px-3 py-2 rounded-xl font-semibold"
+          className="font-grotesk text-black bg-yellow-300 px-3 py-2 rounded-xl font-semibold text-sm md:text-base"
         >
           Explore our process
         </button>
       </div>
-      <div className="grid grid-cols-2 gap-5">
+      <div className="grid grid-cols-2 gap-3 md:gap-5">
         {cards.map((card: Card) => (
           <Card
             key={card.title}

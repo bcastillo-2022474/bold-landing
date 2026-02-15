@@ -26,7 +26,7 @@ function Person({ name, position, photo }: Person) {
 
 function Card({ quote, stars, person }: Testimonial) {
   return (
-    <article className="w-full flex flex-col gap-5 items-center">
+    <article className="w-full flex flex-col gap-5 items-center px-4 md:px-10 lg:px-30">
       <div className="flex gap-2">
         {Array.from({ length: stars }).map(() => (
           <svg
@@ -43,7 +43,7 @@ function Card({ quote, stars, person }: Testimonial) {
           </svg>
         ))}
       </div>
-      <h3 className="text-3xl font-grotesk font-medium max-w-[50ch] text-center">
+      <h3 className="text-xl md:text-2xl lg:text-3xl font-grotesk font-medium max-w-[50ch] text-center">
         <span>"</span>
         <span>{quote}</span>
         <span>"</span>
@@ -71,7 +71,7 @@ export function TestimonialSection() {
   ];
 
   return (
-    <section className="w-full overflow-hidden">
+    <section className="w-full overflow-hidden py-10 md:py-20">
       {testimonials.map((testimonial: Testimonial) => (
         <Card
           key={testimonial.person.name}
