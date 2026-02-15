@@ -60,9 +60,15 @@ export function Navbar() {
       {isMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden z-50 border-t">
           <ul className="flex flex-col font-inter py-4">
-            <a href="#" className="px-6 py-3 hover:bg-gray-50">Home</a>
-            <a href="#" className="px-6 py-3 hover:bg-gray-50">Design</a>
-            <a href="#" className="px-6 py-3 hover:bg-gray-50">About</a>
+            <a href="#" className="px-6 py-3 hover:bg-gray-50">
+              Home
+            </a>
+            <a href="#" className="px-6 py-3 hover:bg-gray-50">
+              Design
+            </a>
+            <a href="#" className="px-6 py-3 hover:bg-gray-50">
+              About
+            </a>
             <div className="px-6 py-3">
               <Button className="w-full">Start Building</Button>
             </div>

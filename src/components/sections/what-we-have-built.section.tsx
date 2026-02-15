@@ -20,7 +20,11 @@ function Card(card: Card) {
 
   return (
     <article
-      className={cn("flex rounded-3xl p-0.75 w-full md:w-auto xl:aspect-19/15 md:flex-1 max-w-[500px]", normal, onHover)}
+      className={cn(
+        "flex rounded-3xl p-0.75 w-full md:w-auto xl:aspect-19/15 md:flex-1 max-w-[500px]",
+        normal,
+        onHover,
+      )}
     >
       <div className="bg-white p-6 md:p-10 flex flex-col items-start gap-5 w-full rounded-[calc(1.5rem-3px)]">
         <Image alt={card.altImage} src={card.image} width={50} />
@@ -70,7 +74,9 @@ export function WhatWeHaveBuiltSection() {
 
   return (
     <section className="flex flex-col gap-10 px-4 md:px-10 lg:px-30 items-center py-10">
-      <h2 className="font-grotesk text-2xl md:text-3xl font-bold">What we've built</h2>
+      <h2 className="font-grotesk text-2xl md:text-3xl font-bold">
+        What we've built
+      </h2>
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-5 xl:gap-10 w-full md:w-auto">
         {cards.map((card: Card) => (
           <Card

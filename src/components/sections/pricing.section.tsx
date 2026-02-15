@@ -108,7 +108,9 @@ export function PricingSection() {
       pricePerMonth: (
         <h3 className="font-inter font-bold text-3xl md:text-4xl">
           <span>$1,499</span>
-          <span className="text-base md:text-lg text-[#6B7280] font-normal">/mo</span>
+          <span className="text-base md:text-lg text-[#6B7280] font-normal">
+            /mo
+          </span>
         </h3>
       ),
       features: [
@@ -124,7 +126,9 @@ export function PricingSection() {
       pricePerMonth: (
         <h3 className="font-inter font-bold text-3xl md:text-4xl">
           <span>$3,499</span>
-          <span className="text-base md:text-lg text-[#6B7280] font-normal">/mo</span>
+          <span className="text-base md:text-lg text-[#6B7280] font-normal">
+            /mo
+          </span>
         </h3>
       ),
       features: [
@@ -137,7 +141,9 @@ export function PricingSection() {
     },
     {
       title: "Enterprise",
-      pricePerMonth: <h3 className="font-inter font-bold text-3xl md:text-4xl">Custom</h3>,
+      pricePerMonth: (
+        <h3 className="font-inter font-bold text-3xl md:text-4xl">Custom</h3>
+      ),
       features: [
         ["Multiple workspaces", true],
         ["Custom SLA", true],
@@ -154,8 +160,12 @@ export function PricingSection() {
       <div className="border-t w-full border-[#E5E7EB]"></div>
       <div className="flex flex-col gap-6 md:gap-10 items-center w-full px-4 md:px-10 lg:px-30 py-10">
         <div className="flex flex-col gap-1 items-center text-center">
-          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">Simple, predictable pricing.</h2>
-          <h4 className="text-[#6B7280] text-sm md:text-base">cancel or pause at any time</h4>
+          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
+            Simple, predictable pricing.
+          </h2>
+          <h4 className="text-[#6B7280] text-sm md:text-base">
+            cancel or pause at any time
+          </h4>
         </div>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 xl:gap-20 pt-6 md:pt-10 w-full lg:w-auto items-center lg:items-stretch">
           {plans.map((plan, i) => (
