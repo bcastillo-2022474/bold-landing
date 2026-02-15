@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import logo from "../../public/logo.svg";
 
 export function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <nav className="flex w-full justify-between items-center px-10 py-5 shadow overflow-hidden sticky bg-white top-0 z-10">
+    <nav className="flex w-full justify-between items-center px-4 md:px-10 py-5 shadow sticky bg-white top-0 z-50">
       <div className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
         <div className="absolute right-5 scale-75 top-1/2 blur shadow w-full h-full">
           <div className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
@@ -16,7 +21,33 @@ export function Navbar() {
         <Image className="z-10" src={logo} alt="Bolt Studios Logo" width={50} />
         <span className="z-10 font-bold">Bold Studio</span>
       </div>
-      <div className="px-2">
+
+      {/* Mobile menu button */}
+      <button
+        type="button"
+        className="md:hidden px-2 z-10 relative"
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-label="Toggle menu"
+      >
+        <svg
+          className="w-6 h-6"
+          fill="none"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          {isMenuOpen ? (
+            <path d="M6 18L18 6M6 6l12 12" />
+          ) : (
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          )}
+        </svg>
+      </button>
+
+      {/* Desktop menu */}
+      <div className="hidden md:block px-2">
         <ul className="flex font-inter gap-5 items-center">
           <a href="#">Home</a>
           <a href="#">Design</a>
@@ -24,6 +55,20 @@ export function Navbar() {
           <Button>Start Building</Button>
         </ul>
       </div>
+
+      {/* Mobile menu */}
+      {isMenuOpen && (
+        <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden z-50 border-t">
+          <ul className="flex flex-col font-inter py-4">
+            <a href="#" className="px-6 py-3 hover:bg-gray-50">Home</a>
+            <a href="#" className="px-6 py-3 hover:bg-gray-50">Design</a>
+            <a href="#" className="px-6 py-3 hover:bg-gray-50">About</a>
+            <div className="px-6 py-3">
+              <Button className="w-full">Start Building</Button>
+            </div>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }

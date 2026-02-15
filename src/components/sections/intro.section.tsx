@@ -5,20 +5,20 @@ import plant from "../../../public/plant.svg";
 
 export function IntroSection() {
   return (
-    <section className="flex flex-col items-center py-20 w-full gap-5 px-30 bg-[#F8F9FA]">
-      <h1 className="text-5xl font-bold leading-12 flex flex-col text-center">
+    <section className="flex flex-col items-center py-10 md:py-20 w-full gap-5 px-4 md:px-10 lg:px-30 bg-[#F8F9FA]">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-12 flex flex-col text-center">
         <span>Build Faster.</span>
         <span className="relative isolate">
           <span className="bg-yellow-300 w-full absolute left-0 bottom-0 -rotate-1 h-[1.5ch] scale-110"></span>
           <span className="z-10 relative">Scale Smarter.</span>
         </span>
       </h1>
-      <p className="text-center font-inter text-[#6B7280] items-center max-w-[60ch]">
+      <p className="text-center font-inter text-[#6B7280] items-center max-w-[60ch] px-4 text-sm md:text-base">
         Custom Slack apps that automate your workflows — delivered through a
         simple monthly subscription. No contracts. No per-project chaos.
       </p>
-      <div className="flex justify-around max-w-[60ch] gap-5 text-lg">
-        <Button className="flex gap-2 items-center text-yellow-300 cursor-pointer">
+      <div className="flex flex-col md:flex-row justify-around max-w-[60ch] gap-3 md:gap-5 text-base md:text-lg w-full md:w-auto px-4 md:px-0">
+        <Button className="flex gap-2 items-center text-yellow-300 cursor-pointer justify-center">
           <span>Start Building</span>
           <div>
             <svg
@@ -35,7 +35,7 @@ export function IntroSection() {
             </svg>
           </div>
         </Button>
-        <Button className="text-black bg-white border-3 cursor-pointer">
+        <Button className="text-black bg-white border-3 cursor-pointer justify-center">
           <span>See it in action</span>
         </Button>
       </div>
@@ -43,7 +43,7 @@ export function IntroSection() {
         src={plant}
         alt="Plant Image"
         width={800}
-        className="shadow-2xl rounded-2xl mt-10"
+        className="shadow-2xl rounded-2xl mt-5 md:mt-10 w-full max-w-[800px] h-auto"
       />
     </section>
   );

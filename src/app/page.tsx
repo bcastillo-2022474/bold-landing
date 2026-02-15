@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center gap-10">
+      <div className="flex flex-col items-center gap-10 *:max-w-432">
         <IntroSection />
         <JustificationSection />
         <SolutionSection />
