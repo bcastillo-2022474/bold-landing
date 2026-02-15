@@ -31,7 +31,8 @@ export default function Error({
         </h2>
 
         <p className="text-muted text-base md:text-lg mb-8 max-w-[60ch] mx-auto">
-          We're sorry, but something unexpected happened. Our team has been notified and we're working on it.
+          We're sorry, but something unexpected happened. Our team has been
+          notified and we're working on it.
         </p>
 
         {/* Error details in development */}
@@ -75,7 +76,10 @@ export default function Error({
         <div className="mt-12 pt-8 border-t border-border-light">
           <p className="text-sm text-muted">
             If this problem persists, please{" "}
-            <a href={`mailto:${CONTACT.support}`} className="underline hover:text-black">
+            <a
+              href={`mailto:${CONTACT.support}`}
+              className="underline hover:text-black"
+            >
               contact support
             </a>
           </p>

@@ -1,4 +1,4 @@
-import { SITE, NAVIGATION, SOCIAL } from "@/constants/site";
+import { NAVIGATION, SITE, SOCIAL } from "@/constants/site";
 
 export function Footer() {
   return (
@@ -12,7 +12,11 @@ export function Footer() {
           <div>
             <ul className="flex flex-col gap-2">
               {NAVIGATION.footer.company.map((link) => (
-                <a key={link.label} className="hover:underline" href={link.href}>
+                <a
+                  key={link.label}
+                  className="hover:underline"
+                  href={link.href}
+                >
                   {link.label}
                 </a>
               ))}
@@ -21,7 +25,11 @@ export function Footer() {
           <div>
             <ul className="flex flex-col gap-2">
               {NAVIGATION.footer.legal.map((link) => (
-                <a key={link.label} className="hover:underline" href={link.href}>
+                <a
+                  key={link.label}
+                  className="hover:underline"
+                  href={link.href}
+                >
                   {link.label}
                 </a>
               ))}
@@ -30,7 +38,9 @@ export function Footer() {
         </div>
       </div>
       <div className="text-xs md:text-sm border-t text-muted-light border-gray-200 w-full py-5 flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center">
-        <span>© {new Date().getFullYear()} {SITE.name}. All rights reserved.</span>
+        <span>
+          © {new Date().getFullYear()} {SITE.name}. All rights reserved.
+        </span>
         <span>
           <a href={SOCIAL.linkedin} className="hover:underline">
             Linkedin

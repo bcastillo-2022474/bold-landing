@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { SITE, NAVIGATION } from "@/constants/site";
+import { NAVIGATION, SITE } from "@/constants/site";
 import logo from "../../public/logo.svg";
 
 export function Navbar() {
@@ -19,7 +19,12 @@ export function Navbar() {
             <span className="font-bold">Bold Studio</span>
           </div>
         </div>
-        <Image className="z-10" src={logo} alt={`${SITE.name} Logo`} width={50} />
+        <Image
+          className="z-10"
+          src={logo}
+          alt={`${SITE.name} Logo`}
+          width={50}
+        />
         <span className="z-10 font-bold">{SITE.name}</span>
       </div>
 
@@ -64,7 +69,11 @@ export function Navbar() {
         <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden z-50 border-t">
           <ul className="flex flex-col font-inter py-4">
             {NAVIGATION.main.map((link) => (
-              <a key={link.label} href={link.href} className="px-6 py-3 hover:bg-gray-50">
+              <a
+                key={link.label}
+                href={link.href}
+                className="px-6 py-3 hover:bg-gray-50"
+              >
                 {link.label}
               </a>
             ))}

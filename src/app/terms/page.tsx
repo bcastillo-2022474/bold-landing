@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SITE, CONTACT, ROUTES } from "@/constants/site";
+import { CONTACT, ROUTES, SITE } from "@/constants/site";
 
 export default function TermsOfService() {
   return (
@@ -7,10 +7,16 @@ export default function TermsOfService() {
       {/* Simple header */}
       <header className="border-b border-border-light sticky top-0 bg-white z-10">
         <div className="max-w-4xl mx-auto px-4 md:px-10 py-5 flex items-center justify-between">
-          <Link href={ROUTES.home} className="font-bold text-xl hover:text-yellow-300 transition-colors">
+          <Link
+            href={ROUTES.home}
+            className="font-bold text-xl hover:text-yellow-300 transition-colors"
+          >
             {SITE.name}
           </Link>
-          <Link href={ROUTES.home} className="text-sm text-muted hover:text-black hover:underline">
+          <Link
+            href={ROUTES.home}
+            className="text-sm text-muted hover:text-black hover:underline"
+          >
             Back to Home
           </Link>
         </div>
@@ -25,17 +31,23 @@ export default function TermsOfService() {
           </span>
         </h1>
 
-        <p className="text-muted mb-8">Last updated: {new Date().toLocaleDateString()}</p>
+        <p className="text-muted mb-8">
+          Last updated: {new Date().toLocaleDateString()}
+        </p>
 
         <div className="prose prose-lg max-w-none">
           {/* Introduction */}
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Agreement to Terms</h2>
             <p className="text-muted mb-4">
-              These Terms of Service constitute a legally binding agreement between you and {SITE.name} ("Company," "we," "us," or "our") concerning your access to and use of our website and services.
+              These Terms of Service constitute a legally binding agreement
+              between you and {SITE.name} ("Company," "we," "us," or "our")
+              concerning your access to and use of our website and services.
             </p>
             <p className="text-muted mb-4">
-              By accessing or using our services, you agree to be bound by these Terms. If you do not agree to these Terms, you may not access or use our services.
+              By accessing or using our services, you agree to be bound by these
+              Terms. If you do not agree to these Terms, you may not access or
+              use our services.
             </p>
           </section>
 
@@ -43,7 +55,9 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Our Services</h2>
             <p className="text-muted mb-4">
-              {SITE.name} provides custom Slack application development and automation services through a subscription-based model. Our services include:
+              {SITE.name} provides custom Slack application development and
+              automation services through a subscription-based model. Our
+              services include:
             </p>
             <ul className="list-disc list-inside text-muted space-y-2 mb-4">
               <li>Custom Slack app development</li>
@@ -63,7 +77,10 @@ export default function TermsOfService() {
             <ul className="list-disc list-inside text-muted space-y-2 mb-4">
               <li>Subscriptions are billed monthly in advance</li>
               <li>You may cancel or pause your subscription at any time</li>
-              <li>Cancellations take effect at the end of the current billing period</li>
+              <li>
+                Cancellations take effect at the end of the current billing
+                period
+              </li>
               <li>No refunds are provided for partial months</li>
               <li>Pricing is subject to change with 30 days notice</li>
             </ul>
@@ -72,14 +89,14 @@ export default function TermsOfService() {
           {/* User Responsibilities */}
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">User Responsibilities</h2>
-            <p className="text-muted mb-4">
-              You agree to:
-            </p>
+            <p className="text-muted mb-4">You agree to:</p>
             <ul className="list-disc list-inside text-muted space-y-2 mb-4">
               <li>Provide accurate and complete information</li>
               <li>Maintain the security of your account credentials</li>
               <li>Use our services in compliance with all applicable laws</li>
-              <li>Not use our services for any illegal or unauthorized purpose</li>
+              <li>
+                Not use our services for any illegal or unauthorized purpose
+              </li>
               <li>Not attempt to interfere with or disrupt our services</li>
             </ul>
           </section>
@@ -88,10 +105,14 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Intellectual Property</h2>
             <p className="text-muted mb-4">
-              The services, including all content, features, and functionality, are owned by {SITE.name} and are protected by copyright, trademark, and other intellectual property laws.
+              The services, including all content, features, and functionality,
+              are owned by {SITE.name} and are protected by copyright,
+              trademark, and other intellectual property laws.
             </p>
             <p className="text-muted mb-4">
-              Custom applications developed for you remain your property, subject to our retention of underlying framework and reusable components.
+              Custom applications developed for you remain your property,
+              subject to our retention of underlying framework and reusable
+              components.
             </p>
           </section>
 
@@ -99,7 +120,9 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Limitation of Liability</h2>
             <p className="text-muted mb-4">
-              To the maximum extent permitted by law, {SITE.name} shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues.
+              To the maximum extent permitted by law, {SITE.name} shall not be
+              liable for any indirect, incidental, special, consequential, or
+              punitive damages, or any loss of profits or revenues.
             </p>
           </section>
 
@@ -107,7 +130,9 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Termination</h2>
             <p className="text-muted mb-4">
-              We reserve the right to terminate or suspend your access to our services immediately, without prior notice or liability, for any reason, including breach of these Terms.
+              We reserve the right to terminate or suspend your access to our
+              services immediately, without prior notice or liability, for any
+              reason, including breach of these Terms.
             </p>
           </section>
 
@@ -115,17 +140,26 @@ export default function TermsOfService() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
             <p className="text-muted mb-4">
-              If you have questions about these Terms of Service, please contact us at:
+              If you have questions about these Terms of Service, please contact
+              us at:
             </p>
             <p className="text-muted">
-              Email: <a href={`mailto:${CONTACT.legal}`} className="underline hover:text-black">{CONTACT.legal}</a>
+              Email:{" "}
+              <a
+                href={`mailto:${CONTACT.legal}`}
+                className="underline hover:text-black"
+              >
+                {CONTACT.legal}
+              </a>
             </p>
           </section>
 
           {/* Notice */}
           <div className="mt-12 p-6 bg-yellow-300/10 border-l-4 border-yellow-300 rounded">
             <p className="text-sm text-muted">
-              <strong>Note:</strong> This is a template Terms of Service. Please consult with a legal professional to ensure it meets your specific needs and complies with applicable laws in your jurisdiction.
+              <strong>Note:</strong> This is a template Terms of Service. Please
+              consult with a legal professional to ensure it meets your specific
+              needs and complies with applicable laws in your jurisdiction.
             </p>
           </div>
         </div>

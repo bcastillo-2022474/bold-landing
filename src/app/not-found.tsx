@@ -18,7 +18,8 @@ export default function NotFound() {
         </h2>
 
         <p className="text-muted text-base md:text-lg mb-8 max-w-[60ch] mx-auto">
-          Oops! The page you're looking for doesn't exist. It might have been moved or deleted.
+          Oops! The page you're looking for doesn't exist. It might have been
+          moved or deleted.
         </p>
 
         {/* Action buttons */}
@@ -46,13 +47,22 @@ export default function NotFound() {
         <div className="mt-12 pt-8 border-t border-border-light">
           <p className="text-sm text-muted-light mb-4">Popular pages:</p>
           <div className="flex flex-wrap gap-4 justify-center text-sm">
-            <Link href="/#pricing" className="text-muted hover:text-black hover:underline">
+            <Link
+              href="/#pricing"
+              className="text-muted hover:text-black hover:underline"
+            >
               Pricing
             </Link>
-            <Link href="/#what-we-built" className="text-muted hover:text-black hover:underline">
+            <Link
+              href="/#what-we-built"
+              className="text-muted hover:text-black hover:underline"
+            >
               What We've Built
             </Link>
-            <Link href={ROUTES.privacy} className="text-muted hover:text-black hover:underline">
+            <Link
+              href={ROUTES.privacy}
+              className="text-muted hover:text-black hover:underline"
+            >
               Privacy Policy
             </Link>
           </div>
