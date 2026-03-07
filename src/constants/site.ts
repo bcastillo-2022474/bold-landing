@@ -40,6 +40,7 @@ export const NAVIGATION = {
       { label: "Careers", href: "#" },
     ],
     legal: [
+      { label: "Pricing", href: "/pricing" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms Of Service", href: "/terms" },
       { label: "Cookies", href: "#" },
@@ -51,6 +52,7 @@ export const ROUTES = {
   home: "/",
   privacy: "/privacy",
   terms: "/terms",
+  pricing: "/pricing",
   notFound: "/404",
 } as const;
 
@@ -66,7 +68,7 @@ export const META = {
     "SaaS",
     "subscription development",
   ] as string[],
-  ogImage: "/og-image.png",
+  ogImage: "/opengraph-image",
   favicon: "/favicon.ico",
   appleTouchIcon: "/apple-touch-icon.png",
   icons: {
@@ -128,6 +130,12 @@ export const META = {
       description: `Read the Privacy Policy for Bold Studio. Learn how we collect, use, and protect your personal information.`,
       canonical: "/privacy",
       lastUpdated: "March 6, 2025",
+    },
+    pricing: {
+      title: "Pricing",
+      description:
+        "Simple, predictable pricing for custom Slack app development. Starter at $1,499/mo, Growth at $3,499/mo, Enterprise at $4,999/mo. One-time setup fee of $6,500. Cancel or pause anytime.",
+      canonical: "/pricing",
     },
   },
 };
