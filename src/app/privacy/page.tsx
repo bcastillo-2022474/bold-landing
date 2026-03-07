@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { CONTACT, META, ROUTES, SITE } from "@/constants/site";
+import { Navbar } from "@/components/navbar";
+import { CONTACT, META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: META.pages.privacy.title,
@@ -14,23 +14,7 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Simple header */}
-      <header className="border-b border-border-light sticky top-0 bg-white z-10">
-        <div className="max-w-4xl mx-auto px-4 md:px-10 py-5 flex items-center justify-between">
-          <Link
-            href={ROUTES.home}
-            className="font-bold text-xl hover:text-yellow-300 transition-colors"
-          >
-            {SITE.name}
-          </Link>
-          <Link
-            href={ROUTES.home}
-            className="text-sm text-muted hover:text-black hover:underline"
-          >
-            Back to Home
-          </Link>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Content */}
       <main className="max-w-4xl mx-auto px-4 md:px-10 py-10 md:py-20">

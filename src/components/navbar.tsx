@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { NAVIGATION, SITE } from "@/constants/site";
+import { NAVIGATION, ROUTES, SITE } from "@/constants/site";
 import logo from "../../public/logo.svg";
 
 export function Navbar() {
@@ -11,7 +12,7 @@ export function Navbar() {
 
   return (
     <nav className="flex w-full justify-between items-center px-4 md:px-10 py-5 shadow sticky bg-white top-0 z-50">
-      <div className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
+      <Link href={ROUTES.home} className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
         <div className="absolute right-5 scale-75 top-1/2 blur shadow w-full h-full">
           <div className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
             <div className="w-full h-full absolute bg-white opacity-70"></div>
@@ -26,7 +27,7 @@ export function Navbar() {
           width={50}
         />
         <span className="z-10 font-bold">{SITE.name}</span>
-      </div>
+      </Link>
 
       {/* Mobile menu button */}
       <button
@@ -56,9 +57,9 @@ export function Navbar() {
       <div className="hidden md:block px-2">
         <ul className="flex font-inter gap-5 items-center">
           {NAVIGATION.main.map((link) => (
-            <a key={link.label} href={link.href}>
+            <Link key={link.label} href={link.href}>
               {link.label}
-            </a>
+            </Link>
           ))}
           <Button>Start Building</Button>
         </ul>
@@ -69,13 +70,13 @@ export function Navbar() {
         <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden z-50 border-t">
           <ul className="flex flex-col font-inter py-4">
             {NAVIGATION.main.map((link) => (
-              <a
+              <Link
                 key={link.label}
                 href={link.href}
                 className="px-6 py-3 hover:bg-gray-50"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
             <div className="px-6 py-3">
               <Button className="w-full">Start Building</Button>

@@ -28,13 +28,13 @@ export const SOCIAL = {
 
 export const NAVIGATION = {
   main: [
-    { label: "Home", href: "#" },
+    { label: "Home", href: "/" },
     { label: "Design", href: "#" },
     { label: "About", href: "#" },
   ],
   footer: {
     company: [
-      { label: "Home", href: "#" },
+      { label: "Home", href: "/" },
       { label: "Design", href: "#" },
       { label: "About", href: "#" },
       { label: "Careers", href: "#" },
