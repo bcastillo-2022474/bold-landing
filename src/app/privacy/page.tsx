@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { CONTACT, ROUTES, SITE } from "@/constants/site";
+import { CONTACT, META, ROUTES, SITE } from "@/constants/site";
+
+export const metadata: Metadata = {
+  title: META.pages.privacy.title,
+  description: META.pages.privacy.description,
+  alternates: {
+    canonical: META.pages.privacy.canonical,
+  },
+  robots: META.robots,
+};
 
 export default function PrivacyPolicy() {
   return (
@@ -31,9 +41,7 @@ export default function PrivacyPolicy() {
           </span>
         </h1>
 
-        <p className="text-muted mb-8">
-          Last updated: {new Date().toLocaleDateString()}
-        </p>
+        <p className="text-muted mb-8">Last updated: {META.pages.privacy.lastUpdated}</p>
 
         <div className="prose prose-lg max-w-none">
           {/* Introduction */}
@@ -139,14 +147,6 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
-          {/* Notice */}
-          <div className="mt-12 p-6 bg-yellow-300/10 border-l-4 border-yellow-300 rounded">
-            <p className="text-sm text-muted">
-              <strong>Note:</strong> This is a template Privacy Policy. Please
-              consult with a legal professional to ensure it meets your specific
-              needs and complies with applicable laws in your jurisdiction.
-            </p>
-          </div>
         </div>
       </main>
     </div>

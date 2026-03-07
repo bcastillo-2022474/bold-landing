@@ -1,5 +1,6 @@
 import type { JSX } from "react";
 import { Button } from "@/components/ui/button";
+import { CONTACT } from "@/constants/site";
 import { cn } from "@/utils/cn";
 
 function Chip({ title }: { title: string }) {
@@ -142,7 +143,12 @@ export function PricingSection() {
     {
       title: "Enterprise",
       pricePerMonth: (
-        <h3 className="font-inter font-bold text-3xl md:text-4xl">Custom</h3>
+        <h3 className="font-inter font-bold text-3xl md:text-4xl">
+          <span>$4,999</span>
+          <span className="text-base md:text-lg text-muted font-normal">
+            /mo
+          </span>
+        </h3>
       ),
       features: [
         ["Multiple workspaces", true],
@@ -166,6 +172,15 @@ export function PricingSection() {
           <h4 className="text-muted text-sm md:text-base">
             cancel or pause at any time
           </h4>
+          <p className="text-muted text-xs mt-1">
+            A one-time setup fee applies to all plans.{" "}
+            <a
+              href={`mailto:${CONTACT.general}`}
+              className="underline hover:text-black"
+            >
+              Contact us for a quote.
+            </a>
+          </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 xl:gap-20 pt-6 md:pt-10 w-full lg:w-auto items-center lg:items-stretch">
           {plans.map((plan, i) => (

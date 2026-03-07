@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
-import { META, SITE } from "@/constants/site";
+import { META, SITE, SOCIAL } from "@/constants/site";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   authors: [{ name: SITE.name }],
   creator: SITE.name,
   publisher: SITE.name,
+  metadataBase: new URL(SITE.url),
+  alternates: {
+    canonical: "/",
+  },
+  robots: META.robots,
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -33,20 +38,26 @@ export const metadata: Metadata = {
         url: META.ogImage,
         width: 1200,
         height: 630,
-        alt: `${SITE.name} - Slack Automation`,
+        alt: `${SITE.name} - Custom Slack Apps & Automation`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    site: SOCIAL.twitterHandle,
+    creator: SOCIAL.twitterHandle,
     title: SITE.title,
     description: SITE.description,
     images: [META.ogImage],
   },
   icons: {
-    icon: META.favicon,
+    icon: [
+      { url: META.favicon, sizes: "any" },
+      { url: META.icons.icon192, sizes: "192x192", type: "image/png" },
+      { url: META.icons.icon512, sizes: "512x512", type: "image/png" },
+    ],
     shortcut: META.favicon,
-    apple: META.appleTouchIcon,
+    apple: { url: META.appleTouchIcon, sizes: "180x180" },
   },
   manifest: "/site.webmanifest",
 };
