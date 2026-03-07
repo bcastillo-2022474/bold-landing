@@ -12,32 +12,28 @@ export function Footer() {
           <div>
             <ul className="flex flex-col gap-2">
               {NAVIGATION.footer.company.map((link) => (
-                <a
-                  key={link.label}
-                  className="hover:underline"
-                  href={link.href}
-                >
-                  {link.label}
-                </a>
+                <li key={link.label} className="list-none">
+                  <a className="hover:underline" href={link.href}>
+                    {link.label}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
           <div>
             <ul className="flex flex-col gap-2">
               {NAVIGATION.footer.legal.map((link) => (
-                <a
-                  key={link.label}
-                  className="hover:underline"
-                  href={link.href}
-                >
-                  {link.label}
-                </a>
+                <li key={link.label} className="list-none">
+                  <a className="hover:underline" href={link.href}>
+                    {link.label}
+                  </a>
+                </li>
               ))}
             </ul>
           </div>
         </div>
       </div>
-      <div className="text-xs md:text-sm border-t text-muted-light border-gray-200 w-full py-5 flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center">
+      <div className="text-xs md:text-sm border-t text-muted border-gray-200 w-full py-5 flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center">
         <span>
           © {new Date().getFullYear()} {SITE.name}. All rights reserved.
         </span>

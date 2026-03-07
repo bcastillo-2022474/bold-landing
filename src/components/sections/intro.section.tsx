@@ -43,6 +43,7 @@ export function IntroSection() {
         src={plant}
         alt="Plant Image"
         width={800}
+        priority
         className="shadow-2xl rounded-2xl mt-5 md:mt-10 w-full max-w-[800px] h-auto"
       />
     </section>

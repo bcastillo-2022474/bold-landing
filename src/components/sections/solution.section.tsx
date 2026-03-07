@@ -54,7 +54,7 @@ export function SolutionSection() {
     <section className="grid grid-cols-1 md:grid-cols-2 items-center py-10 md:py-20 w-full gap-8 md:gap-5 px-4 md:px-10 lg:px-30 bg-section-bg">
       <div className="flex flex-col gap-5 items-start">
         <div className="flex flex-col gap-1">
-          <h3 className="text-yellow-300 uppercase font-semibold text-sm md:text-base">
+          <h3 className="text-yellow-600 uppercase font-semibold text-sm md:text-base">
             The Solution
           </h3>
           <h2 className="flex flex-col text-2xl md:text-3xl font-bold">

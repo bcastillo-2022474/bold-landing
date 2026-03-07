@@ -23,7 +23,7 @@ export function CustomersSection() {
 
   return (
     <div className="w-full gap-3 md:gap-5 bg-section-bg flex flex-col items-center pb-10 px-4">
-      <h3 className="uppercase text-muted-light font-bold text-xs md:text-sm text-center">
+      <h3 className="uppercase text-muted font-bold text-xs md:text-sm text-center">
         Helping Industry leaders to automate
       </h3>
       <div className="flex flex-wrap justify-center gap-3 md:gap-5">
@@ -169,9 +169,9 @@ export function PricingSection() {
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
             Simple, predictable pricing.
           </h2>
-          <h4 className="text-muted text-sm md:text-base">
+          <p className="text-muted text-sm md:text-base">
             cancel or pause at any time
-          </h4>
+          </p>
           <p className="text-muted text-xs mt-1">
             A one-time setup fee applies to all plans.{" "}
             <a

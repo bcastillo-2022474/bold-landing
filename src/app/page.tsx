@@ -75,7 +75,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Navbar />
-      <div className="flex flex-col items-center gap-10 *:max-w-432">
+      <main className="flex flex-col items-center gap-10 *:max-w-432">
         <IntroSection />
         <JustificationSection />
         <SolutionSection />
@@ -83,7 +83,7 @@ export default function Home() {
         <PricingSection />
         <TestimonialSection />
         <CallToActionSection />
-      </div>
+      </main>
       <Footer />
     </>
   );
