@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Navbar } from "@/components/navbar";
-import { CONTACT, META, SITE } from "@/constants/site";
+import { CONTACT, META } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: META.pages.pricing.title,
@@ -13,12 +13,13 @@ export const metadata: Metadata = {
 
 const plans = [
   {
-    title: "Starter",
-    price: "$1,499",
+    title: "Enterprise",
+    price: "$4,999",
     features: [
-      "One request at a time",
-      "48-hour turnaround",
-      "Unlimited revisions",
+      "Multiple workspaces",
+      "Custom SLA",
+      "Strategy consulting",
+      "Dedicated Project Manager",
     ],
     isPopular: false,
   },
@@ -35,14 +36,12 @@ const plans = [
     isPopular: true,
   },
   {
-    title: "Enterprise",
-    price: "$4,999",
+    title: "Starter",
+    price: "$1,499",
     features: [
-      "Multiple workspaces",
-      "Custom SLA",
-      "On-site workshops",
-      "Strategy consulting",
-      "Dedicated Project Manager",
+      "One request at a time",
+      "48-hour turnaround",
+      "Unlimited revisions",
     ],
     isPopular: false,
   },
@@ -72,7 +71,9 @@ export default function PricingPage() {
               <div
                 key={plan.title}
                 className={`rounded-2xl p-8 flex flex-col gap-6 shadow relative ${
-                  plan.isPopular ? "border-2 border-yellow-300" : "border border-gray-100"
+                  plan.isPopular
+                    ? "border-2 border-yellow-300"
+                    : "border border-gray-100"
                 }`}
               >
                 {plan.isPopular && (
@@ -86,7 +87,9 @@ export default function PricingPage() {
                   <h2 className="font-bold text-lg mb-2">{plan.title}</h2>
                   <p className="font-inter font-bold text-4xl">
                     {plan.price}
-                    <span className="text-base font-normal text-muted">/mo</span>
+                    <span className="text-base font-normal text-muted">
+                      /mo
+                    </span>
                   </p>
                 </div>
                 <ul className="flex flex-col gap-2 text-muted text-sm">
@@ -118,8 +121,8 @@ export default function PricingPage() {
           <p className="text-muted mb-4">
             All plans require a one-time setup fee of{" "}
             <strong className="text-black">$6,500 USD</strong>. This covers
-            onboarding, workspace configuration, initial architecture review, and
-            getting your first request scoped and ready for development.
+            onboarding, workspace configuration, initial architecture review,
+            and getting your first request scoped and ready for development.
           </p>
           <p className="text-muted">
             Have questions about what's included?{" "}

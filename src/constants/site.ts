@@ -13,10 +13,10 @@ export const SITE = {
 } as const;
 
 export const CONTACT = {
-  support: "support@boldstudio.com",
-  privacy: "privacy@boldstudio.com",
-  legal: "legal@boldstudio.com",
-  general: "hello@boldstudio.com",
+  support: "info@getboldstudio.com",
+  privacy: "info@getboldstudio.com",
+  legal: "info@getboldstudio.com",
+  general: "info@getboldstudio.com",
 } as const;
 
 export const SOCIAL = {
@@ -29,14 +29,14 @@ export const SOCIAL = {
 export const NAVIGATION = {
   main: [
     { label: "Home", href: "/" },
-    { label: "Design", href: "#" },
-    { label: "About", href: "#" },
+    { label: "Design", href: "/design" },
+    { label: "About", href: "/about" },
   ],
   footer: {
     company: [
       { label: "Home", href: "/" },
-      { label: "Design", href: "#" },
-      { label: "About", href: "#" },
+      { label: "Design", href: "/design" },
+      { label: "About", href: "/about" },
       { label: "Careers", href: "#" },
     ],
     legal: [
@@ -50,6 +50,8 @@ export const NAVIGATION = {
 
 export const ROUTES = {
   home: "/",
+  design: "/design",
+  about: "/about",
   privacy: "/privacy",
   terms: "/terms",
   pricing: "/pricing",
