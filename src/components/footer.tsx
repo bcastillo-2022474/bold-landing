@@ -1,4 +1,4 @@
-import { NAVIGATION, SITE, SOCIAL } from "@/constants/site";
+import { NAVIGATION, SITE } from "@/constants/site";
 
 export function Footer() {
   return (
@@ -36,11 +36,6 @@ export function Footer() {
       <div className="text-xs md:text-sm border-t text-muted border-gray-200 w-full py-5 flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center">
         <span>
           © {new Date().getFullYear()} {SITE.name}. All rights reserved.
-        </span>
-        <span>
-          <a href={SOCIAL.linkedin} className="hover:underline">
-            Linkedin
-          </a>
         </span>
       </div>
     </div>

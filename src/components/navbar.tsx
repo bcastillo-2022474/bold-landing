@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { BookingModal } from "@/components/booking-modal";
 import { Button } from "@/components/ui/button";
 import { NAVIGATION, ROUTES, SITE } from "@/constants/site";
 import logo from "../../public/logo.svg";
@@ -12,7 +13,10 @@ export function Navbar() {
 
   return (
     <nav className="flex w-full justify-between items-center px-4 md:px-10 py-5 shadow sticky bg-white top-0 z-50">
-      <Link href={ROUTES.home} className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
+      <Link
+        href={ROUTES.home}
+        className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate"
+      >
         <div className="absolute right-5 scale-75 top-1/2 blur shadow w-full h-full">
           <div className="px-3 py-2 flex text-2xl gap-3 items-center relative isolate">
             <div className="w-full h-full absolute bg-white opacity-70"></div>
@@ -61,7 +65,7 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Button>Start Building</Button>
+          <BookingModal variant="button" label="Start Building" style="black" />
         </ul>
       </div>
 
@@ -79,7 +83,11 @@ export function Navbar() {
               </Link>
             ))}
             <div className="px-6 py-3">
-              <Button className="w-full">Start Building</Button>
+              <BookingModal
+                variant="button"
+                label="Start Building"
+                style="black"
+              />
             </div>
           </ul>
         </div>

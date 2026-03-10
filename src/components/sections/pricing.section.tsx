@@ -105,20 +105,19 @@ function Card({ title, pricePerMonth, features, isPopular }: Plan) {
 export function PricingSection() {
   const plans: Plan[] = [
     {
-      title: "Starter",
+      title: "Enterprise",
       pricePerMonth: (
         <h3 className="font-inter font-bold text-3xl md:text-4xl">
-          <span>$1,499</span>
+          <span>$4,999</span>
           <span className="text-base md:text-lg text-muted font-normal">
             /mo
           </span>
         </h3>
       ),
       features: [
-        ["One request at a time", true],
-        ["48-hour turnaround", true],
-        ["Unlimited revisions", true],
-        ["Dedicated Project Manager", false],
+        ["Multiple workspaces", true],
+        ["Custom SLA", true],
+        ["Strategy consulting", true],
       ],
       isPopular: false,
     },
@@ -141,20 +140,20 @@ export function PricingSection() {
       isPopular: true,
     },
     {
-      title: "Enterprise",
+      title: "Starter",
       pricePerMonth: (
         <h3 className="font-inter font-bold text-3xl md:text-4xl">
-          <span>$4,999</span>
+          <span>$1,499</span>
           <span className="text-base md:text-lg text-muted font-normal">
             /mo
           </span>
         </h3>
       ),
       features: [
-        ["Multiple workspaces", true],
-        ["Custom SLA", true],
-        ["On-site workshops", true],
-        ["Strategy consulting", true],
+        ["One request at a time", true],
+        ["48-hour turnaround", true],
+        ["Unlimited revisions", true],
+        ["Dedicated Project Manager", false],
       ],
       isPopular: false,
     },
