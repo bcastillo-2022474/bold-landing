@@ -13,18 +13,18 @@ function Chip({ title }: { title: string }) {
 
 export function CustomersSection() {
   const chips = [
-    "Startups",
-    "Fin-techs",
-    "Law Firms",
-    "Saas Companies",
-    "E-commerce",
-    "Agencies",
+    "Founders",
+    "Startup Teams",
+    "Product Managers",
+    "Operations Leads",
+    "Growing Companies",
+    "Internal Tools Teams",
   ];
 
   return (
     <div className="w-full gap-3 md:gap-5 bg-section-bg flex flex-col items-center pb-10 px-4">
       <h3 className="uppercase text-muted font-bold text-xs md:text-sm text-center">
-        Helping Industry leaders to automate
+        Built for teams who need ongoing development
       </h3>
       <div className="flex flex-wrap justify-center gap-3 md:gap-5">
         {chips.map((chip) => (
@@ -66,8 +66,8 @@ function Icon({ isAvailable }: { isAvailable: boolean }) {
 
 function Card({ title, pricePerMonth, features, isPopular }: Plan) {
   const normal =
-    "w-full max-w-[500px] lg:max-w-none lg:min-w-[320px] lg:aspect-39/43 p-6 md:p-10 flex flex-col gap-5 justify-around shadow rounded-2xl bg-white relative";
-  const popular = "lg:scale-120 border-2 border-yellow-300";
+    "w-full max-w-[400px] md:max-w-[500px] lg:max-w-none lg:min-w-[280px] p-6 md:p-10 flex flex-col gap-5 shadow rounded-2xl bg-white relative";
+  const popular = "lg:scale-105 border-2 border-yellow-300";
 
   return (
     <article className={cn(normal, isPopular && popular)}>
@@ -92,7 +92,7 @@ function Card({ title, pricePerMonth, features, isPopular }: Plan) {
       </div>
       <Button
         className={cn(
-          "text-black rounded-xl cursor-pointer",
+          "text-black rounded-xl cursor-pointer w-full",
           isPopular ? "bg-yellow-300" : "border-2 bg-white",
         )}
       >
@@ -115,9 +115,10 @@ export function PricingSection() {
         </h3>
       ),
       features: [
-        ["Multiple workspaces", true],
-        ["Custom SLA", true],
-        ["Strategy consulting", true],
+        ["Real-time operational data", true],
+        ["Micro-app ecosystems", true],
+        ["Custom security protocols", true],
+        ["Priority 24/7 support", true],
       ],
       isPopular: false,
     },
@@ -132,10 +133,10 @@ export function PricingSection() {
         </h3>
       ),
       features: [
-        ["Two request at a time", true],
-        ["24-hour turnaround", true],
-        ["Priority support", true],
-        ["Dedicated Project Manager", true],
+        ["Custom Slack apps", true],
+        ["CRM & internal system integrations", true],
+        ["Product-level automation", true],
+        ["Iterative improvements", true],
       ],
       isPopular: true,
     },
@@ -150,10 +151,10 @@ export function PricingSection() {
         </h3>
       ),
       features: [
-        ["One request at a time", true],
-        ["48-hour turnaround", true],
-        ["Unlimited revisions", true],
-        ["Dedicated Project Manager", false],
+        ["Automated workflows", true],
+        ["Operational organization", true],
+        ["Administrative efficiency", true],
+        ["Slack-native tools", true],
       ],
       isPopular: false,
     },
@@ -166,19 +167,18 @@ export function PricingSection() {
       <div className="flex flex-col gap-6 md:gap-10 items-center w-full px-4 md:px-10 lg:px-30 py-10">
         <div className="flex flex-col gap-1 items-center text-center">
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
-            Simple, predictable pricing.
+            Plans that scale with you
           </h2>
           <p className="text-muted text-sm md:text-base">
-            cancel or pause at any time
+            Flat monthly fee. Cancel or pause anytime.
           </p>
-          <p className="text-muted text-xs mt-1">
-            A one-time setup fee applies to all plans.{" "}
-            <a
-              href={`mailto:${CONTACT.general}`}
-              className="underline hover:text-black"
-            >
-              Contact us for a quote.
-            </a>
+        </div>
+
+        {/* Global setup fee message */}
+        <div className="bg-yellow-300/20 border border-yellow-300 rounded-xl px-6 py-4 text-center">
+          <p className="text-sm font-medium">
+            All plans include a one-time setup fee of $6,500 covering
+            architecture, deployment and initial integrations.
           </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-10 xl:gap-20 pt-6 md:pt-10 w-full lg:w-auto items-center lg:items-stretch">

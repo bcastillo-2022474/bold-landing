@@ -5,10 +5,10 @@ import { useState } from "react";
 import { BookingModal } from "@/components/booking-modal";
 import { RightIcon } from "@/components/right-icon";
 import { Button } from "@/components/ui/button";
+import heroImage from "../../../public/ba113923-f721-4796-b104-b8f29d8a4d35.png";
 import BotIcon from "../../../public/icons/bot.svg";
 import HammerIcon from "../../../public/icons/hammer.svg";
 import LightningIcon from "../../../public/icons/lightning.svg";
-import plant from "../../../public/plant.svg";
 
 type Workflow = {
   title: string;
@@ -41,28 +41,34 @@ export function IntroSection() {
     <>
       <section className="flex flex-col items-center py-10 md:py-20 w-full gap-5 px-4 md:px-10 lg:px-30 bg-section-bg">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-12 flex flex-col text-center">
-          <span>Build Faster.</span>
+          <span>Your Dedicated Dev Team.</span>
           <span className="relative isolate">
             <span className="bg-yellow-300 w-full absolute left-0 bottom-0 -rotate-1 h-[1.5ch] scale-110"></span>
-            <span className="z-10 relative">Scale Smarter.</span>
+            <span className="z-10 relative">On Demand. On Slack.</span>
           </span>
         </h1>
         <p className="text-center font-inter text-muted items-center max-w-[60ch] px-4 text-sm md:text-base">
-          Custom Slack apps that automate your workflows — delivered through a
-          simple monthly subscription. No contracts. No per-project chaos.
+          Custom software development via monthly subscription. Send your
+          requests directly in Slack — we build MVPs, internal tools,
+          integrations, and automations. No hiring. No contracts.
         </p>
-        <div className="flex flex-col md:flex-row justify-around max-w-[60ch] gap-3 md:gap-5 text-base md:text-lg w-full md:w-auto px-4 md:px-0">
-          <BookingModal variant="button" label="Start Building" style="black" />
+        <div className="flex flex-row flex-wrap items-center justify-center gap-3 md:gap-5 text-base md:text-lg w-full md:w-auto px-4 md:px-0">
+          <BookingModal
+            variant="button"
+            label="Start your subscription"
+            style="black"
+            className="justify-center"
+          />
           <Button
             onClick={() => setIsModalOpen(true)}
             className="text-black bg-white border-3 cursor-pointer justify-center"
           >
-            <span>See it in action</span>
+            <span>Book a call</span>
           </Button>
         </div>
         <Image
-          src={plant}
-          alt="Plant Image"
+          src={heroImage}
+          alt="Bold Studio - Your dedicated dev team"
           width={800}
           priority
           className="shadow-2xl rounded-2xl mt-5 md:mt-10 w-full max-w-[800px] h-auto"
@@ -100,10 +106,10 @@ export function IntroSection() {
 
             <div className="flex flex-col items-center text-center gap-6">
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
-                Real Slack workflows built for{" "}
+                Real software built for{" "}
                 <span className="relative isolate">
                   <span className="bg-yellow-300 w-full absolute left-0 bottom-0 -rotate-1 h-[1.5ch] scale-110"></span>
-                  <span className="z-10 relative">modern teams</span>
+                  <span className="z-10 relative">growing teams</span>
                 </span>
               </h2>
 

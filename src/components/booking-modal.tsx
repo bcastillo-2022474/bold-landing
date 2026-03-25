@@ -7,12 +7,14 @@ type BookingModalProps = {
   variant?: "button" | "link";
   label?: string;
   style?: "yellow" | "black";
+  className?: string;
 };
 
 export function BookingModal({
   variant = "button",
   label = "Schedule a demo",
   style = "yellow",
+  className = "",
 }: BookingModalProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -40,7 +42,7 @@ export function BookingModal({
       {variant === "button" ? (
         <Button
           onClick={() => setIsOpen(true)}
-          className={`rounded-full px-5 py-2 cursor-pointer flex gap-3 items-center z-10 text-sm md:text-base font-semibold ${buttonClass}`}
+          className={`rounded-full px-5 py-2 cursor-pointer flex gap-3 items-center z-10 text-sm md:text-base font-semibold ${buttonClass} ${className}`}
         >
           <span>{label}</span>
           <svg
@@ -59,7 +61,7 @@ export function BookingModal({
       ) : (
         <button
           onClick={() => setIsOpen(true)}
-          className={`rounded-full px-5 py-2 cursor-pointer flex gap-3 items-center z-10 text-sm md:text-base font-semibold ${buttonClass}`}
+          className={`rounded-full px-5 py-2 cursor-pointer flex gap-3 items-center z-10 text-sm md:text-base font-semibold ${buttonClass} ${className}`}
         >
           <span>{label}</span>
           <svg
