@@ -5,10 +5,10 @@
 
 export const SITE = {
   name: "Bold Studio",
-  title: "Bold Studio - Custom Slack Apps & Automation",
+  title: "Bold Studio - Custom Software Development Subscription",
   description:
-    "Custom Slack apps that automate your workflows — delivered through a simple monthly subscription. No contracts. No per-project chaos.",
-  tagline: "Build Faster. Scale Smarter.",
+    "Your dedicated dev team on Slack. Get custom software, MVPs, internal tools, and automations via monthly subscription. Skip hiring — start building today.",
+  tagline: "Your Dedicated Dev Team. On Demand. On Slack.",
   url: "https://boldstudio.com",
 } as const;
 
@@ -92,12 +92,12 @@ export const META = {
     {
       question: "What exactly do you build?",
       answer:
-        "We build custom Slack apps — bots, workflow automations, slash commands, modals, and integrations with your existing tools (Jira, Notion, HubSpot, etc.). Everything runs natively inside Slack.",
+        "We build custom software — SaaS MVPs, internal tools, API integrations, Slack bots, dashboards, and web applications. If you can describe it, we can build it.",
     },
     {
       question: "How does the subscription model work?",
       answer:
-        "You subscribe to a monthly plan and submit development requests one at a time (or two at a time on Growth). We deliver within 48 or 24 hours, you review, request revisions, and repeat. Cancel or pause anytime.",
+        "You subscribe to a monthly plan and submit development requests through Slack. We deliver within 48 or 24 hours, you review, request revisions, and repeat. Cancel or pause anytime.",
     },
     {
       question: "Is there a setup fee?",
@@ -112,12 +112,12 @@ export const META = {
     {
       question: "Who owns the code?",
       answer:
-        "You do. All custom code built for your workspace is your property. We retain rights to underlying frameworks and reusable internal components.",
+        "You do. All custom code built for your project is your property. We retain rights to underlying frameworks and reusable internal components.",
     },
     {
       question: "How do I submit requests?",
       answer:
-        "After onboarding you'll get access to a shared project board where you submit, prioritize, and track requests. No email threads.",
+        "Simply send us a message in Slack describing what you need. No formal specs required — just explain the problem and desired outcome.",
     },
   ],
   pages: {

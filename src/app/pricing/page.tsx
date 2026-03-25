@@ -16,10 +16,10 @@ const plans = [
     title: "Enterprise",
     price: "$4,999",
     features: [
-      "Multiple workspaces",
-      "Custom SLA",
-      "Strategy consulting",
-      "Dedicated Project Manager",
+      "Real-time operational data",
+      "Micro-app ecosystems",
+      "Custom security protocols",
+      "Priority 24/7 support",
     ],
     isPopular: false,
   },
@@ -27,11 +27,10 @@ const plans = [
     title: "Growth",
     price: "$3,499",
     features: [
-      "Two requests at a time",
-      "24-hour turnaround",
-      "Unlimited revisions",
-      "Priority support",
-      "Dedicated Project Manager",
+      "Custom Slack apps",
+      "CRM & internal system integrations",
+      "Product-level automation",
+      "Iterative improvements",
     ],
     isPopular: true,
   },
@@ -39,9 +38,10 @@ const plans = [
     title: "Starter",
     price: "$1,499",
     features: [
-      "One request at a time",
-      "48-hour turnaround",
-      "Unlimited revisions",
+      "Automated workflows",
+      "Operational organization",
+      "Administrative efficiency",
+      "Slack-native tools",
     ],
     isPopular: false,
   },
@@ -116,13 +116,12 @@ export default function PricingPage() {
         </section>
 
         {/* Setup Fee */}
-        <section className="mb-12 p-8 bg-gray-50 rounded-2xl">
+        <section className="mb-12 p-8 bg-yellow-300/20 border border-yellow-300 rounded-2xl">
           <h2 className="text-2xl font-bold mb-3">One-time Setup Fee</h2>
           <p className="text-muted mb-4">
-            All plans require a one-time setup fee of{" "}
-            <strong className="text-black">$6,500 USD</strong>. This covers
-            onboarding, workspace configuration, initial architecture review,
-            and getting your first request scoped and ready for development.
+            All plans include a one-time setup fee of{" "}
+            <strong className="text-black">$6,500</strong> covering
+            architecture, deployment and initial integrations.
           </p>
           <p className="text-muted">
             Have questions about what's included?{" "}
