@@ -31,6 +31,7 @@ export const NAVIGATION = {
     { label: "Home", href: "/" },
     { label: "Design", href: "/design" },
     { label: "About", href: "/about" },
+    { label: "PTO & Handover", href: "/pto" },
   ],
   footer: {
     company: [
@@ -42,7 +43,9 @@ export const NAVIGATION = {
     legal: [
       { label: "Pricing", href: "/pricing" },
       { label: "Privacy Policy", href: "/privacy" },
+      { label: "Privacy Policy – PTO & Handover", href: "/pto/privacy" },
       { label: "Terms Of Service", href: "/terms" },
+      { label: "Terms of Service – PTO & Handover", href: "/pto/terms" },
       { label: "Cookies", href: "#" },
     ],
   },
@@ -52,6 +55,7 @@ export const ROUTES = {
   home: "/",
   design: "/design",
   about: "/about",
+  pto: "/pto",
   privacy: "/privacy",
   terms: "/terms",
   pricing: "/pricing",
