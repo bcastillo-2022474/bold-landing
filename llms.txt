@@ -1,0 +1,63 @@
+# Bold Studio Landing Page
+
+> Marketing website for Bold Studio — a Slack-native software development studio.
+> We centralize pipelines inside Slack, develop AI agents, manage workspaces as services,
+> and build custom software (Slack apps, MVPs, internal tools, automations) via monthly subscription.
+> Built with Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4.
+> Deployed on Netlify.
+
+## Core Services
+
+- **Pipeline Centralization:** Deploy, monitor, and manage CI/CD pipelines, data pipelines, and workflow orchestration directly inside Slack — no context switching to external dashboards.
+- **AI Agent Development:** Build custom AI agents and intelligent automation that live inside your Slack workspace — from support bots to decision-making assistants.
+- **Workspace as a Service:** Full lifecycle management of Slack workspaces — architecture, provisioning, governance, security, and ongoing maintenance.
+- **Custom Software Subscription:** SaaS MVPs, internal tools, API integrations, and automation — all delivered through Slack with a simple monthly subscription.
+
+## Key files
+
+- src/constants/site.ts: All site-wide config (SITE name/url, CONTACT emails, SOCIAL links, NAVIGATION, META/SEO defaults, FAQ content)
+- src/app/layout.tsx: Root layout (HTML, fonts with next/font, global metadata/OG/Twitter/SEO)
+- src/app/page.tsx: Homepage (ProfessionalService + FAQPage JSON-LD, imports all section components)
+- src/app/sitemap.ts: Dynamic sitemap (9 URLs — homepage, about, design, pricing, blog + 2 articles, terms, privacy)
+- src/app/robots.ts: Dynamic robots.txt
+- src/app/opengraph-image.tsx: Dynamic OG image (Edge runtime, 1200x630)
+- src/components/navbar.tsx: Sticky navbar with mobile hamburger (client component)
+- src/components/footer.tsx: Site footer
+- src/components/booking-modal.tsx: Booking/demo request form modal (client component)
+- src/components/ui/button.tsx: Reusable button (uses cn() utility)
+- src/components/sections/intro.section.tsx: Hero section
+- src/components/sections/justification.section.tsx: Problem section
+- src/components/sections/solution.section.tsx: Solution/features section
+- src/components/sections/testimonial.section.tsx: Video testimonial
+- src/components/sections/how-it-works.section.tsx: 4-step process
+- src/components/sections/pricing.section.tsx: 3 pricing cards + embedded customers section
+- src/components/sections/call-to-action.tsx: Final CTA
+- src/app/globals.css: Tailwind v4 imports + custom theme
+
+## Pages
+
+- / (home): 7 sections — hero, problem, solution, testimonial, how it works, pricing, final CTA
+- /about: Company mission + 3 founders (Rodrigo Queche, Guillermo Julca, Joaquin Ladd)
+- /design: Dev stack (Block Kit, Slack API, TypeScript, Slack CLI, Sandbox Testing)
+- /pricing: 3 plans + setup fee ($6,500) + 45-day refund guarantee
+- /blog: Blog index listing articles
+- /blog/deploy-first-slack-workflow: Tutorial — How to Deploy Your First Workflow in Slack (Article + HowTo JSON-LD)
+- /blog/connect-hermes-agent: Guide — Connect Hermes Agent to Your Slack Workspace (Article JSON-LD)
+- /terms: Terms of Service (noindex)
+- /privacy: Privacy Policy (noindex)
+
+## Structured Data
+
+JSON-LD schemas used: ProfessionalService, FAQPage, Organization, WebApplication, Product + AggregateOffer, SoftwareApplication, WebPage, Article, HowTo, CollectionPage, BreadcrumbList
+
+## Pricing
+
+- Starter: $1,499/mo (1 task, 48h turnaround)
+- Growth: $3,499/mo (2 concurrent, 24h turnaround) — Most Popular
+- Enterprise: $4,999/mo (unlimited tasks, custom SLA)
+- Setup fee: $6,500 (one-time)
+- 45-day refund guarantee on subscription fees
+
+## How to book
+
+Visit / (homepage) and click "Start your subscription" or "Book a call" — both open a demo request form. Direct email: info@getboldstudio.com

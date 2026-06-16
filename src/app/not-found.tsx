@@ -1,20 +1,25 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ROUTES } from "@/constants/site";
 
+export const metadata: Metadata = {
+  title: "404 - Page Not Found",
+  robots: {
+    index: false,
+  },
+};
+
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-section-bg">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4">
       <div className="text-center max-w-2xl">
         {/* 404 Large Text */}
         <h1 className="text-8xl md:text-9xl font-bold text-black mb-4">404</h1>
 
         {/* Yellow underline effect like homepage */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          <span className="relative isolate inline-block">
-            <span className="bg-yellow-300 w-full absolute left-0 bottom-0 -rotate-1 h-[1.5ch] scale-110"></span>
-            <span className="z-10 relative">Page Not Found</span>
-          </span>
+          Page <span className="text-[#FFD200]">Not Found</span>
         </h2>
 
         <p className="text-muted text-base md:text-lg mb-8 max-w-[60ch] mx-auto">
@@ -33,6 +38,7 @@ export default function NotFound() {
                 viewBox="0 0 16 16"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
               >
                 <path
                   d="M12.175 9H-9.64664e-06V7H12.175L6.57499 1.4L7.99999 4.76837e-07L16 8L7.99999 16L6.57499 14.6L12.175 9Z"
@@ -44,7 +50,7 @@ export default function NotFound() {
         </div>
 
         {/* Helpful links */}
-        <div className="mt-12 pt-8 border-t border-border-light">
+        <div className="mt-12 pt-8 border-t border-black/5">
           <p className="text-sm text-muted-light mb-4">Popular pages:</p>
           <div className="flex flex-wrap gap-4 justify-center text-sm">
             <Link

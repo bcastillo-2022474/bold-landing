@@ -13,7 +13,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: SITE.name,
-  description: SITE.description,
+  description:
+    "Build custom Slack apps, automate Slack workflows, and deploy AI Slack agents with your dedicated dev team on Slack.",
   url: SITE.url,
   email: CONTACT.general,
   priceRange: "$$$",
@@ -25,27 +26,35 @@ const jsonLd = {
     itemListElement: [
       {
         "@type": "Offer",
-        name: "Starter",
-        price: "1499",
+        name: "Launch",
+        price: "999",
         priceCurrency: "USD",
         description:
-          "1 task at a time, 48-hour turnaround, unlimited revisions, Slack communication.",
+          "1 Slack workflow automation, Slack workspace setup, 1 integration, async support, 1 revision per week.",
       },
       {
         "@type": "Offer",
-        name: "Growth",
+        name: "Build",
+        price: "1999",
+        priceCurrency: "USD",
+        description:
+          "Up to 3 Slack workflows, custom Slack app, up to 2 integrations, simple AI agent, async + sync support.",
+      },
+      {
+        "@type": "Offer",
+        name: "Scale",
         price: "3499",
         priceCurrency: "USD",
         description:
-          "2 concurrent tasks, 24-hour turnaround, priority support, dedicated Project Manager.",
+          "Unlimited Slack workflows, full custom Slack apps, multi-pipeline AI agents, CRM integrations, priority support.",
       },
       {
         "@type": "Offer",
-        name: "Enterprise",
-        price: "4999",
+        name: "Operate",
+        price: "5999",
         priceCurrency: "USD",
         description:
-          "Unlimited concurrent tasks, custom SLA, multiple workspaces, strategy consulting.",
+          "Micro-app ecosystem, custom AI Slack agents, unlimited integrations, real-time data, 24/7 SLA, dedicated engineer.",
       },
     ],
   },
@@ -78,7 +87,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Navbar />
-      <main className="flex flex-col items-center gap-10 *:max-w-432">
+      <main className="flex flex-col items-center gap-20 md:gap-28 *:max-w-432">
         {/* HERO: Explain what Bold Studio is and how it's different */}
         <IntroSection />
 

@@ -51,48 +51,52 @@ export function WhatWeHaveBuiltSection() {
       description:
         "Ship your product idea fast. We build full-stack web applications with authentication, payments, and dashboards.",
       image: IconBot,
-      altImage: "Bot Icon",
-      route: "#",
+      altImage: "Bot icon representing SaaS MVP development",
+      route: "/pricing",
     },
     {
       title: "Internal Tools",
       description:
         "CRMs, admin panels, inventory systems, and workflow tools tailored to how your team operates.",
       image: IconCalculator,
-      altImage: "Calculator Icon",
-      route: "#",
+      altImage:
+        "Calculator icon representing internal tools and operational software",
+      route: "/design",
     },
     {
       title: "API Integrations",
       description:
         "Connect your tools. We build integrations with Stripe, HubSpot, Salesforce, and any other API.",
       image: IconHammer,
-      altImage: "Hammer Icon",
-      route: "#",
+      altImage:
+        "Hammer icon representing API integrations and system connectivity",
+      route: "/design",
     },
     {
       title: "Slack Bots & Automations",
       description:
         "Custom Slack apps that automate workflows, send alerts, and handle approvals directly in your workspace.",
       image: IconBot,
-      altImage: "Bot Icon",
-      route: "#",
+      altImage: "Bot icon representing Slack bots and workflow automations",
+      route: "/design",
     },
     {
       title: "Dashboards & Web Apps",
       description:
         "Data visualizations, analytics dashboards, and real-time reporting tools for your business.",
       image: IconCalculator,
-      altImage: "Calculator Icon",
-      route: "#",
+      altImage:
+        "Calculator icon representing dashboards and web application development",
+      route: "/design",
     },
     {
       title: "Workflow Automations",
       description:
         "Eliminate manual processes. We connect your tools and automate repetitive tasks end-to-end.",
       image: IconHammer,
-      altImage: "Hammer Icon",
-      route: "#",
+      altImage:
+        "Hammer icon representing workflow automation and process optimization",
+      route: "/pricing",
     },
   ];
 

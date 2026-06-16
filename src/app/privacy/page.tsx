@@ -8,24 +8,68 @@ export const metadata: Metadata = {
   alternates: {
     canonical: META.pages.privacy.canonical,
   },
-  robots: META.robots,
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
+const privacyJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  name: META.pages.privacy.title,
+  description: META.pages.privacy.description,
+  url: `${SITE.url}${META.pages.privacy.canonical}`,
+  isPartOf: {
+    "@type": "WebSite",
+    name: SITE.name,
+    url: SITE.url,
+  },
+  dateModified: META.pages.privacy.lastUpdated,
+  about: {
+    "@type": "Thing",
+    name: "Privacy Policy",
+  },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE.url },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Privacy Policy",
+      item: `${SITE.url}${META.pages.privacy.canonical}`,
+    },
+  ],
 };
 
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: structured data
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(privacyJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: structured data
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Navbar />
 
       {/* Content */}
-      <main className="max-w-4xl mx-auto px-4 md:px-10 py-10 md:py-20">
+      <main className="max-w-4xl mx-auto px-4 md:px-10 py-16 md:py-24">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          <span className="relative isolate inline-block">
-            <span className="bg-yellow-300 w-full absolute left-0 bottom-0 -rotate-1 h-[1.5ch] scale-110"></span>
-            <span className="z-10 relative">Privacy Policy</span>
-          </span>
+          <span className="text-[#FFD200]">Privacy Policy</span>
         </h1>
 
-        <p className="text-muted mb-8">Last updated: {META.pages.privacy.lastUpdated}</p>
+        <p className="text-muted mb-8">
+          Last updated: {META.pages.privacy.lastUpdated}
+        </p>
 
         <div className="prose prose-lg max-w-none">
           {/* Introduction */}
@@ -130,7 +174,6 @@ export default function PrivacyPolicy() {
               </a>
             </p>
           </section>
-
         </div>
       </main>
     </div>

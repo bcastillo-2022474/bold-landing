@@ -1,0 +1,138 @@
+{
+  "$schema": "https://getboldstudio.com/agents.json",
+  "site": {
+    "name": "Bold Studio",
+    "url": "https://getboldstudio.com",
+    "tagline": "Your Dedicated Dev Team. On Demand. On Slack.",
+    "description": "Your dedicated dev team on Slack. Get custom software, MVPs, internal tools, and automations via monthly subscription. Skip hiring — start building today.",
+    "language": "en",
+    "framework": "Next.js 16",
+    "language_tech": "TypeScript",
+    "styling": "Tailwind CSS v4",
+    "forms": "Tally.so"
+  },
+  "contact": {
+    "email": "info@getboldstudio.com",
+    "formUrl": "https://tally.so/embed/44GD1d",
+    "social": {
+      "linkedin": "https://linkedin.com/company/boldstudio",
+      "twitter": "https://twitter.com/bold_studios",
+      "twitterHandle": "@bold_studios",
+      "github": "https://github.com/boldstudio"
+    }
+  },
+  "pages": [
+    { "path": "/", "title": "Home", "type": "landing" },
+    { "path": "/about", "title": "About", "type": "info" },
+    { "path": "/design", "title": "Design", "type": "info" },
+    { "path": "/blog", "title": "Blog", "type": "blog_index" },
+    { "path": "/blog/deploy-first-slack-workflow", "title": "How to Deploy Your First Workflow in Slack", "type": "blog_article" },
+    { "path": "/blog/connect-hermes-agent", "title": "Connect Hermes Agent to Your Slack Workspace", "type": "blog_article" },
+    { "path": "/pricing", "title": "Pricing", "type": "pricing" },
+    { "path": "/privacy", "title": "Privacy Policy", "type": "legal" },
+    { "path": "/terms", "title": "Terms of Service", "type": "legal" }
+  ],
+  "pricing": {
+    "plans": [
+      {
+        "name": "Launch",
+        "priceMonthly": 999,
+        "setupFee": 0,
+        "minimumCommitment": "3 months ($2,997 all-in)",
+        "isPopular": false,
+        "features": ["1 workflow automation activo", "Slack workspace setup", "1 integración (CRM o DB)", "Soporte async en Slack", "1 revisión/iteración por semana", "3 meses mínimo = $2,997 all-in"]
+      },
+      {
+        "name": "Build",
+        "priceMonthly": 1999,
+        "setupFee": 2500,
+        "minimumCommitment": "None",
+        "isPopular": true,
+        "features": ["Hasta 3 workflows activos", "Custom Slack app (básica)", "Hasta 2 integraciones", "AI agent simple (1 pipeline)", "Soporte async + 1 sync call/mes", "Pausa o cancela cuando quieras"]
+      },
+      {
+        "name": "Scale",
+        "priceMonthly": 3499,
+        "setupFee": 4000,
+        "minimumCommitment": "None",
+        "isPopular": false,
+        "features": ["Workflows ilimitados", "Custom Slack apps (full)", "AI agents multi-pipeline", "CRM + sistemas internos", "Iteraciones semanales", "Soporte prioritario", "Pausa o cancela cuando quieras"]
+      },
+      {
+        "name": "Operate",
+        "priceMonthly": 5999,
+        "setupFee": 6500,
+        "minimumCommitment": "None",
+        "isPopular": false,
+        "features": ["Ecosistema de micro-apps", "AI agents custom + seguridad", "Integraciones ilimitadas", "Data real-time en Slack", "SLA + soporte 24/7", "Dedicated engineer", "Pausa o cancela cuando quieras"]
+      }
+    ]
+  },
+  "navigation": {
+    "main": [
+      { "label": "Home", "href": "/" },
+      { "label": "Design", "href": "/design" },
+      { "label": "About", "href": "/about" },
+      { "label": "Blog", "href": "/blog" }
+    ],
+    "footerCompany": [
+      { "label": "Home", "href": "/" },
+      { "label": "Design", "href": "/design" },
+      { "label": "About", "href": "/about" }
+    ],
+    "footerLegal": [
+      { "label": "Pricing", "href": "/pricing" },
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms Of Service", "href": "/terms" }
+    ]
+  },
+  "designSystem": {
+    "colors": {
+      "yellow": "#FFD200",
+      "black": "#000000",
+      "white": "#FFFFFF",
+      "muted": "#6B7280",
+      "mutedLight": "#9CA3AF"
+    },
+    "fonts": {
+      "primary": "Space Grotesk",
+      "secondary": "Inter"
+    },
+    "borderRadius": "rounded-[32px]",
+    "buttonStyle": "rounded-full",
+    "sectionPadding": "py-16 md:py-24",
+    "sectionGap": "gap-20 md:gap-28",
+    "maxWidth": "max-w-432",
+    "cardBorder": "border border-black/5"
+  },
+  "founders": [
+    { "name": "Rodrigo Queche" },
+    { "name": "Guillermo Julca" },
+    { "name": "Joaquin Ladd" }
+  ],
+  "structuredData": [
+    { "page": "/", "schemas": ["ProfessionalService", "FAQPage", "OfferCatalog"] },
+    { "page": "/about", "schemas": ["Organization", "BreadcrumbList"] },
+    { "page": "/design", "schemas": ["WebApplication", "BreadcrumbList"] },
+    { "page": "/blog", "schemas": ["CollectionPage", "BreadcrumbList"] },
+    { "page": "/blog/deploy-first-slack-workflow", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
+    { "page": "/blog/connect-hermes-agent", "schemas": ["Article", "BreadcrumbList"] },
+    { "page": "/pricing", "schemas": ["Product", "AggregateOffer", "FAQPage", "BreadcrumbList"] },
+    { "page": "/privacy", "schemas": ["WebPage", "BreadcrumbList"] },
+    { "page": "/terms", "schemas": ["WebPage", "BreadcrumbList"] }
+  ],
+  "blogArticles": [
+    {
+      "slug": "deploy-first-slack-workflow",
+      "title": "How to Deploy Your First Workflow in Slack",
+      "date": "June 16, 2026",
+      "topics": ["Workflow Builder", "triggers", "link", "webhook", "scheduled", "channel join", "emoji reaction", "keyword", "Slack actions", "connector steps", "custom steps", "variables", "buttons", "permissions", "publishing"]
+    },
+    {
+      "slug": "connect-hermes-agent",
+      "title": "Connect Hermes Agent to Your Slack Workspace",
+      "date": "June 16, 2026",
+      "topics": ["Slack app creation", "OAuth scopes", "chat:write", "channels:history", "im:history", "app_mentions:read", "token storage", "gateway config", "Socket Mode", "channel restrictions", "response batching", "troubleshooting"]
+    }
+  ]
+}

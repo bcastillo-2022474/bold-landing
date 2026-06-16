@@ -17,17 +17,14 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 bg-section-bg">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4">
       <div className="text-center max-w-2xl">
         {/* 500 Large Text */}
         <h1 className="text-8xl md:text-9xl font-bold text-black mb-4">500</h1>
 
         {/* Yellow underline effect */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          <span className="relative isolate inline-block">
-            <span className="bg-yellow-300 w-full absolute left-0 bottom-0 -rotate-1 h-[1.5ch] scale-110"></span>
-            <span className="z-10 relative">Something went wrong</span>
-          </span>
+          Something <span className="text-[#FFD200]">went wrong</span>
         </h2>
 
         <p className="text-muted text-base md:text-lg mb-8 max-w-[60ch] mx-auto">
@@ -73,7 +70,7 @@ export default function Error({
         </div>
 
         {/* Support info */}
-        <div className="mt-12 pt-8 border-t border-border-light">
+        <div className="mt-12 pt-8 border-t border-black/5">
           <p className="text-sm text-muted">
             If this problem persists, please{" "}
             <a
