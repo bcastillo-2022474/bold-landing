@@ -13,15 +13,15 @@ type Step = {
 
 function StepCard({ stepNumber, title, description, icon }: Step) {
   return (
-    <div className="flex flex-col items-center text-center gap-4 p-6">
-      <div className="w-16 h-16 rounded-2xl bg-yellow-300 flex items-center justify-center text-2xl font-bold text-black">
+    <div className="flex flex-col items-center text-center gap-4 p-8 rounded-[32px] border border-black/5">
+      <div className="w-14 h-14 rounded-full bg-[#FFD200] flex items-center justify-center text-lg font-bold text-black">
         {stepNumber}
       </div>
-      <div className="w-12 h-12 rounded-xl bg-black flex items-center justify-center">
-        <Image alt={title} src={icon} width={24} height={24} />
+      <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center">
+        <Image alt={title} src={icon} width={20} height={20} />
       </div>
-      <h3 className="font-bold text-lg">{title}</h3>
-      <p className="text-muted text-sm">{description}</p>
+      <h3 className="font-bold text-base">{title}</h3>
+      <p className="text-muted text-sm leading-relaxed">{description}</p>
     </div>
   );
 }
@@ -59,14 +59,12 @@ export function HowItWorksSection() {
   ];
 
   return (
-    <section className="flex flex-col gap-10 px-4 md:px-10 lg:px-30 items-center py-10 md:py-20 bg-section-bg">
-      <h2 className="font-grotesk text-2xl md:text-3xl font-bold">
-        How it works
-      </h2>
-      <p className="text-muted text-center max-w-[50ch]">
+    <section className="flex flex-col gap-10 px-4 md:px-10 lg:px-30 items-center py-16 md:py-24">
+      <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
+      <p className="text-muted text-center max-w-[50ch] leading-relaxed">
         Four simple steps. No project managers, no long meetings, no chaos.
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 w-full max-w-[1000px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-[1000px]">
         {steps.map((step) => (
           <StepCard
             key={step.stepNumber}

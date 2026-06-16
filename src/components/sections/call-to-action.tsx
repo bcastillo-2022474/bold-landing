@@ -1,18 +1,32 @@
-import { BookingModal } from "@/components/booking-modal";
-
 export function CallToActionSection() {
   return (
-    <section className="py-10 md:py-20 w-full gap-5 px-4 md:px-10 lg:px-30 bg-section-bg flex flex-col items-center">
-      <div className="bg-black rounded-2xl md:rounded-3xl w-full md:w-4/5 flex flex-col md:aspect-1024/380 relative isolate justify-center items-center p-8 md:p-10 text-center gap-5">
-        <div className="absolute w-1/4 aspect-square rounded-3xl bg-yellow-300/25 blur-[100px] right-0 top-0"></div>
-        <h2 className="max-w-[21ch] text-3xl md:text-4xl lg:text-5xl font-bold text-white z-10">
-          Get your dev team on Slack today
-        </h2>
-        <p className="text-gray-400 max-w-[40ch] z-10">
-          Join teams who've replaced hiring headaches with a subscription dev
-          team that just works.
-        </p>
-        <BookingModal variant="button" label="Start your subscription" />
+    <section
+      id="book-a-call"
+      className="w-full px-4 md:px-10 lg:px-30 py-16 md:py-24 flex flex-col items-center"
+    >
+      <div className="w-full max-w-4xl">
+        <div className="rounded-[32px] border border-black/5 overflow-hidden">
+          <div className="p-10 md:p-16 text-center">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black">
+              Book a Call
+            </h2>
+            <p className="text-muted max-w-[50ch] mx-auto mt-4 leading-relaxed">
+              Tell us about your project — we build custom Slack apps, automate
+              Slack workflows, and deploy AI agents. We&apos;ll get back to you
+              within 24 hours. No pushy sales — just a conversation about what
+              you need.
+            </p>
+          </div>
+          <div className="px-6 md:px-12 pb-8 md:pb-12">
+            <iframe
+              src="https://tally.so/embed/44GD1d?alignLeft=1&hideTitle=1&transparentBackground=1"
+              frameBorder="0"
+              title="Book a Call"
+              className="w-full rounded-2xl"
+              style={{ height: "600px" }}
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

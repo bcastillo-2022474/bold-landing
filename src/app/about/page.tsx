@@ -1,34 +1,74 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { META } from "@/constants/site";
+import { CONTACT, META, SITE, SOCIAL } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "About - Bold Studio",
   description:
-    "Learn about Bold Studio - the Slack-native software factory for modern teams who want to build faster and scale smarter.",
+    "Learn about Bold Studio - build custom Slack apps and automate Slack workflows with our Slack-native subscription service for modern teams.",
   alternates: {
     canonical: "/about",
   },
   robots: META.robots,
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: SITE.name,
+  description:
+    "A Slack-native software factory for building custom Slack apps, automating Slack workflows, and deploying AI agents.",
+  url: SITE.url,
+  email: CONTACT.general,
+  sameAs: [SOCIAL.linkedin, SOCIAL.twitter, SOCIAL.github],
+  founder: [
+    { "@type": "Person", name: "Rodrigo Queche" },
+    { "@type": "Person", name: "Guillermo Julca" },
+    { "@type": "Person", name: "Joaquin Ladd" },
+  ],
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE.url },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "About",
+      item: `${SITE.url}/about`,
+    },
+  ],
+};
+
 export default function AboutPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: structured data
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: structured data
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Navbar />
-      <main className="flex flex-col items-center gap-10 *:max-w-432">
-        <section className="flex flex-col items-center py-10 md:py-20 w-full gap-5 px-4 md:px-10 lg:px-30">
+      <main className="flex flex-col items-center gap-20 md:gap-28 *:max-w-432">
+        <section className="flex flex-col items-center py-16 md:py-24 w-full gap-5 px-4 md:px-10 lg:px-30">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-12 flex flex-col text-center">
-            <span className="relative isolate">
-              <span className="bg-yellow-300 w-full absolute left-0 bottom-0 -rotate-1 h-[1.5ch] scale-110"></span>
-              <span className="z-10 relative">We believe software</span>
+            <span>We believe software</span>
+            <span>
+              should evolve —{" "}
+              <span className="text-[#FFD200]">not be abandoned</span>.
             </span>
-            <span>should evolve — not be abandoned.</span>
           </h1>
         </section>
 
-        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-10 text-center w-full items-center">
+        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-16 md:py-24 text-center w-full items-center">
           <p className="text-muted px-4 md:px-0 max-w-[70ch] text-base md:text-lg">
             Most software projects start the same way: a large upfront payment,
             months of development, and a final delivery that slowly becomes
@@ -48,8 +88,8 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-10 text-center w-full items-center bg-section-bg">
-          <h2 className="font-grotesk text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
+        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-16 md:py-24 text-center w-full items-center">
+          <h2 className="text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
             Companies launch tools, integrations, and automations
           </h2>
           <p className="text-muted px-4 md:px-0 max-w-[65ch]">
@@ -60,21 +100,21 @@ export default function AboutPage() {
             That&apos;s why Bold Studio was created.
           </p>
           <p className="text-muted px-4 md:px-0 max-w-[65ch]">
-            We build and maintain custom Slack applications that automate
+            We build and maintain custom Slack apps that automate Slack
             workflows, integrate systems, and bring operational tools directly
             into the place where teams already work every day: Slack.
           </p>
         </section>
 
-        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-10 text-center w-full items-center">
-          <h2 className="font-grotesk text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
+        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-16 md:py-24 text-center w-full items-center">
+          <h2 className="text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
             Why Slack
           </h2>
           <p className="text-muted px-4 md:px-0 max-w-[65ch]">
             Modern teams run on communication. With the ecosystem of Slack,
-            applications can live directly inside conversations, transforming
-            chat into a powerful operational layer for startups, fintech
-            companies, and ecommerce teams.
+            custom Slack apps and AI agents can live directly inside
+            conversations, transforming chat into a powerful operational layer
+            for startups, fintech companies, and ecommerce teams.
           </p>
           <p className="text-black font-semibold px-4 md:px-0 max-w-[65ch]">
             Instead of building standalone tools that create more dashboards, we
@@ -90,8 +130,8 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-10 text-center w-full items-center bg-section-bg">
-          <h2 className="font-grotesk text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
+        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-16 md:py-24 text-center w-full items-center">
+          <h2 className="text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
             The Founders
           </h2>
           <p className="text-muted px-4 md:px-0 max-w-[65ch]">
@@ -123,8 +163,8 @@ export default function AboutPage() {
           </p>
         </section>
 
-        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-10 text-center w-full items-center">
-          <h2 className="font-grotesk text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
+        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-16 md:py-24 text-center w-full items-center">
+          <h2 className="text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
             Our goal is simple:
           </h2>
           <p className="text-muted px-4 md:px-0 max-w-[65ch]">

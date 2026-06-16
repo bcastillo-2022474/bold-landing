@@ -1,0 +1,20 @@
+export function BlogCtaCard({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) {
+  return (
+    <div className="mt-4 p-6 rounded-[32px] bg-black text-white flex flex-col gap-3 items-center text-center">
+      <h3 className="font-bold text-xl">{title}</h3>
+      <p className="text-gray-400 text-sm max-w-[50ch]">{description}</p>
+      <a
+        href="/#book-a-call"
+        className="inline-block rounded-full bg-yellow-300 text-black font-semibold px-6 py-3 hover:bg-yellow-400 transition-colors"
+      >
+        Book a Call
+      </a>
+    </div>
+  );
+}

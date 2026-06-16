@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { META } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Design - Bold Studio",
   description:
-    "Learn how we design and build custom Slack applications using native tools and modern development frameworks.",
+    "Learn how we design and build custom Slack apps, Slack workflows, and AI agents using Block Kit, Slack API, and TypeScript.",
   alternates: {
     canonical: "/design",
   },
@@ -54,7 +54,7 @@ function TechnologyCard({
   ];
 
   return (
-    <article className="flex flex-col gap-2 p-5 rounded-2xl bg-white border border-border-light">
+    <article className="flex flex-col gap-2 p-5 rounded-[32px] bg-white border border-black/5">
       <div
         className={`w-10 h-10 rounded-lg ${colors[index]} flex items-center justify-center`}
         role="img"
@@ -92,28 +92,73 @@ function TechnologyCard({
   );
 }
 
+const softwareAppJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Bold Studio - Design & Development",
+  description:
+    "Custom Slack app design and development for Slack workflows, AI agents, and automations using Block Kit, Slack API, and TypeScript.",
+  url: `${SITE.url}/design`,
+  applicationCategory: "DeveloperApplication",
+  operatingSystem: "Web",
+  offers: {
+    "@type": "Offer",
+    price: "1499",
+    priceCurrency: "USD",
+    priceValidUntil: new Date(
+      new Date().setFullYear(new Date().getFullYear() + 1),
+    )
+      .toISOString()
+      .split("T")[0],
+    description: "Starting at $1,499/month subscription",
+  },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: SITE.url },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Design",
+      item: `${SITE.url}/design`,
+    },
+  ],
+};
+
 export default function DesignPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: structured data
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareAppJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: structured data
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Navbar />
-      <main className="flex flex-col items-center gap-10 *:max-w-432">
-        <section className="flex flex-col items-center py-10 md:py-20 w-full gap-5 px-4 md:px-10 lg:px-30">
+      <main className="flex flex-col items-center gap-20 md:gap-28 *:max-w-432">
+        <section className="flex flex-col items-center py-16 md:py-24 w-full gap-5 px-4 md:px-10 lg:px-30">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight md:leading-12 flex flex-col text-center">
             <span>Built for Slack.</span>
-            <span className="relative isolate">
-              <span className="bg-yellow-300 w-full absolute left-0 bottom-0 -rotate-1 h-[1.5ch] scale-110"></span>
-              <span className="z-10 relative">Designed for speed.</span>
+            <span>
+              <span className="text-[#FFD200]">Designed for speed</span>.
             </span>
           </h1>
           <p className="text-center font-inter text-muted items-center max-w-[65ch] px-4 text-sm md:text-base">
-            Every application is crafted using the native tools and frameworks
-            provided by Slack, ensuring performance, reliability, and seamless
-            integration with your workspace.
+            Every custom Slack app and workflow is crafted using the native
+            tools and frameworks provided by Slack, ensuring performance,
+            reliability, and seamless integration with your workspace.
           </p>
         </section>
 
-        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-10 text-center w-full items-center bg-section-bg">
-          <h2 className="font-grotesk text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
+        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-16 md:py-24 text-center w-full items-center">
+          <h2 className="text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
             We design interactive workflows using Block Kit
           </h2>
           <p className="text-muted px-4 md:px-0 max-w-[70ch]">
@@ -123,7 +168,7 @@ export default function DesignPage() {
           </p>
         </section>
 
-        <section className="py-10 md:py-20 w-full gap-6 md:gap-10 px-4 md:px-10 lg:px-30 flex flex-col items-center">
+        <section className="py-16 md:py-24 w-full gap-6 md:gap-10 px-4 md:px-10 lg:px-30 flex flex-col items-center">
           <div className="flex flex-col gap-1 items-center text-center">
             <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
               Our Stack
@@ -145,14 +190,14 @@ export default function DesignPage() {
           </div>
         </section>
 
-        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-10 text-center w-full items-center">
-          <h2 className="font-grotesk text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
+        <section className="flex flex-col gap-6 md:gap-10 px-4 md:px-10 lg:px-30 py-16 md:py-24 text-center w-full items-center">
+          <h2 className="text-2xl md:text-3xl font-bold px-4 md:px-12 lg:px-24">
             No context switching. Just productivity.
           </h2>
           <p className="text-muted px-4 md:px-0 max-w-[65ch]">
             This stack allows us to prototype quickly, test safely, and ship
-            powerful Slack applications that feel native to your team&apos;s
-            workflow.
+            powerful Slack workflows and custom Slack apps that feel native to
+            your team&apos;s workflow.
           </p>
         </section>
       </main>

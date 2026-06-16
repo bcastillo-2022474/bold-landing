@@ -7,9 +7,9 @@ export const SITE = {
   name: "Bold Studio",
   title: "Bold Studio - Custom Software Development Subscription",
   description:
-    "Your dedicated dev team on Slack. Get custom software, MVPs, internal tools, and automations via monthly subscription. Skip hiring — start building today.",
+    "Your dedicated dev team on Slack. Build custom Slack apps, automate Slack workflows, and deploy AI Slack agents via monthly subscription. Skip hiring — start building today.",
   tagline: "Your Dedicated Dev Team. On Demand. On Slack.",
-  url: "https://boldstudio.com",
+  url: "https://getboldstudio.com",
 } as const;
 
 export const CONTACT = {
@@ -31,22 +31,18 @@ export const NAVIGATION = {
     { label: "Home", href: "/" },
     { label: "Design", href: "/design" },
     { label: "About", href: "/about" },
-    { label: "PTO & Handover", href: "/pto" },
+    { label: "Blog", href: "/blog" },
   ],
   footer: {
     company: [
       { label: "Home", href: "/" },
       { label: "Design", href: "/design" },
       { label: "About", href: "/about" },
-      { label: "Careers", href: "#" },
     ],
     legal: [
       { label: "Pricing", href: "/pricing" },
       { label: "Privacy Policy", href: "/privacy" },
-      { label: "Privacy Policy – PTO & Handover", href: "/pto/privacy" },
       { label: "Terms Of Service", href: "/terms" },
-      { label: "Terms of Service – PTO & Handover", href: "/pto/terms" },
-      { label: "Cookies", href: "#" },
     ],
   },
 } as const;
@@ -55,7 +51,7 @@ export const ROUTES = {
   home: "/",
   design: "/design",
   about: "/about",
-  pto: "/pto",
+  blog: "/blog",
   privacy: "/privacy",
   terms: "/terms",
   pricing: "/pricing",
@@ -64,14 +60,17 @@ export const ROUTES = {
 
 export const META = {
   keywords: [
-    "Slack apps",
+    "ai slack agent",
+    "slack workflows",
+    "slack workflows builder",
+    "workflow builder slack",
+    "slack workflow",
+    "custom slack apps",
+    "custom slack",
     "Slack automation",
-    "workflow automation",
-    "custom Slack bots",
     "Slack bot development",
     "business automation",
     "Slack integrations",
-    "SaaS",
     "subscription development",
   ] as string[],
   ogImage: "/opengraph-image",
@@ -96,17 +95,17 @@ export const META = {
     {
       question: "What exactly do you build?",
       answer:
-        "We build custom software — SaaS MVPs, internal tools, API integrations, Slack bots, dashboards, and web applications. If you can describe it, we can build it.",
+        "We build custom software — Slack workflows, AI Slack agents, custom Slack apps, internal tools, API integrations, and automations. If you can describe it, we can build it.",
     },
     {
       question: "How does the subscription model work?",
       answer:
-        "You subscribe to a monthly plan and submit development requests through Slack. We deliver within 48 or 24 hours, you review, request revisions, and repeat. Cancel or pause anytime.",
+        "You subscribe to a monthly plan and submit development requests through Slack. We build, you review, we iterate. Cancel or pause anytime.",
     },
     {
-      question: "Is there a setup fee?",
+      question: "Is there a minimum commitment?",
       answer:
-        "Yes, a one-time setup fee applies to all plans. The amount depends on your stack and requirements. Contact us for a quote before subscribing.",
+        "Only the Launch plan requires a 3-month minimum ($2,997 all-in). Build, Scale, and Operate have no minimum contract — pause or cancel whenever you want.",
     },
     {
       question: "What if I only need one thing built?",
@@ -127,20 +126,20 @@ export const META = {
   pages: {
     terms: {
       title: "Terms of Service",
-      description: `Read the Terms of Service for Bold Studio. Understand your rights and obligations when using our custom Slack app development and automation services.`,
+      description: `Read the Terms of Service for Bold Studio. Understand your rights and obligations when using our custom Slack app development, Slack workflows, and automation services.`,
       canonical: "/terms",
       lastUpdated: "March 6, 2025",
     },
     privacy: {
       title: "Privacy Policy",
-      description: `Read the Privacy Policy for Bold Studio. Learn how we collect, use, and protect your personal information.`,
+      description: `Read the Privacy Policy for Bold Studio. Learn how we collect, use, and protect your personal information when using our custom Slack apps and workflow automation services.`,
       canonical: "/privacy",
       lastUpdated: "March 6, 2025",
     },
     pricing: {
       title: "Pricing",
       description:
-        "Simple, predictable pricing for custom Slack app development. Starter at $1,499/mo, Growth at $3,499/mo, Enterprise at $4,999/mo. One-time setup fee of $6,500. Cancel or pause anytime.",
+        "Simple, predictable pricing for Slack workflows, custom Slack apps, and AI agents. Launch at $999/mo, Build at $1,999/mo, Scale at $3,499/mo, Operate at $5,999/mo. Cancel or pause anytime.",
       canonical: "/pricing",
     },
   },
