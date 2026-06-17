@@ -13,6 +13,14 @@
 - **Workspace as a Service:** Full lifecycle management of Slack workspaces — architecture, provisioning, governance, security, and ongoing maintenance.
 - **Custom Software Subscription:** SaaS MVPs, internal tools, API integrations, and automation — all delivered through Slack with a simple monthly subscription.
 
+## Development Tools
+
+- **Slack CLI Development:** We build using the Slack CLI for create, run, and deploy workflows. Develop AI agents bolt Slack with Bolt frameworks and Deno. We handle Slack custom function development and Slack trigger automation.
+- **Slack Bolt Framework Development:** Full-stack development with Bolt for JavaScript and Bolt for Python. We build custom functions, wire event triggers, and deploy to Slack's managed platform.
+- **Slack App CI/CD Pipeline:** Automated testing, linting, and deployment to Slack's managed infrastructure using GitHub Actions. Slack developer sandbox testing for safe staging environments before production.
+- **Slack Datastore Integration:** Store and query app data natively with Slack's datastore. Slack external auth integration for OAuth providers and third-party API authentication.
+- **Slack Deno App Development:** Modern stack development with Deno Slack SDK, TypeScript first, with built-in formatting, linting, and testing tools.
+
 ## Key files
 
 - src/constants/site.ts: All site-wide config (SITE name/url, CONTACT emails, SOCIAL links, NAVIGATION, META/SEO defaults, FAQ content)
@@ -43,6 +51,9 @@
 - /blog: Blog index listing articles
 - /blog/deploy-first-slack-workflow: Tutorial — How to Deploy Your First Workflow in Slack (Article + HowTo JSON-LD)
 - /blog/connect-hermes-agent: Guide — Connect Hermes Agent to Your Slack Workspace (Article JSON-LD)
+- /blog/slack-ai-agent-vs-custom-agents: Comparison — Slackbot vs custom agents for AI slack agents development (Article + FAQPage JSON-LD)
+- /blog/develop-ai-agents-bolt-slack: Guide — How to develop AI agents bolt Slack using Slack CLI and Bolt frameworks (Article + HowTo JSON-LD)
+- /blog/slack-ai-agents-subscription-dedicated-team: Guide — Slack AI agents subscription with a dedicated team for slack AI agents (Article + FAQPage JSON-LD)
 - /terms: Terms of Service (noindex)
 - /privacy: Privacy Policy (noindex)
 
@@ -50,13 +61,18 @@
 
 JSON-LD schemas used: ProfessionalService, FAQPage, Organization, WebApplication, Product + AggregateOffer, SoftwareApplication, WebPage, Article, HowTo, CollectionPage, BreadcrumbList
 
+## Subscription Model
+
+- **Slack AI Agents Subscription:** Monthly subscription covering AI agents, workflow automation, and custom development. A dedicated team for slack AI agents — no hiring, no long-term contracts.
+- **Custom Slack AI Agents LLM:** Build custom agents with your choice of LLM provider. Integrate LLMs as agents in Slack with full control over model, behavior, and data governance.
+- **Slack Workflows with AI Agents Monthly:** Unlimited Slack workflow automation with AI agent support. One monthly price covers development, iteration, and maintenance.
+
 ## Pricing
 
-- Starter: $1,499/mo (1 task, 48h turnaround)
-- Growth: $3,499/mo (2 concurrent, 24h turnaround) — Most Popular
-- Enterprise: $4,999/mo (unlimited tasks, custom SLA)
-- Setup fee: $6,500 (one-time)
-- 45-day refund guarantee on subscription fees
+- Launch: $999/mo (1 workflow, 1 integration, 3-month min)
+- Build: $1,999/mo (up to 3 workflows, custom Slack app, simple AI agent) — Most Popular
+- Scale: $3,499/mo (unlimited workflows, full Slack apps, multi AI agents)
+- Operate: $5,999/mo (micro-app ecosystem, unlimited integrations, 24/7 SLA)
 
 ## How to book
 

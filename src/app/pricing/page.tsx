@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BookingModal } from "@/components/booking-modal";
 import { Navbar } from "@/components/navbar";
 import { META, SITE } from "@/constants/site";
 
@@ -249,16 +250,12 @@ export default function PricingPage() {
                     </li>
                   ))}
                 </ul>
-                <a
-                  href="/#book-a-call"
-                  className={`mt-auto text-center py-3 px-6 rounded-full font-semibold text-sm transition-colors ${
-                    plan.isPopular
-                      ? "bg-yellow-300 text-black hover:bg-yellow-400"
-                      : "border-2 border-black text-black hover:bg-black hover:text-white"
-                  }`}
-                >
-                  Book a Call
-                </a>
+                <BookingModal
+                  variant="link"
+                  label="Book a Call"
+                  style={plan.isPopular ? "yellow" : "outline"}
+                  className="mt-auto text-center justify-center"
+                />
               </div>
             ))}
           </div>
@@ -268,12 +265,12 @@ export default function PricingPage() {
         <section>
           <h2 className="text-2xl font-bold mb-4">Questions?</h2>
           <p className="text-muted">
-            <a
-              href="/#book-a-call"
-              className="underline hover:text-black font-semibold"
-            >
-              Book a call
-            </a>{" "}
+            <BookingModal
+              variant="link"
+              label="Book a call"
+              style="yellow"
+              className="underline !border-0 !bg-transparent !text-muted hover:!text-black font-semibold inline p-0 h-auto"
+            />{" "}
             — we're happy to help you pick the right plan or discuss custom
             arrangements for your team.
           </p>

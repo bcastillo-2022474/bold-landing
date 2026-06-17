@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 type BookingModalProps = {
   variant?: "button" | "link";
   label?: string;
-  style?: "yellow" | "black";
+  style?: "yellow" | "black" | "black-white" | "outline" | "outline-light";
   className?: string;
 };
 
@@ -74,9 +74,16 @@ export function BookingModal({
   const buttonClass =
     style === "black"
       ? "bg-black text-yellow-300 hover:bg-gray-800"
-      : "bg-yellow-300 text-black hover:bg-yellow-400";
+      : style === "black-white"
+        ? "bg-black text-white hover:bg-gray-800"
+        : style === "outline"
+          ? "border-2 border-black text-black hover:bg-black hover:text-white"
+          : style === "outline-light"
+            ? "bg-white text-black border border-black/10 hover:border-black/30"
+            : "bg-yellow-300 text-black hover:bg-yellow-400";
 
-  const iconColor = style === "black" ? "#FFD200" : "black";
+  const iconColor =
+    style === "black" || style === "black-white" ? "#FFD200" : "black";
 
   return (
     <>

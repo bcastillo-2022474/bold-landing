@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { BookingModal } from "@/components/booking-modal";
 import { cn } from "@/utils/cn";
 
 function Chip({ title }: { title: string }) {
@@ -91,17 +92,12 @@ function Card({ title, pricePerMonth, features, isPopular }: Plan) {
           </div>
         ))}
       </div>
-      <a
-        href="#book-a-call"
-        className={cn(
-          "w-full rounded-full px-6 py-3 text-sm font-semibold transition-all text-center block",
-          isPopular
-            ? "bg-black text-[#FFD200] hover:bg-gray-800"
-            : "bg-white text-black border border-black/10 hover:border-black/30",
-        )}
-      >
-        Book a Call
-      </a>
+      <BookingModal
+        variant="link"
+        label="Book a Call"
+        style={isPopular ? "black" : "outline-light"}
+        className="w-full text-center justify-center"
+      />
     </article>
   );
 }
