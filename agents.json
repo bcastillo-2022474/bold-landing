@@ -28,6 +28,9 @@
     { "path": "/blog", "title": "Blog", "type": "blog_index" },
     { "path": "/blog/deploy-first-slack-workflow", "title": "How to Deploy Your First Workflow in Slack", "type": "blog_article" },
     { "path": "/blog/connect-hermes-agent", "title": "Connect Hermes Agent to Your Slack Workspace", "type": "blog_article" },
+    { "path": "/blog/slack-ai-agent-vs-custom-agents", "title": "Slack AI Agent vs Custom Agents", "type": "blog_article" },
+    { "path": "/blog/develop-ai-agents-bolt-slack", "title": "How to Develop AI Agents with Bolt for Slack", "type": "blog_article" },
+    { "path": "/blog/slack-ai-agents-subscription-dedicated-team", "title": "Slack AI Agents Subscription", "type": "blog_article" },
     { "path": "/pricing", "title": "Pricing", "type": "pricing" },
     { "path": "/privacy", "title": "Privacy Policy", "type": "legal" },
     { "path": "/terms", "title": "Terms of Service", "type": "legal" }
@@ -121,6 +124,39 @@
     { "page": "/privacy", "schemas": ["WebPage", "BreadcrumbList"] },
     { "page": "/terms", "schemas": ["WebPage", "BreadcrumbList"] }
   ],
+  "services": {
+    "development": {
+      "tools": ["Slack CLI", "Bolt for JavaScript", "Bolt for Python", "Deno Slack SDK"],
+      "keywords": [
+        "Develop AI agents bolt Slack",
+        "Slack Bolt framework development",
+        "Slack Deno app development",
+        "Slack custom function development",
+        "Slack trigger automation",
+        "Slack app manifest configuration"
+      ]
+    },
+    "deployment": {
+      "keywords": [
+        "Slack app CI/CD pipeline",
+        "deploy Slack apps to cloud",
+        "Slack developer sandbox testing"
+      ]
+    },
+    "automation": {
+      "keywords": [
+        "Slack trigger automation",
+        "Slack datastore integration",
+        "Slack external auth integration",
+        "Slack workflows with AI agents monthly"
+      ]
+    }
+  },
+  "subscription": {
+    "model": "Slack AI agents subscription",
+    "team": "dedicated team for slack AI agents",
+    "includes": "custom Slack AI agents LLM integration"
+  },
   "blogArticles": [
     {
       "slug": "deploy-first-slack-workflow",
@@ -133,6 +169,24 @@
       "title": "Connect Hermes Agent to Your Slack Workspace",
       "date": "June 16, 2026",
       "topics": ["Slack app creation", "OAuth scopes", "chat:write", "channels:history", "im:history", "app_mentions:read", "token storage", "gateway config", "Socket Mode", "channel restrictions", "response batching", "troubleshooting"]
+    },
+    {
+      "slug": "slack-ai-agent-vs-custom-agents",
+      "title": "Slack AI Agent vs Custom Agents: LangGraph, Hermes, and When to Build Your Own",
+      "date": "June 17, 2026",
+      "topics": ["Slackbot", "Slack AI agent", "LangGraph", "Hermes", "custom AI agents", "AI Slack agents", "autonomous agents", "LLM integration", "Slack agent builder"]
+    },
+    {
+      "slug": "develop-ai-agents-bolt-slack",
+      "title": "How to Develop AI Agents with Bolt for Slack: A Complete Guide",
+      "date": "June 17, 2026",
+      "topics": ["Slack CLI", "Bolt for JavaScript", "Bolt for Python", "custom functions", "triggers", "link trigger", "webhook trigger", "scheduled trigger", "event trigger", "slack run", "developer sandbox", "slack deploy", "CI/CD", "GitHub Actions"]
+    },
+    {
+      "slug": "slack-ai-agents-subscription-dedicated-team",
+      "title": "Slack AI Agents Subscription: What You Get with a Dedicated Team",
+      "date": "June 17, 2026",
+      "topics": ["Slack AI agents subscription", "dedicated team", "Slack agentforce", "custom agents", "Salesforce", "workflow automation", "AI agents", "monthly subscription", "developer sandbox", "testing environment"]
     }
   ]
 }

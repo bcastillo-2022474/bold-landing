@@ -21,7 +21,7 @@ FRAMEWORK: Next.js 16 + TypeScript + Tailwind CSS v4
 
 /design
   title: Design
-  description: Technology stack. Block Kit, JavaScript/TypeScript, Slack API, Slack CLI, Sandbox Testing.
+  description: Technology stack. Block Kit, JavaScript/TypeScript, Slack API, Slack CLI, Sandbox Testing. We develop AI agents bolt Slack and build custom Slack functions using Bolt frameworks and Deno.
 
 /blog
   title: Blog
@@ -34,6 +34,18 @@ FRAMEWORK: Next.js 16 + TypeScript + Tailwind CSS v4
 /blog/connect-hermes-agent
   title: Connect Hermes Agent to Your Slack Workspace
   description: Step-by-step guide. Topics: Slack app creation, OAuth scopes (chat:write, channels:history, im:history, app_mentions:read), token storage, gateway config, Socket Mode, channel restrictions, response batching, troubleshooting.
+
+/blog/slack-ai-agent-vs-custom-agents
+  title: Slack AI Agent vs Custom Agents
+  description: Compare Slackbot vs custom AI agents for Slack built with LangGraph and Hermes. Learn when to build AI agents in Slack and when Slack's built-in agent is enough.
+
+/blog/develop-ai-agents-bolt-slack
+  title: How to Develop AI Agents with Bolt for Slack
+  description: Step-by-step guide. Topics: Slack CLI, Bolt for JavaScript, Bolt for Python, custom functions, triggers (link, webhook, scheduled, event), slack run, sandbox testing, slack deploy, CI/CD with GitHub Actions.
+
+/blog/slack-ai-agents-subscription-dedicated-team
+  title: Slack AI Agents Subscription
+  description: What you get with a Slack AI agents subscription. Dedicated team for slack AI agents, Slack agentforce custom agents, and Slack workflows with AI agents monthly.
 
 /pricing
   title: Pricing

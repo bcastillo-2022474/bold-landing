@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { BookingModal } from "@/components/booking-modal";
 import { NAVIGATION, ROUTES, SITE } from "@/constants/site";
 import logo from "../../public/logo.svg";
 
@@ -59,12 +60,12 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
-          <a
-            href="/#book-a-call"
-            className="rounded-full px-5 py-2 bg-black text-yellow-300 font-semibold text-sm hover:bg-gray-800 transition-colors"
-          >
-            Book a Call
-          </a>
+          <BookingModal
+            variant="link"
+            label="Book a Call"
+            style="black"
+            className="text-sm"
+          />
         </ul>
       </div>
 
@@ -82,12 +83,12 @@ export function Navbar() {
               </Link>
             ))}
             <div className="px-6 pt-2 pb-4">
-              <a
-                href="/#book-a-call"
-                className="inline-block rounded-full px-5 py-2 bg-black text-yellow-300 font-semibold text-sm hover:bg-gray-800 transition-colors"
-              >
-                Book a Call
-              </a>
+              <BookingModal
+                variant="link"
+                label="Book a Call"
+                style="black"
+                className="text-sm text-center inline-flex"
+              />
             </div>
           </ul>
         </div>

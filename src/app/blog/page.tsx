@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BookingModal } from "@/components/booking-modal";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { SITE } from "@/constants/site";
@@ -32,6 +33,28 @@ const posts = [
       "Turn your Slack workspace into an AI-powered command center. Learn how to set up your AI Slack agent with the right scopes, test it in a private channel, and deploy safely.",
     slug: "connect-hermes-agent",
     date: "June 16, 2026",
+  },
+  {
+    title:
+      "Slack AI Agent vs Custom Agents: LangGraph, Hermes, and When to Build Your Own",
+    excerpt:
+      "Compare Slack's native Slackbot AI agent vs custom AI agents for Slack built with LangGraph and Hermes. Learn when to build AI agents in Slack and when Slack's built-in agent is enough.",
+    slug: "slack-ai-agent-vs-custom-agents",
+    date: "June 17, 2026",
+  },
+  {
+    title: "How to Develop AI Agents with Bolt for Slack: A Complete Guide",
+    excerpt:
+      "Learn how to develop AI agents bolt Slack using Bolt for JavaScript and Python. Step-by-step guide covering Slack CLI setup, custom functions, triggers, sandbox testing, and deployment.",
+    slug: "develop-ai-agents-bolt-slack",
+    date: "June 17, 2026",
+  },
+  {
+    title: "Slack AI Agents Subscription: What You Get with a Dedicated Team",
+    excerpt:
+      "Compare the cost of building in-house vs a Slack AI agents subscription with a dedicated team. Includes Slack agentforce custom agents and Slack workflows with AI agents monthly.",
+    slug: "slack-ai-agents-subscription-dedicated-team",
+    date: "June 17, 2026",
   },
 ];
 
@@ -128,12 +151,11 @@ export default function BlogPage() {
             teams that want to move faster. Book a call and tell us what you
             need.
           </p>
-          <a
-            href="/#book-a-call"
-            className="inline-block rounded-full bg-black text-white font-semibold px-6 py-3 hover:bg-gray-800 transition-colors"
-          >
-            Book a Call
-          </a>
+          <BookingModal
+            variant="link"
+            label="Book a Call"
+            style="black-white"
+          />
         </section>
       </main>
       <Footer />
