@@ -10,7 +10,7 @@ The app is configured to look for these favicon files in the `/public` directory
    - Size: 16x16, 32x32, 48x48 (multi-size .ico file)
    - Used by browsers for tabs and bookmarks
 
-2. **`/public/apple-touch-icon.png`** (recommended)
+2. **`/public/bold_studio_logo.png`** (recommended)
    - Size: 180x180 pixels
    - Used when users add your site to their iOS home screen
 

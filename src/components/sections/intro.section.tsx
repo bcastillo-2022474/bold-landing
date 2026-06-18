@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroImage from "../../../public/Frame 106-2.png";
+import heroImage from "../../../public/Slack_MockUp.png";
 
 export function IntroSection() {
   return (

@@ -30,6 +30,7 @@
     { "path": "/blog/connect-hermes-agent", "title": "Connect Hermes Agent to Your Slack Workspace", "type": "blog_article" },
     { "path": "/blog/slack-ai-agent-vs-custom-agents", "title": "Slack AI Agent vs Custom Agents", "type": "blog_article" },
     { "path": "/blog/develop-ai-agents-bolt-slack", "title": "How to Develop AI Agents with Bolt for Slack", "type": "blog_article" },
+    { "path": "/blog/slack-mcp-server-guide", "title": "How to Use Slack's MCP Server with AI Agents", "type": "blog_article" },
     { "path": "/blog/slack-ai-agents-subscription-dedicated-team", "title": "Slack AI Agents Subscription", "type": "blog_article" },
     { "path": "/pricing", "title": "Pricing", "type": "pricing" },
     { "path": "/privacy", "title": "Privacy Policy", "type": "legal" },
@@ -120,6 +121,7 @@
     { "page": "/blog", "schemas": ["CollectionPage", "BreadcrumbList"] },
     { "page": "/blog/deploy-first-slack-workflow", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
     { "page": "/blog/connect-hermes-agent", "schemas": ["Article", "BreadcrumbList"] },
+    { "page": "/blog/slack-mcp-server-guide", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
     { "page": "/pricing", "schemas": ["Product", "AggregateOffer", "FAQPage", "BreadcrumbList"] },
     { "page": "/privacy", "schemas": ["WebPage", "BreadcrumbList"] },
     { "page": "/terms", "schemas": ["WebPage", "BreadcrumbList"] }
@@ -149,6 +151,17 @@
         "Slack datastore integration",
         "Slack external auth integration",
         "Slack workflows with AI agents monthly"
+      ]
+    },
+    "mcp": {
+      "keywords": [
+        "MCP Slack",
+        "Slack MCP server",
+        "Slack AI agents orchestation",
+        "Slack mobile AI agent",
+        "Hermes Agent Slack",
+        "Model Context Protocol Slack",
+        "Slack AI agents orchestration"
       ]
     }
   },
@@ -181,6 +194,12 @@
       "title": "How to Develop AI Agents with Bolt for Slack: A Complete Guide",
       "date": "June 17, 2026",
       "topics": ["Slack CLI", "Bolt for JavaScript", "Bolt for Python", "custom functions", "triggers", "link trigger", "webhook trigger", "scheduled trigger", "event trigger", "slack run", "developer sandbox", "slack deploy", "CI/CD", "GitHub Actions"]
+    },
+    {
+      "slug": "slack-mcp-server-guide",
+      "title": "How to Use Slack's MCP Server with AI Agents: A Complete Guide",
+      "date": "June 18, 2026",
+      "topics": ["MCP Slack", "Model Context Protocol", "Slack MCP server", "AI assistants", "Claude", "Perplexity", "OpenAI", "Cursor", "Hermes Agent Slack", "Slack AI agents orchestation", "Slack mobile AI agent", "canvases", "member info", "OAuth", "natural language search"]
     },
     {
       "slug": "slack-ai-agents-subscription-dedicated-team",

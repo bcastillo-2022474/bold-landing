@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BlogCtaCard } from "@/components/blog-cta-card";
+import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { SITE } from "@/constants/site";
@@ -352,6 +353,8 @@ export default function DeployFirstWorkflowPage() {
               automatically.
             </p>
           </section>
+
+          <BlogRelatedArticles currentSlug="deploy-first-slack-workflow" />
 
           <section className="flex flex-col gap-4">
             <h2 className="text-2xl md:text-3xl font-bold">Next steps</h2>

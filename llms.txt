@@ -10,6 +10,7 @@
 
 - **Pipeline Centralization:** Deploy, monitor, and manage CI/CD pipelines, data pipelines, and workflow orchestration directly inside Slack — no context switching to external dashboards.
 - **AI Agent Development:** Build custom AI agents and intelligent automation that live inside your Slack workspace — from support bots to decision-making assistants.
+- **MCP Slack Integration:** Connect Hermes Agent and custom AI agents to Slack's Model Context Protocol server. Enables secure, scoped AI access for Slack AI agents orchestation, Slack mobile AI agent usage, and advanced multi-step workflows.
 - **Workspace as a Service:** Full lifecycle management of Slack workspaces — architecture, provisioning, governance, security, and ongoing maintenance.
 - **Custom Software Subscription:** SaaS MVPs, internal tools, API integrations, and automation — all delivered through Slack with a simple monthly subscription.
 
@@ -50,6 +51,7 @@
 - /pricing: 3 plans + setup fee ($6,500) + 45-day refund guarantee
 - /blog: Blog index listing articles
 - /blog/deploy-first-slack-workflow: Tutorial — How to Deploy Your First Workflow in Slack (Article + HowTo JSON-LD)
+- /blog/slack-mcp-server-guide: Guide — How to Use Slack's MCP Server with AI Agents (Article + HowTo JSON-LD). Covers MCP Slack, Slack AI agents orchestation, Slack mobile AI agent, and Hermes Agent Slack integration.
 - /blog/connect-hermes-agent: Guide — Connect Hermes Agent to Your Slack Workspace (Article JSON-LD)
 - /blog/slack-ai-agent-vs-custom-agents: Comparison — Slackbot vs custom agents for AI slack agents development (Article + FAQPage JSON-LD)
 - /blog/develop-ai-agents-bolt-slack: Guide — How to develop AI agents bolt Slack using Slack CLI and Bolt frameworks (Article + HowTo JSON-LD)

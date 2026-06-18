@@ -31,6 +31,10 @@ FRAMEWORK: Next.js 16 + TypeScript + Tailwind CSS v4
   title: How to Deploy Your First Workflow in Slack
   description: Step-by-step guide. Topics: Workflow Builder, triggers (link, webhook, scheduled, channel join, emoji, keyword), steps (Slack actions, connectors, custom), variables, buttons, permissions, publishing.
 
+/blog/slack-mcp-server-guide
+  title: How to Use Slack's MCP Server with AI Agents
+  description: Complete guide to Slack MCP server. Topics: Model Context Protocol, MCP Slack setup, connecting AI assistants (Claude, Perplexity, OpenAI), searching messages, sending messages, managing canvases, member info access, Hermes Agent Slack, Slack AI agents orchestation, Slack mobile AI agent.
+
 /blog/connect-hermes-agent
   title: Connect Hermes Agent to Your Slack Workspace
   description: Step-by-step guide. Topics: Slack app creation, OAuth scopes (chat:write, channels:history, im:history, app_mentions:read), token storage, gateway config, Socket Mode, channel restrictions, response batching, troubleshooting.
@@ -78,7 +82,8 @@ PLAN: Operate ($5,999/mo, $6,500 setup, no minimum contract)
 - Organization + BreadcrumbList (about)
 - WebApplication + BreadcrumbList (design)
 - CollectionPage + BreadcrumbList (blog index)
-- Article + HowTo + BreadcrumbList (blog articles)
+- Article + HowTo + BreadcrumbList (blog articles, tutorials)
+- MCP Slack integration keywords: mcp slack, slack ai agents orchestation, slack mobile ai agent, hermes agent slack
 - Product/AggregateOffer + BreadcrumbList (pricing)
 - WebPage + BreadcrumbList (privacy, terms)
 

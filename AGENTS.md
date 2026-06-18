@@ -37,9 +37,14 @@ Technology stack and design approach. Built with Slack's native tools: Block Kit
 
 ### Blog (`/blog`)
 
-Index page listing 2 articles:
-1. **How to Deploy Your First Workflow in Slack** — Workflow Builder guide covering triggers (link, webhook, scheduled, channel join, emoji, keyword), steps (Slack actions, connectors, custom), variables, buttons, permissions, publishing, and a real onboarding workflow example.
-2. **Connect Hermes Agent to Your Slack Workspace** — AI agent setup guide covering Slack app creation, OAuth scopes, token storage, gateway config, Socket Mode, channel restrictions, response batching, and troubleshooting.
+Index page listing 6 articles:
+1. **How to Use Slack's MCP Server with AI Agents** — MCP Slack server guide covering Model Context Protocol, connecting AI assistants (Claude, Perplexity, OpenAI), searching messages, managing canvases, member info, Hermes Agent Slack integration, Slack AI agents orchestation, and Slack mobile AI agent usage.
+2. **How to Deploy Your First Workflow in Slack** — Workflow Builder guide covering triggers (link, webhook, scheduled, channel join, emoji, keyword), steps (Slack actions, connectors, custom), variables, buttons, permissions, publishing, and a real onboarding workflow example.
+3. **Connect Hermes Agent to Your Slack Workspace** — AI agent setup guide covering Slack app creation, OAuth scopes, token storage, gateway config, Socket Mode, channel restrictions, response batching, and troubleshooting.
+
+### Slack MCP (`/blog/slack-mcp-server-guide`)
+
+Guide to using Slack's Model Context Protocol (MCP) server. Topics: MCP open-source protocol, connecting AI assistants securely, searching messages, reading/sending messages, managing canvases, member info access, partner setup (Claude, Perplexity, OpenAI, Cursor), Hermes Agent Slack integration, Slack AI agents orchestation, and Slack mobile AI agent best practices.
 
 ### Pricing (`/pricing`)
 
@@ -101,7 +106,7 @@ Four subscription plans:
 | About | `Organization`, `BreadcrumbList` |
 | Design | `WebApplication`, `BreadcrumbList` |
 | Blog Index | `CollectionPage`, `BreadcrumbList` |
-| Blog Articles | `Article`, `HowTo` (tutorial), `BreadcrumbList` |
+| Blog Articles | `Article`, `HowTo` (tutorials), `BreadcrumbList` |
 | Pricing | `Product` + `AggregateOffer`, `FAQPage`, `BreadcrumbList` |
 | Privacy | `WebPage`, `BreadcrumbList` |
 | Terms | `WebPage`, `BreadcrumbList` |
@@ -173,4 +178,14 @@ src/
 
 ## Sitemap
 
-XML sitemap at `/sitemap.xml` — includes all 9 pages with priorities and change frequencies.
+XML sitemap at `/sitemap.xml` — includes all 9+ pages with priorities and change frequencies.
+
+---
+
+## MCP Slack (Model Context Protocol)
+
+Bold Studio provides custom AI agents that integrate with Slack's MCP server. Key services:
+- **MCP Slack integration** — Connect Hermes Agent to Slack's Model Context Protocol server for secure, scoped AI access
+- **Slack AI agents orchestation** — Build multi-step AI workflows that chain search, message, canvas, and member actions
+- **Slack mobile AI agent** — Deploy AI agents accessible from mobile devices via MCP
+- **Hermes Agent Slack** — Custom AI agent platform that extends MCP with scheduled tasks, event-driven triggers, and custom integrations
