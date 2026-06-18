@@ -21,6 +21,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "How to Use Slack's MCP Server with AI Agents: A Complete Guide",
+    excerpt:
+      "Learn how to connect AI agents to Slack via MCP — search messages, manage canvases, send messages, and orchestrate Slack AI agents from mobile or desktop using natural language.",
+    slug: "slack-mcp-server-guide",
+    date: "June 18, 2026",
+  },
+  {
     title: "How to Deploy Your First Workflow in Slack",
     excerpt:
       "A step-by-step guide to using the Slack workflows builder — from choosing a trigger to adding steps, variables, and publishing your first automation.",

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BlogCtaCard } from "@/components/blog-cta-card";
+import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { SITE } from "@/constants/site";
@@ -428,6 +429,8 @@ export default function DevelopAiAgentsBoltSlackPage() {
               </div>
             </div>
           </section>
+
+          <BlogRelatedArticles currentSlug="develop-ai-agents-bolt-slack" />
 
           <section className="flex flex-col gap-4">
             <BlogCtaCard
