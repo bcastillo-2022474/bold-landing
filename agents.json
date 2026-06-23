@@ -32,6 +32,8 @@
     { "path": "/blog/develop-ai-agents-bolt-slack", "title": "How to Develop AI Agents with Bolt for Slack", "type": "blog_article" },
     { "path": "/blog/slack-mcp-server-guide", "title": "How to Use Slack's MCP Server with AI Agents", "type": "blog_article" },
     { "path": "/blog/slack-ai-agents-subscription-dedicated-team", "title": "Slack AI Agents Subscription", "type": "blog_article" },
+    { "path": "/blog/salesforce-agentforce-slack", "title": "Salesforce Agentforce in Slack", "type": "blog_article" },
+    { "path": "/blog/slack-whatsapp-ecommerce-case-study", "title": "Slack + WhatsApp API for Ecommerce Case Study", "type": "blog_article" },
     { "path": "/pricing", "title": "Pricing", "type": "pricing" },
     { "path": "/privacy", "title": "Privacy Policy", "type": "legal" },
     { "path": "/terms", "title": "Terms of Service", "type": "legal" }
@@ -122,6 +124,8 @@
     { "page": "/blog/deploy-first-slack-workflow", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
     { "page": "/blog/connect-hermes-agent", "schemas": ["Article", "BreadcrumbList"] },
     { "page": "/blog/slack-mcp-server-guide", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
+    { "page": "/blog/salesforce-agentforce-slack", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
+    { "page": "/blog/slack-whatsapp-ecommerce-case-study", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
     { "page": "/pricing", "schemas": ["Product", "AggregateOffer", "FAQPage", "BreadcrumbList"] },
     { "page": "/privacy", "schemas": ["WebPage", "BreadcrumbList"] },
     { "page": "/terms", "schemas": ["WebPage", "BreadcrumbList"] }
@@ -206,6 +210,18 @@
       "title": "Slack AI Agents Subscription: What You Get with a Dedicated Team",
       "date": "June 17, 2026",
       "topics": ["Slack AI agents subscription", "dedicated team", "Slack agentforce", "custom agents", "Salesforce", "workflow automation", "AI agents", "monthly subscription", "developer sandbox", "testing environment"]
+    },
+    {
+      "slug": "salesforce-agentforce-slack",
+      "title": "Salesforce Agentforce in Slack: AI Agents That Work Alongside Your Team",
+      "date": "June 22, 2026",
+      "topics": ["Salesforce Agentforce", "AI agents Slack", "Slack AI agents", "Einstein Trust Layer", "HR agent", "IT agent", "Sales agent", "Service agent", "Marketing agent", "Legal agent", "Engineering agent", "Supply Chain agent", "conversational data", "RAG", "Slack API assistants", "third-party AI assistants", "Slack Marketplace", "generative AI", "Slack actions", "agent templates"]
+    },
+    {
+      "slug": "slack-whatsapp-ecommerce-case-study",
+      "title": "Slack + WhatsApp API for Ecommerce: A Case Study in Customer Service Automation",
+      "date": "June 22, 2026",
+      "topics": ["Slack WhatsApp integration", "WhatsApp Business API", "ecommerce customer service", "2chat", "Slack customer service", "WhatsApp Slack", "customer service automation", "bootstrapped ecommerce", "team efficiency", "Slack webhook", "WhatsApp API", "case study", "Slack integration", "customer support"]
     }
   ]
 }

@@ -10,7 +10,10 @@ export function TestimonialSection() {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/Ecommerce_onboarding_agent_slack.mp4" type="video/mp4" />
+            <source
+              src="/Ecommerce_onboarding_agent_slack.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
 

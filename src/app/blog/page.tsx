@@ -6,17 +6,23 @@ import { Navbar } from "@/components/navbar";
 import { SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
-  title: "Blog - Bold Studio",
+  title: "Blog",
   description:
-    "Tutorials and guides for the Slack workflows builder, AI Slack agents, automation, and integrations. Learn how to deploy your first workflow and connect AI agents to your workspace.",
+    "Tutorials and guides for the Slack workflows builder, AI Slack agents, automation, and integrations. Learn how to deploy your first workflow and connect AI agents to your workspace. Start building today.",
   alternates: {
     canonical: "/blog",
   },
   openGraph: {
-    title: "Blog - Bold Studio",
+    title: "Blog | Bold Studio",
     description:
       "Tutorials and guides for the Slack workflows builder, AI Slack agents, automation, and integrations.",
   },
+  keywords: [
+    "slack blog",
+    "slack workflow tutorials",
+    "ai slack agents",
+    "slack automation guides",
+  ],
 };
 
 const posts = [
@@ -63,8 +69,23 @@ const posts = [
     slug: "slack-ai-agents-subscription-dedicated-team",
     date: "June 17, 2026",
   },
+  {
+    title:
+      "Salesforce Agentforce in Slack: AI Agents That Work Alongside Your Team",
+    excerpt:
+      "Learn how Salesforce Agentforce turns AI agents into Slack teammates. Deploy HR, IT, sales, and service agents that collaborate with humans in channels and DMs.",
+    slug: "salesforce-agentforce-slack",
+    date: "June 22, 2026",
+  },
+  {
+    title:
+      "Slack + WhatsApp API for Ecommerce: A Case Study in Customer Service Automation",
+    excerpt:
+      "How a bootstrap ecommerce founder unified customer service by integrating Slack with WhatsApp Business API. Real story, real results.",
+    slug: "slack-whatsapp-ecommerce-case-study",
+    date: "June 22, 2026",
+  },
 ];
-
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -142,7 +163,8 @@ export default function BlogPage() {
                   href={`/blog/${post.slug}`}
                   className="text-yellow-600 font-semibold text-sm hover:underline mt-2"
                 >
-                  Read more →
+                  Read this guide{" "}
+                  <span className="sr-only">about {post.title}</span>→
                 </Link>
               </article>
             ))}

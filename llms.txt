@@ -27,7 +27,7 @@
 - src/constants/site.ts: All site-wide config (SITE name/url, CONTACT emails, SOCIAL links, NAVIGATION, META/SEO defaults, FAQ content)
 - src/app/layout.tsx: Root layout (HTML, fonts with next/font, global metadata/OG/Twitter/SEO)
 - src/app/page.tsx: Homepage (ProfessionalService + FAQPage JSON-LD, imports all section components)
-- src/app/sitemap.ts: Dynamic sitemap (9 URLs — homepage, about, design, pricing, blog + 2 articles, terms, privacy)
+- src/app/sitemap.ts: Dynamic sitemap (14 URLs — homepage, about, design, pricing, blog + 7 articles, terms, privacy)
 - src/app/robots.ts: Dynamic robots.txt
 - src/app/opengraph-image.tsx: Dynamic OG image (Edge runtime, 1200x630)
 - src/components/navbar.tsx: Sticky navbar with mobile hamburger (client component)
@@ -56,6 +56,8 @@
 - /blog/slack-ai-agent-vs-custom-agents: Comparison — Slackbot vs custom agents for AI slack agents development (Article + FAQPage JSON-LD)
 - /blog/develop-ai-agents-bolt-slack: Guide — How to develop AI agents bolt Slack using Slack CLI and Bolt frameworks (Article + HowTo JSON-LD)
 - /blog/slack-ai-agents-subscription-dedicated-team: Guide — Slack AI agents subscription with a dedicated team for slack AI agents (Article + FAQPage JSON-LD)
+- /blog/salesforce-agentforce-slack: Guide — Salesforce Agentforce in Slack: AI agents as teammates across HR, IT, Sales, Service, Marketing, Legal, Engineering, Supply Chain (Article + HowTo JSON-LD)
+- /blog/slack-whatsapp-ecommerce-case-study: Case study — Slack + WhatsApp API integration for ecommerce customer service automation, using 2chat.co (Article + HowTo JSON-LD)
 - /terms: Terms of Service (noindex)
 - /privacy: Privacy Policy (noindex)
 

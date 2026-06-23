@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     canonical: META.pages.pricing.canonical,
   },
   robots: META.robots,
+  keywords: [
+    "slack development pricing",
+    "custom slack app cost",
+    "slack automation subscription",
+    "ai agent pricing",
+  ],
 };
 
 const plans = [

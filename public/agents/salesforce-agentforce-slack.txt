@@ -1,0 +1,71 @@
+Salesforce Agentforce in Slack: AI Agents That Work Alongside Your Team
+=====================================================================
+
+URL: https://getboldstudio.com/blog/salesforce-agentforce-slack
+Date: June 22, 2026
+Author: Bold Studio
+
+Quick Answer
+------------
+Salesforce Agentforce is a platform that turns AI agents into Slack teammates. You
+@mention them in channels and DMs just like any coworker. They access conversational
+context from Slack and connected business systems to answer questions, automate
+tasks, and execute actions within Einstein Trust Layer security guardrails. Choose
+from pre-built templates for HR, IT, Sales, Service, Marketing, Legal, Engineering,
+or Supply Chain, or build custom AI assistants using the Slack API.
+
+What Is Salesforce Agentforce?
+-------------------------------
+Agentforce is Salesforce's platform for creating, deploying, and managing AI agents
+that operate alongside human employees. In Slack, these agents become active team
+members that live in channels, participate in threads, respond to DMs, and take
+action autonomously within defined boundaries. Unlike chatbots, Agentforce agents
+use LLMs, RAG, and real-time conversational data to understand context and execute
+multi-step workflows.
+
+The Three Types of AI Agents in Slack
+--------------------------------------
+1. Agentforce (Salesforce): Pre-built agent templates with enterprise security.
+2. Custom AI Assistants (Slack API): Build your own with your preferred LLM.
+3. Third-Party AI Assistants: Pre-configured apps from Slack Marketplace.
+
+Pre-Built Agent Templates
+--------------------------
+- HR Agent: Onboarding, benefits, professional development questions.
+- IT Agent: Support tickets, incident communications, access requests.
+- Service Agent: Subject matter experts, historical data, customer issues.
+- Sales Agent: Executive briefs, proposals, proactive outreach.
+- Marketing Agent: Campaign optimization, content drafts, planning.
+- Legal Agent: Compliance workflows, approvals, policy answers.
+- Engineering Agent: Planning, design, development, QA coordination.
+- Supply Chain Agent: Supplier management, warehouse automation, forecasting.
+
+Why Conversational Context Makes Agents Smarter
+-------------------------------------------------
+Agentforce uses RAG on Slack's conversational data plus enterprise search to give
+agents relevant context. They search messages, files, and connected systems to
+produce accurate, context-aware responses. Organizations see up to 40% improvement
+in task performance when agents access conversational data.
+
+Security: Einstein Trust Layer
+-------------------------------
+- No customer data used for LLM training
+- Data masking of sensitive information
+- Toxicity monitoring on all outputs
+- No-data-retention agreements with LLM providers
+- Administrators control data access scopes
+
+Related Articles
+-----------------
+- How to Use Slack's MCP Server with AI Agents
+  https://getboldstudio.com/blog/slack-mcp-server-guide
+- How to Deploy Your First Workflow in Slack
+  https://getboldstudio.com/blog/deploy-first-slack-workflow
+- Connect Hermes Agent to Your Slack Workspace
+  https://getboldstudio.com/blog/connect-hermes-agent
+- Slack AI Agent vs Custom Agents
+  https://getboldstudio.com/blog/slack-ai-agent-vs-custom-agents
+- How to Develop AI Agents with Bolt for Slack
+  https://getboldstudio.com/blog/develop-ai-agents-bolt-slack
+- Slack AI Agents Subscription
+  https://getboldstudio.com/blog/slack-ai-agents-subscription-dedicated-team

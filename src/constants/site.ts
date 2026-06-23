@@ -5,9 +5,9 @@
 
 export const SITE = {
   name: "Bold Studio",
-  title: "Bold Studio - Custom Software Development Subscription",
+  title: "Bold Studio — Dedicated Dev Team on Slack | Custom Software",
   description:
-    "Your dedicated dev team on Slack. Build custom Slack apps, automate Slack workflows, and deploy AI Slack agents via monthly subscription. Skip hiring — start building today.",
+    "Your dedicated dev team on Slack. Build custom Slack apps, automate Slack workflows, and deploy AI Slack agents via monthly subscription. Skip the hiring process — start building today.",
   tagline: "Your Dedicated Dev Team. On Demand. On Slack.",
   url: "https://getboldstudio.com",
 } as const;
@@ -145,7 +145,7 @@ export const META = {
     pricing: {
       title: "Pricing",
       description:
-        "Simple, predictable pricing for Slack workflows, custom Slack apps, and AI agents. Launch at $999/mo, Build at $1,999/mo, Scale at $3,499/mo, Operate at $5,999/mo. Cancel or pause anytime.",
+        "Simple, predictable pricing for Slack workflows, custom Slack apps, and AI agents. Launch at $999/mo, Build at $1,999/mo, Scale at $3,499/mo, Operate at $5,999/mo. No hidden fees — cancel or pause anytime.",
       canonical: "/pricing",
     },
   },

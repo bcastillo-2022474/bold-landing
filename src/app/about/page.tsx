@@ -4,13 +4,19 @@ import { Navbar } from "@/components/navbar";
 import { CONTACT, META, SITE, SOCIAL } from "@/constants/site";
 
 export const metadata: Metadata = {
-  title: "About - Bold Studio",
+  title: "About",
   description:
-    "Learn about Bold Studio - build custom Slack apps and automate Slack workflows with our Slack-native subscription service for modern teams.",
+    "Learn about Bold Studio — your dedicated dev team on Slack. We build custom Slack apps, automate Slack workflows, and deploy AI agents. Subscribe and start building today.",
   alternates: {
     canonical: "/about",
   },
   robots: META.robots,
+  keywords: [
+    "about bold studio",
+    "custom slack apps",
+    "slack automation team",
+    "slack development subscription",
+  ],
 };
 
 const organizationJsonLd = {

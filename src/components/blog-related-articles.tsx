@@ -38,13 +38,23 @@ const articles = [
       "Compare building in-house vs a subscription with a dedicated team for Slack AI agents.",
     slug: "slack-ai-agents-subscription-dedicated-team",
   },
+  {
+    title:
+      "Salesforce Agentforce in Slack: AI Agents That Work Alongside Your Team",
+    excerpt:
+      "Learn how Salesforce Agentforce turns AI agents into Slack teammates. Deploy HR, IT, sales, and service agents in channels and DMs.",
+    slug: "salesforce-agentforce-slack",
+  },
+  {
+    title:
+      "Slack + WhatsApp API for Ecommerce: A Case Study in Customer Service Automation",
+    excerpt:
+      "How a bootstrap ecommerce founder unified customer service by integrating Slack with WhatsApp Business API.",
+    slug: "slack-whatsapp-ecommerce-case-study",
+  },
 ];
 
-export function BlogRelatedArticles({
-  currentSlug,
-}: {
-  currentSlug: string;
-}) {
+export function BlogRelatedArticles({ currentSlug }: { currentSlug: string }) {
   const related = articles.filter((a) => a.slug !== currentSlug);
 
   return (
