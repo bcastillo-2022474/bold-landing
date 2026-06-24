@@ -27,6 +27,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "Slack CI/CD Best Practices: Automate Your Slack App Pipeline",
+    excerpt:
+      "Set up a production-grade CI/CD pipeline for Slack app development. Automate testing with Slack CLI, deploy with GitHub Actions, and manage dev, staging, and production environments.",
+    slug: "slack-cicd-best-practices",
+    date: "June 23, 2026",
+  },
+  {
     title: "How to Use Slack's MCP Server with AI Agents: A Complete Guide",
     excerpt:
       "Learn how to connect AI agents to Slack via MCP — search messages, manage canvases, send messages, and orchestrate Slack AI agents from mobile or desktop using natural language.",

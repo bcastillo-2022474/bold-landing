@@ -1,0 +1,89 @@
+{
+  "title": "Slack CI/CD Best Practices: Automate Your Slack App Pipeline",
+  "slug": "slack-cicd-best-practices",
+  "description": "Learn how to set up CI/CD pipelines for Slack app development. Automate testing with Slack CLI, deploy workflows with GitHub Actions, and manage dev, staging, and production environments.",
+  "excerpt": "Shipping Slack apps should be as fast as the messages your users send. Learn how to set up a production-grade CI/CD pipeline that tests, builds, and deploys your Slack apps automatically.",
+  "datePublished": "2026-06-23",
+  "dateModified": "2026-06-23",
+  "canonical": "https://getboldstudio.com/blog/slack-cicd-best-practices",
+  "author": {
+    "@type": "Organization",
+    "name": "Bold Studio",
+    "url": "https://getboldstudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bold Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getboldstudio.com/logo-192.png"
+    }
+  },
+  "keywords": [
+    "slack ci/cd",
+    "slack app deployment",
+    "github actions slack",
+    "slack cli testing",
+    "ci/cd pipeline slack",
+    "slack app development",
+    "slack workflow automation"
+  ],
+  "sections": [
+    {
+      "heading": "What is CI/CD for Slack Apps?",
+      "content": "CI/CD (Continuous Integration and Continuous Deployment) for Slack apps means every code change is automatically tested, built, and deployed to your Slack workspace. Instead of manually running slack deploy after every change, a CI/CD pipeline handles the entire process."
+    },
+    {
+      "heading": "Why You Need CI/CD for Slack Development",
+      "content": "Without CI/CD, deploying Slack apps becomes a manual, error-prone process. A proper CI/CD pipeline gives you automated testing, consistent environments, fast iteration, instant rollbacks, and team velocity."
+    },
+    {
+      "heading": "Step 1: Set Up Version Control",
+      "content": "Create a Git repository with a clear directory layout including separate manifest files for dev, staging, and production. Never commit .env files — store secrets in your CI provider's secret vault."
+    },
+    {
+      "heading": "Step 2: Configure GitHub Actions for Slack Apps",
+      "content": "Create a .github/workflows/ci.yml file with jobs for linting, type checking, and unit tests. Use actions/setup-node to install dependencies and add caching for faster subsequent runs."
+    },
+    {
+      "heading": "Step 3: Automate Testing with Slack CLI",
+      "content": "Install the Slack CLI in your CI environment, start a local development server with slack run, and run integration tests. Store credentials as GitHub Secrets and use Slack API test endpoints to simulate real events."
+    },
+    {
+      "heading": "Step 4: Manage Environments",
+      "content": "Create three distinct stages: Development (local with slack run), Staging (auto-deploy from main branch), and Production (deploy from release tags only). Use separate manifests and environment variables for each stage."
+    },
+    {
+      "heading": "Step 5: Automate Deployment",
+      "content": "Create a deployment workflow triggered by release tags. Include build steps, slack deploy commands, and a rollback step using slack deploy --version to revert quickly if needed."
+    },
+    {
+      "heading": "CI/CD Best Practices Summary",
+      "content": "Test early and often, use branch-based deployments, keep manifests in version control, monitor deployments with Slack's app logs, and document your pipeline with a CONTRIBUTING.md file."
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can I use CI/CD with Slack's Workflow Builder?",
+      "answer": "Yes. Export your workflows as JSON, store them in Git, and use the Slack API to sync them during deployment."
+    },
+    {
+      "question": "What CI platforms work best with Slack apps?",
+      "answer": "GitHub Actions is the most common choice. GitLab CI and CircleCI work well too. Any platform that supports Node.js and the Slack CLI will work."
+    },
+    {
+      "question": "How do I handle Slack tokens securely in CI?",
+      "answer": "Use your CI provider's encrypted secrets feature. Never hardcode tokens. Rotate tokens regularly and use separate tokens for each environment."
+    },
+    {
+      "question": "Should I test Slack AI agents in CI?",
+      "answer": "Absolutely. Mock the AI responses in unit tests and run end-to-end tests against a staging environment."
+    }
+  ],
+  "relatedArticles": [
+    "deploy-first-slack-workflow",
+    "develop-ai-agents-bolt-slack",
+    "connect-hermes-agent",
+    "slack-mcp-server-guide"
+  ]
+}

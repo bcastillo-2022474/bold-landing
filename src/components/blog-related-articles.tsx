@@ -2,6 +2,12 @@ import Link from "next/link";
 
 const articles = [
   {
+    title: "Slack CI/CD Best Practices: Automate Your Slack App Pipeline",
+    excerpt:
+      "Set up CI/CD pipelines for Slack app development with GitHub Actions, Slack CLI testing, and environment management.",
+    slug: "slack-cicd-best-practices",
+  },
+  {
     title: "How to Use Slack's MCP Server with AI Agents: A Complete Guide",
     excerpt:
       "Connect AI agents to Slack via MCP — search messages, manage canvases, and orchestrate workflows using natural language.",
