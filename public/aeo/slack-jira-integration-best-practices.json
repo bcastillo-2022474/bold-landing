@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Slack and Jira Integration Best Practices: Automate Ticket Management and PR Reviews",
+  "description": "Learn the best practices for integrating Jira with Slack. Automate ticket notifications, review PRs, use slash commands, and connect Workflow Builder with Jira for seamless development workflows.",
+  "url": "https://getboldstudio.com/blog/slack-jira-integration-best-practices",
+  "image": "https://getboldstudio.com/opengraph-image",
+  "author": {
+    "@type": "Organization",
+    "name": "Bold Studio",
+    "url": "https://getboldstudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bold Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getboldstudio.com/logo-192.png"
+    }
+  },
+  "datePublished": "2026-06-25",
+  "dateModified": "2026-06-25",
+  "keywords": [
+    "slack jira integration",
+    "jira cloud slack",
+    "jira slash commands",
+    "jira slack notifications",
+    "jira workflow builder",
+    "jira ticket automation",
+    "slack jira best practices",
+    "pr review slack jira",
+    "jira connect slack"
+  ],
+  "articleBody": "Integrating Jira with Slack eliminates context switching between your issue tracker and communication hub. This guide covers 5 best practices.\n\nBest Practice 1: Install the Jira Cloud app from the Slack App Directory. Type any issue key like PROJ-123 and the Jira bot posts a summary with status, assignee, priority, and description. For Jira Server or Data Center, use the Jira Server alerts app.\n\nBest Practice 2: Configure smart notifications per channel. Use /jira manage to subscribe channels to specific projects and event types. Route bug alerts to #bugs, feature tickets to #product, and sprint changes to #engineering. Filter by event type.\n\nBest Practice 3: Use slash commands. /jira <issue-key> looks up any issue. /jira connect links your Jira instance. /jira manage opens the config panel.\n\nBest Practice 4: Automate ticket creation from Slack workflows. Connect Workflow Builder with Jira to create tickets from emoji reactions, form submissions, or scheduled triggers.\n\nBest Practice 5: Review PRs and tickets collaboratively. PR notifications in #pr-reviews, team discusses in threads, uses /jira to check tickets, and Jira transitions automatically on PR merge.\n\nQuick reference: Issue lookup (type key or /jira), Notifications (app subscription), Ticket creation (Workflow Builder), Management (/jira manage)."
+}

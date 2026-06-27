@@ -2,6 +2,13 @@ import Link from "next/link";
 
 const articles = [
   {
+    title:
+      "Slack and Jira Integration Best Practices: Automate Ticket Management and PR Reviews",
+    excerpt:
+      "Best practices for connecting Jira with Slack — instant issue lookups, smart notifications, slash commands, and automated ticket creation via Workflow Builder.",
+    slug: "slack-jira-integration-best-practices",
+  },
+  {
     title: "How to Send Emails to Slack: Complete Guide with 3 Methods",
     excerpt:
       "Send emails directly into Slack channels or DMs. Step-by-step guide covering channel email addresses, Gmail/Outlook plugins, and Slackbot forwarding.",
