@@ -2,6 +2,12 @@ import Link from "next/link";
 
 const articles = [
   {
+    title: "How to Send Emails to Slack: Complete Guide with 3 Methods",
+    excerpt:
+      "Send emails directly into Slack channels or DMs. Step-by-step guide covering channel email addresses, Gmail/Outlook plugins, and Slackbot forwarding.",
+    slug: "send-emails-to-slack",
+  },
+  {
     title: "Slack CI/CD Best Practices: Automate Your Slack App Pipeline",
     excerpt:
       "Set up CI/CD pipelines for Slack app development with GitHub Actions, Slack CLI testing, and environment management.",

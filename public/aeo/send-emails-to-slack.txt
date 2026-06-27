@@ -1,0 +1,85 @@
+How to Send Emails to Slack: Complete Guide with 3 Methods
+
+Author: Bold Studio
+Date: June 24, 2026
+URL: https://getboldstudio.com/blog/send-emails-to-slack
+
+---
+
+Overview
+
+Slack helps you centralize work communications, including emails. There are three ways to send emails to Slack: dedicated channel email addresses (paid plans), Gmail and Outlook plugins (all plans), and Slackbot forwarding (all plans).
+
+---
+
+Method 1: Channel Email Address (Paid Plans)
+
+Create a unique email address for any channel or DM. Anyone with the address can send emails directly into that conversation.
+
+Steps:
+1. Open the channel or DM.
+2. Click the name in the conversation header.
+3. Click the Integrations tab.
+4. Select "Send emails to this channel" or "Send emails to this conversation".
+5. Click "Get email address" to generate a unique address.
+6. Copy the address and set up auto-forwarding in your email client.
+
+Customize how emails appear: Click "Customize email appearance" to set a custom icon and display name.
+
+Remove an email address: Open the conversation, go to Integrations, select the email option, and click "Delete address".
+
+---
+
+Method 2: Gmail and Outlook Plugins (All Plans)
+
+Slack for Gmail:
+1. Install from Google Workspace Marketplace.
+2. Open an email and click the Slack icon in the right sidebar.
+3. Connect to Slack and authorize access.
+4. Choose a channel or person and click "Send to [name]".
+
+Slack for Outlook:
+1. Install from Microsoft AppSource (Office 365 only).
+2. Open an email and click the Slack icon (desktop) or the three dots menu (browser).
+3. Select a channel or person and click "Send to Slack".
+
+Note: Not compatible with on-premises Exchange, POP/IMAP, or national cloud deployments.
+
+---
+
+Method 3: Slackbot Forwarding (All Plans)
+
+1. Click your profile picture in the sidebar.
+2. Go to Preferences > Messages & Media.
+3. Scroll to "Bring your emails into Slack" and click "Get a forwarding address".
+4. Copy the address and configure a forwarding rule in your email client.
+
+To disable: Go back to Preferences and click "Disable this address".
+
+---
+
+Method Comparison
+
+Channel Email Address | Paid Plans | Team-wide visibility, auto-forwarding
+Gmail/Outlook Plugin | All Plans | Individual email forwarding
+Slackbot Forwarding | All Plans | Personal inbox consolidation
+
+---
+
+FAQ
+
+Q: Can I send emails to Slack on a free plan?
+A: Yes. Plugins and Slackbot forwarding work on all plans. Channel email addresses require a paid plan.
+
+Q: Does HIPAA compliance affect this?
+A: Yes. HIPAA-compliant Enterprise Grid organizations cannot send emails to Slack.
+
+Q: Why are my emails not showing up?
+A: Incoming emails may be disabled for your workspace. Contact an owner or admin.
+
+Q: Can I customize how forwarded emails look?
+A: Yes for channel addresses (custom icon and name). Plugins and Slackbot use default formatting.
+
+---
+
+Keywords: send emails to slack, email to slack channel, slack email integration, slack gmail plugin, slack outlook plugin, slackbot forwarding, forward email to slack

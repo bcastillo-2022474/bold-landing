@@ -27,6 +27,13 @@ export const metadata: Metadata = {
 
 const posts = [
   {
+    title: "How to Send Emails to Slack: Complete Guide with 3 Methods",
+    excerpt:
+      "Send emails directly into Slack channels or DMs. Step-by-step guide covering channel email addresses, Gmail/Outlook plugins, and Slackbot forwarding.",
+    slug: "send-emails-to-slack",
+    date: "June 24, 2026",
+  },
+  {
     title: "Slack CI/CD Best Practices: Automate Your Slack App Pipeline",
     excerpt:
       "Set up a production-grade CI/CD pipeline for Slack app development. Automate testing with Slack CLI, deploy with GitHub Actions, and manage dev, staging, and production environments.",
