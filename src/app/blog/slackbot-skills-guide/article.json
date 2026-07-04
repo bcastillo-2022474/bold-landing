@@ -1,0 +1,86 @@
+{
+  "title": "Your Team Is Sitting on an AI Feature They Probably Scrolled Right Past",
+  "slug": "slackbot-skills-guide",
+  "date": "June 26, 2026",
+  "datePublished": "2026-06-26",
+  "dateModified": "2026-06-26",
+  "description": "Slack quietly shipped Skills for Slackbot — step-by-step instructions your team can build, share, and reuse. Turn recurring processes into executable workflows without writing a single line of code.",
+  "tags": [
+    "Slack",
+    "Slackbot",
+    "Skills",
+    "AI",
+    "Workflow Automation",
+    "Productivity",
+    "SaaS",
+    "Fintech",
+    "eCommerce"
+  ],
+  "content": [
+    {
+      "type": "paragraph",
+      "text": "Slack just quietly shipped Skills for Slackbot — and most teams won't notice until a competitor is already using it to move faster than them."
+    },
+    {
+      "type": "heading",
+      "text": "What are Slackbot Skills?"
+    },
+    {
+      "type": "paragraph",
+      "text": "Instead of Slackbot giving you a generic, one-off answer every time, Skills let you encode repeatable processes. Think of them as executable Standard Operating Procedures that live inside your workspace. You describe the steps, Slackbot follows them. No more re-explaining how to run a client kickoff or triage a support ticket. No more 'well it depends who does it.' The process becomes the process."
+    },
+    {
+      "type": "paragraph",
+      "text": "Slackbot automatically finds and uses the right Skill when you ask a relevant question. You can also manually attach a Skill to a prompt the same way you attach a file, channel, or person. The result is consistent, repeatable execution across your entire team — regardless of who is doing the work."
+    },
+    {
+      "type": "heading",
+      "text": "What makes Skills a game-changer"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Anyone on the team can build one — no admin or developer needed. Slackbot can help you build it by asking a few questions, or you can create one from scratch.",
+        "They're shareable — push Skills to the channels or people who need them. Institutional knowledge stops living in one person's head.",
+        "Assignable by role — owners and admins can hand the right Skills to the right people based on their job requirements.",
+        "Import from any Canvas — if you've documented a process in a Slack Canvas, you're one click away from making it executable."
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "Why this is bigger than it sounds"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most founders miss the real point. This isn't really an 'AI feature.' It's a mechanism for turning tribal knowledge into infrastructure. The way your team runs a client kickoff, triages a support ticket, or preps a board update — that process can now be encoded once and reused forever."
+    },
+    {
+      "type": "paragraph",
+      "text": "The companies that win with tools like this aren't the ones chasing every AI headline. They're the ones who take 30 minutes this week to turn their three most-repeated workflows into Skills before it becomes 'everyone does this' and the advantage disappears."
+    },
+    {
+      "type": "heading",
+      "text": "How to create your first Skill"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open Slack, click Slackbot at the top of your screen, and navigate to the Skills tab. You have two options: Create with Slackbot (Slackbot asks you questions and drafts the Skill for your approval) or Create from scratch (write the description, steps, and output format yourself). Once created, share it with your team and Slackbot will start using it automatically."
+    },
+    {
+      "type": "heading",
+      "text": "The opportunity gap"
+    },
+    {
+      "type": "paragraph",
+      "text": "At Bold Studio, this is the exact gap we build for. We work with fintech, eCommerce, and SaaS teams who already live inside Slack all day but are leaving real leverage on the table. Skills are available now on Business+ and Enterprise Grid plans. The only investment is 30 minutes of your team's attention to identify and encode your most repeated workflows."
+    },
+    {
+      "type": "paragraph",
+      "text": "If your team's 'process' still only exists in someone's memory, that's your first Skill to build."
+    }
+  ],
+  "cta": {
+    "title": "Need help systematizing your Slack workflows?",
+    "description": "We build custom Slack automations, AI agents, and Skills-ready processes for teams that want to move faster. Book a call and tell us what you need."
+  }
+}

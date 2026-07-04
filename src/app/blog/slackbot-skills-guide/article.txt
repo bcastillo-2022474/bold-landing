@@ -1,0 +1,30 @@
+TITLE: Your Team Is Sitting on an AI Feature They Probably Scrolled Right Past
+DATE: June 26, 2026
+SLUG: slackbot-skills-guide
+TAGS: Slack, Slackbot, Skills, AI, Workflow Automation, Productivity, SaaS, Fintech, eCommerce
+
+---
+
+Slack just quietly shipped Skills for Slackbot — and most teams won't notice until a competitor is already using it to move faster than them.
+
+Here's what it actually does: instead of Slackbot giving you a generic, one-off answer every time, you can give it step-by-step instructions for a task your team repeats constantly — building a quarterly report, drafting an event plan, pulling and summarizing data across multiple spreadsheets. Once that Skill exists, Slackbot executes the process the same way, every single time. No re-explaining. No "well it depends who does it."
+
+A few things make this bigger than it sounds:
+
+1. Anyone on the team can build one. You don't need an admin or a developer. If you know the process, you can turn it into a Skill — or just ask Slackbot to help you build it by answering a few questions. You can also create one from scratch with your own description, steps, and expected output format.
+
+2. They're shareable. Once someone builds a good Skill, they can push it straight to the channels or people who need it. Institutional knowledge stops living in one person's head and starts living in the workspace itself. Anyone can explore available skills and add them to their Slackbot.
+
+3. They can be assigned by role. Owners and admins can hand the right Skills to the right people based on what their job actually requires — which means onboarding a process becomes a five-minute setup instead of a three-week shadow period.
+
+4. You can even turn an existing Canvas into a Skill. If you've already documented "how we do X" somewhere in Slack, you're one click away from making it executable. Click Add Skill and select Import a Skill.
+
+Here's the part most founders miss: this isn't really an "AI feature." It's a mechanism for turning tribal knowledge into infrastructure. The way your team runs a client kickoff, triages a support ticket, or preps a board update — that process, the one currently living in Slack messages, a Notion page nobody opens, or a senior person's head — can now be encoded once and reused forever.
+
+The companies that win with tools like this aren't the ones chasing every AI headline. They're the ones who take 30 minutes this week to turn their 3 most-repeated workflows into Skills before it becomes "everyone does this" and the advantage disappears.
+
+At Bold Studio, this is the exact gap we build for. We work with fintech, eCommerce, and SaaS teams who already live inside Slack all day but are leaving real leverage on the table — because nobody's had the time (or reason) to sit down and systematize what they already know how to do.
+
+Skills are available now on Business+ and Enterprise Grid plans. They cost nothing extra. The only investment is 30 minutes of your team's attention.
+
+If your team's "process" still only exists in someone's memory, that's your first Skill to build.

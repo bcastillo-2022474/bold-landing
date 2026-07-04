@@ -3,6 +3,20 @@ import Link from "next/link";
 const articles = [
   {
     title:
+      "Google Analytics Insights in Slack: Real-Time Marketing Monitoring Without Dashboard Fatigue",
+    excerpt:
+      "Monitor GA4, Google Ads, Meta Ads, Search Console, and Shopify directly in Slack with intelligent alerts for marketing and ecommerce teams.",
+    slug: "ga-insights-slack-monitoring",
+  },
+  {
+    title:
+      "Your Team Is Sitting on an AI Feature They Probably Scrolled Right Past",
+    excerpt:
+      "Slack quietly shipped Skills for Slackbot — encode repeatable processes your team can build, share, and reuse without writing code.",
+    slug: "slackbot-skills-guide",
+  },
+  {
+    title:
       "Slack and Jira Integration Best Practices: Automate Ticket Management and PR Reviews",
     excerpt:
       "Best practices for connecting Jira with Slack — instant issue lookups, smart notifications, slash commands, and automated ticket creation via Workflow Builder.",
