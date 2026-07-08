@@ -3,6 +3,13 @@ import Link from "next/link";
 const articles = [
   {
     title:
+      "Custom Slack App vs Buying Another Tool: When to Build vs Buy",
+    excerpt:
+      "A framework for deciding when to build a custom Slack app instead of buying another SaaS tool. Learn when custom Slack apps, workflows, and automation make sense.",
+    slug: "custom-slack-app-vs-buy",
+  },
+  {
+    title:
       "Google Analytics Insights in Slack: Real-Time Marketing Monitoring Without Dashboard Fatigue",
     excerpt:
       "Monitor GA4, Google Ads, Meta Ads, Search Console, and Shopify directly in Slack with intelligent alerts for marketing and ecommerce teams.",

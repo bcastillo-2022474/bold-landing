@@ -28,6 +28,14 @@ export const metadata: Metadata = {
 const posts = [
   {
     title:
+      "Custom Slack App vs Buying Another Tool: When to Build vs Buy",
+    excerpt:
+      "A framework for deciding when to build a custom Slack app instead of buying another SaaS tool. Learn when custom Slack apps, workflows, and automation make sense for fintech and ecommerce teams.",
+    slug: "custom-slack-app-vs-buy",
+    date: "July 8, 2026",
+  },
+  {
+    title:
       "Google Analytics Insights in Slack: Real-Time Marketing Monitoring Without Dashboard Fatigue",
     excerpt:
       "Monitor GA4, Google Ads, Meta Ads, Search Console, and Shopify directly in Slack. Learn how Go Insights eliminates dashboard switching with intelligent alerts for marketing and ecommerce teams.",

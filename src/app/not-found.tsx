@@ -10,9 +10,6 @@ export const metadata: Metadata = {
   robots: {
     index: false,
   },
-  alternates: {
-    canonical: "/404",
-  },
 };
 
 const breadcrumbJsonLd = {

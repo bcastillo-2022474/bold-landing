@@ -24,7 +24,10 @@ export const metadata: Metadata = {
   publisher: SITE.name,
   metadataBase: new URL(SITE.url),
   alternates: {
-    canonical: "/",
+    canonical: SITE.url,
+    languages: {
+      "en-US": SITE.url,
+    },
   },
   robots: META.robots,
   openGraph: {
