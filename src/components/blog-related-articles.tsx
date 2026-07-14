@@ -3,6 +3,13 @@ import Link from "next/link";
 const articles = [
   {
     title:
+      "The End of Infinite Tabs: Why Your Next Software Shouldn't Be a Web App — It Should Be a Slack Bot",
+    excerpt:
+      "Slack-native bots eliminate context friction and reduce context switching. Why the web app portal paradigm is ending for internal B2B tools.",
+    slug: "slack-native-bot-vs-web-app",
+  },
+  {
+    title:
       "Custom Slack App vs Buying Another Tool: When to Build vs Buy",
     excerpt:
       "A framework for deciding when to build a custom Slack app instead of buying another SaaS tool. Learn when custom Slack apps, workflows, and automation make sense.",

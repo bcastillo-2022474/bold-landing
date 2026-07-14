@@ -4,13 +4,14 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title:
     "Custom Slack App vs Buying Another Tool: When to Build vs Buy",
   description:
     "A framework for deciding when to build a custom Slack app instead of buying another SaaS tool. Learn when custom Slack apps, workflows, and automation make sense for fintech and ecommerce teams.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/custom-slack-app-vs-buy",
   },

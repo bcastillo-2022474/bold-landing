@@ -4,12 +4,13 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Slack AI Agents Subscription: What You Get with a Dedicated Team",
   description:
     "Compare the cost of building in-house vs a Slack AI agents subscription with a dedicated team for slack AI agents. Includes Slack agentforce custom agents and Slack workflows with AI agents monthly.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/slack-ai-agents-subscription-dedicated-team",
   },

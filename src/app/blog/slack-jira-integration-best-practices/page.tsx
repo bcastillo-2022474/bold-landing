@@ -4,13 +4,14 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title:
     "Slack and Jira Integration Best Practices: Automate Ticket Management and PR Reviews",
   description:
     "Learn the best practices for integrating Jira with Slack. Automate ticket notifications, review PRs, use slash commands, and connect Workflow Builder with Jira for seamless development workflows.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/slack-jira-integration-best-practices",
   },

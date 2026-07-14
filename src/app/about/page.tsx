@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { CONTACT, META, SITE, SOCIAL } from "@/constants/site";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About Us — Custom Slack Apps & Automation",
   description:
     "Learn about Bold Studio — your dedicated dev team on Slack. We build custom Slack apps, automate Slack workflows, and deploy AI agents. Subscribe and start building today.",
   alternates: {

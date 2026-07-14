@@ -4,13 +4,14 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title:
     "Slack AI Agent vs Custom Agents: LangGraph, Hermes, and When to Build Your Own",
   description:
     "Compare Slack's native Slackbot AI agent vs custom AI agents for Slack built with LangGraph and Hermes. Learn when to build AI agents in Slack and when Slack's built-in agent is enough.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/slack-ai-agent-vs-custom-agents",
   },

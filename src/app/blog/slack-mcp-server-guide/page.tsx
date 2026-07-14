@@ -4,12 +4,13 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "How to Use Slack's MCP Server with AI Agents: A Complete Guide",
   description:
     "Learn how to connect AI agents to Slack using the MCP server. Search messages, manage canvases, send messages, and orchestrate Slack AI agents from mobile or desktop with natural language.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/slack-mcp-server-guide",
   },

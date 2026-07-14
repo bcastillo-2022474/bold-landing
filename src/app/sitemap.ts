@@ -1,8 +1,26 @@
 import type { MetadataRoute } from "next";
 import { META, SITE } from "@/constants/site";
 
+const blogSlugs = [
+  "slack-native-bot-vs-web-app",
+  "deploy-first-slack-workflow",
+  "connect-hermes-agent",
+  "slack-ai-agent-vs-custom-agents",
+  "develop-ai-agents-bolt-slack",
+  "slack-ai-agents-subscription-dedicated-team",
+  "slack-mcp-server-guide",
+  "salesforce-agentforce-slack",
+  "slack-whatsapp-ecommerce-case-study",
+  "slack-cicd-best-practices",
+  "send-emails-to-slack",
+  "slack-jira-integration-best-practices",
+  "slackbot-skills-guide",
+  "custom-slack-app-vs-buy",
+  "ga-insights-slack-monitoring",
+] as const;
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: SITE.url,
       lastModified: new Date(),
@@ -45,89 +63,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
-    {
-      url: `${SITE.url}/blog/deploy-first-slack-workflow`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/connect-hermes-agent`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/slack-ai-agent-vs-custom-agents`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/develop-ai-agents-bolt-slack`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/slack-ai-agents-subscription-dedicated-team`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/slack-mcp-server-guide`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/salesforce-agentforce-slack`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/slack-whatsapp-ecommerce-case-study`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/slack-cicd-best-practices`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/send-emails-to-slack`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/slack-jira-integration-best-practices`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/slackbot-skills-guide`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/custom-slack-app-vs-buy`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
-    {
-      url: `${SITE.url}/blog/ga-insights-slack-monitoring`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
   ];
+
+  const blogPages: MetadataRoute.Sitemap = blogSlugs.map((slug) => ({
+    url: `${SITE.url}/blog/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticPages, ...blogPages];
 }

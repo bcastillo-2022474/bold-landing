@@ -4,12 +4,13 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Slack CI/CD Best Practices: Automate Your Slack App Pipeline",
   description:
     "Learn how to set up CI/CD pipelines for Slack app development. Automate testing with Slack CLI, deploy workflows with GitHub Actions, and manage dev, staging, and production environments.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/slack-cicd-best-practices",
   },

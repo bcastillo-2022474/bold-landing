@@ -4,12 +4,13 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "How to Send Emails to Slack: Complete Guide with 3 Methods",
   description:
     "Learn how to send emails to Slack using 3 methods: create a channel email address, use Gmail or Outlook plugins, or forward emails to Slackbot. Step-by-step tutorial.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/send-emails-to-slack",
   },

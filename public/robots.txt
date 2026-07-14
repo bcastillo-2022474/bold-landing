@@ -1,0 +1,5 @@
+# https://getboldstudio.com/robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://getboldstudio.com/sitemap.xml

@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar";
 import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
-  title: "Design",
+  title: "Design & Development — Slack Apps Built with Block Kit",
   description:
     "See how we design and build custom Slack apps, Slack workflows, and AI agents using Block Kit, Slack API, and TypeScript. Slack-native development for modern teams.",
   alternates: {

@@ -4,12 +4,13 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Connect Hermes Agent to Your Slack Workspace",
   description:
     "Step-by-step guide to connecting your AI Slack agent to your workspace. Learn how to create a Slack app, set the right scopes, store tokens, and verify your first AI-powered reply.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/connect-hermes-agent",
   },
@@ -44,6 +45,46 @@ const articleJsonLd = {
   dateModified: "2026-06-16",
 };
 
+const howToJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Connect Hermes Agent to Your Slack Workspace",
+  description:
+    "Set up an AI agent in Slack by creating a Slack app, configuring OAuth scopes, storing tokens, and verifying replies.",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Create a Slack app for Hermes",
+      text: "Go to the Slack API dashboard and create a new app from scratch. Name it 'Hermes' and select your target workspace. Install it into one private test channel first.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Add the minimum Slack scopes",
+      text: "Navigate to OAuth & Permissions and add bot token scopes: chat:write, channels:history, im:history, and app_mentions:read. Avoid broad workspace access until the first workflow is verified.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Store the token in Hermes",
+      text: "After installing the app, copy the Bot User OAuth Token. Store it in the active Hermes gateway profile or environment configuration — never in prompts, screenshots, or committed repository files.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "Restart the Hermes gateway",
+      text: "Restart the Hermes gateway process so it picks up the new token and profile. Verify the startup logs show the correct profile. If using Docker, restart the container.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 5,
+      name: "Verify one private channel reply",
+      text: "Send a harmless test message in your private test channel and mention Hermes. Check gateway logs to confirm the message was received and a response was sent before adding production channels.",
+    },
+  ],
+};
+
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -76,6 +117,11 @@ export default function ConnectHermesAgentPage() {
         type="application/ld+json"
         // biome-ignore lint/security/noDangerouslySetInnerHtml: structured data
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: structured data
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }}
       />
       <Navbar />
       <main className="flex flex-col items-center gap-20 md:gap-28 *:max-w-432">

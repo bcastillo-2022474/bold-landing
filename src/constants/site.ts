@@ -77,7 +77,7 @@ export const META = {
     "Slack AI agents orchestration",
     "Slack mobile AI agent",
     "Hermes Agent Slack",
-    "AI agents orchestation",
+    "AI agents orchestration",
   ] as string[],
   ogImage: "/opengraph-image",
   favicon: "/favicon.ico",

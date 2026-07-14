@@ -4,13 +4,14 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title:
     "Salesforce Agentforce in Slack: AI Agents That Work Alongside Your Team",
   description:
     "Learn how Salesforce Agentforce turns AI agents into Slack teammates. Deploy HR, IT, sales, and service agents that collaborate with humans in channels and DMs.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/salesforce-agentforce-slack",
   },

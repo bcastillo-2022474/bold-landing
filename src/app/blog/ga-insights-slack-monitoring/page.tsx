@@ -4,13 +4,14 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title:
     "Google Analytics Insights in Slack: Real-Time Marketing Monitoring Without Dashboard Fatigue",
   description:
     "Monitor GA4, Google Ads, Meta Ads, Search Console, and Shopify directly in Slack. Learn how Go Insights eliminates dashboard switching with intelligent alerts for marketing and ecommerce teams.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/ga-insights-slack-monitoring",
   },

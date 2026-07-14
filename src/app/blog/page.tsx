@@ -6,7 +6,7 @@ import { Navbar } from "@/components/navbar";
 import { SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Blog — Slack Workflow & AI Agent Tutorials",
   description:
     "Tutorials and guides for the Slack workflows builder, AI Slack agents, automation, and integrations. Learn how to deploy your first workflow and connect AI agents to your workspace. Start building today.",
   alternates: {
@@ -26,6 +26,14 @@ export const metadata: Metadata = {
 };
 
 const posts = [
+  {
+    title:
+      "The End of Infinite Tabs: Why Your Next Software Shouldn't Be a Web App — It Should Be a Slack Bot",
+    excerpt:
+      "The web app portal paradigm is ending. Learn why Slack-native bots eliminate context friction, reduce context switching, and ship software people actually use.",
+    slug: "slack-native-bot-vs-web-app",
+    date: "July 13, 2026",
+  },
   {
     title:
       "Custom Slack App vs Buying Another Tool: When to Build vs Buy",

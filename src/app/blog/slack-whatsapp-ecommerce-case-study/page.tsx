@@ -4,13 +4,14 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title:
     "Slack + WhatsApp API for Ecommerce: A Case Study in Customer Service Automation",
   description:
     "How an early-stage ecommerce founder with 40% margins and a fragmented team of 4 unified customer service by integrating Slack with WhatsApp Business API via 2chat.co.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/slack-whatsapp-ecommerce-case-study",
   },

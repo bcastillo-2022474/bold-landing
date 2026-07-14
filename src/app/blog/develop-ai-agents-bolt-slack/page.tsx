@@ -4,12 +4,13 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "How to Develop AI Agents with Bolt for Slack: A Complete Guide",
   description:
     "Learn how to develop AI agents bolt Slack using Bolt for JavaScript and Python. Step-by-step guide covering Slack CLI setup, custom functions, triggers, sandbox testing, and deployment.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/develop-ai-agents-bolt-slack",
   },

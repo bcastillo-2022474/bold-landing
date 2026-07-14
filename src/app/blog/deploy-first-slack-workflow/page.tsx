@@ -4,12 +4,13 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "How to Deploy Your First Workflow in Slack",
   description:
     "Learn how to use the Slack workflows builder to build and publish automated workflows. Step-by-step guide covering triggers, steps, variables, buttons, and publishing.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/deploy-first-slack-workflow",
   },

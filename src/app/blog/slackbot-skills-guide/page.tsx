@@ -4,12 +4,13 @@ import { BlogCtaCard } from "@/components/blog-cta-card";
 import { BlogRelatedArticles } from "@/components/blog-related-articles";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { SITE } from "@/constants/site";
+import { META, SITE } from "@/constants/site";
 
 export const metadata: Metadata = {
   title: "Your Team Is Sitting on an AI Feature They Probably Scrolled Right Past",
   description:
     "Slack quietly shipped Skills for Slackbot — step-by-step instructions your team can build, share, and reuse. Turn recurring processes into executable workflows without writing a single line of code.",
+  robots: META.robots,
   alternates: {
     canonical: "/blog/slackbot-skills-guide",
   },
