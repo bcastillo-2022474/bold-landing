@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { META, SITE } from "@/constants/site";
 
 const blogSlugs = [
+  "fine-tune-ai-brain-muse-glimmer-slack",
+  "custom-ai-agent-slack-workspace",
   "slack-native-bot-vs-web-app",
   "deploy-first-slack-workflow",
   "connect-hermes-agent",

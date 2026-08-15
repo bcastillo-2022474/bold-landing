@@ -3,6 +3,20 @@ import Link from "next/link";
 const articles = [
   {
     title:
+      "The Benefits of Fine-Tuning Your Own AI Brain: Using Meta's Muse Glimmer Inside Slack",
+    excerpt:
+      "Fine-tune Muse Glimmer so your Slack AI agent understands company terminology, workflows, and approvals — then execute actions with tool calling.",
+    slug: "fine-tune-ai-brain-muse-glimmer-slack",
+  },
+  {
+    title:
+      "Benefits of a Custom AI Agent Inside Your Slack Workspace: Tool Calling and Semantic Kernel",
+    excerpt:
+      "A custom Slack AI agent can call CRM and Jira tools and execute actions with Semantic Kernel — without leaving Slack.",
+    slug: "custom-ai-agent-slack-workspace",
+  },
+  {
+    title:
       "The End of Infinite Tabs: Why Your Next Software Shouldn't Be a Web App — It Should Be a Slack Bot",
     excerpt:
       "Slack-native bots eliminate context friction and reduce context switching. Why the web app portal paradigm is ending for internal B2B tools.",

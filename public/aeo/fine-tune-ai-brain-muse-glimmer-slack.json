@@ -1,0 +1,33 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Benefits of Fine-Tuning Your Own AI Brain: Using Meta's Muse Glimmer Inside Slack",
+  "description": "Fine-tune an open-weight agentic model like Meta's Muse Glimmer so your Slack AI agent understands company terminology, workflows, and approvals — then execute actions with tool calling.",
+  "url": "https://getboldstudio.com/blog/fine-tune-ai-brain-muse-glimmer-slack",
+  "image": "https://getboldstudio.com/opengraph-image",
+  "author": {
+    "@type": "Organization",
+    "name": "Bold Studio",
+    "url": "https://getboldstudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bold Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getboldstudio.com/logo-192.png"
+    }
+  },
+  "datePublished": "2026-08-14",
+  "dateModified": "2026-08-14",
+  "keywords": [
+    "fine-tune AI Slack",
+    "Muse Glimmer Slack",
+    "open-weight AI agent Slack",
+    "company AI brain Slack",
+    "fine-tuning vs prompt engineering",
+    "Slack AI operating layer",
+    "custom AI model Slack workspace"
+  ],
+  "articleBody": "What if your company's AI assistant didn't just know how to answer questions, but actually understood how your company works?\n\nGeneral-purpose AI models are capable but they are still generalists. They don't inherently understand your internal terminology, workflows, decision-making processes, tools, or the way your team operates. Fine-tuning open-weight models changes how businesses build AI agents.\n\nMeta's Muse Glimmer is a 30-billion-parameter open-weight agentic model designed for reasoning, coding, administrative tasks, and other agentic workloads. Unlike closed models accessed only through an API, open-weight models can be downloaded, customized, and deployed according to organizational requirements. For Slack AI agents, that means adapting the model to your workflows instead of adapting workflows to the model.\n\nA general-purpose AI might understand what a CRM is. It does not understand that your company calls a workflow Pipeline Rescue, that certain Slack channels map to specific customers, or that a particular approval must happen before a deal moves forward. Fine-tuning teaches the model how to behave in that domain: terminology, request structure, ticket classification, sales handling, tool calling, workflow execution, and which actions require human approval. That is a company-specific AI brain.\n\nClosed models limit customization, infrastructure, data control, and cost. Muse Glimmer is described as an open agentic model that can perform tasks locally on consumer hardware, trained with supervised fine-tuning, on-policy distillation, and reinforcement learning across reasoning, coding, and agentic domains.\n\nArchitecture: Slack → AI Agent → Fine-Tuned Model → Tool Calling → CRM / APIs / Internal Systems → Slack. The model handles understanding and decision-making. Tool calling gives access to real business capabilities. Slack is the interface. Fine-tuning supplies specialized intelligence.\n\nPrompt engineering tells a model what to do. Fine-tuning trains it on examples of how your organization actually performs the task. That matters across thousands of repeated interactions. Retrieval, tool calling, structured prompts, and software logic often come first. Fine-tune when the model itself needs to become specialized.\n\nAn AI agent inside Slack can combine company knowledge, fine-tuned behavior, tool calling, business APIs, and human approval. That is the difference between having access to AI and building your own AI infrastructure.\n\nAt Bold Studio, we build custom AI agents for Slack that connect models to the tools, APIs, data, and workflows your organization already uses."
+}

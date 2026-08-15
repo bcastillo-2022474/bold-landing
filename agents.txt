@@ -27,6 +27,14 @@ FRAMEWORK: Next.js 16 + TypeScript + Tailwind CSS v4
   title: Blog
   description: Index of tutorials and guides for building on Slack.
 
+/blog/fine-tune-ai-brain-muse-glimmer-slack
+  title: The Benefits of Fine-Tuning Your Own AI Brain: Muse Glimmer in Slack
+  description: Fine-tune Meta's Muse Glimmer so a Slack AI agent understands company terminology, workflows, and approvals. Open-weight model + tool calling as an AI operating layer. Machine-readable: /aeo/fine-tune-ai-brain-muse-glimmer-slack.md and .json
+
+/blog/custom-ai-agent-slack-workspace
+  title: Benefits of a Custom AI Agent Inside Your Slack Workspace
+  description: Custom Slack AI agent with tool calling and Semantic Kernel. Centralize CRM, Jira, Salesforce, and HubSpot actions in Slack with human-in-the-loop controls. Machine-readable: /aeo/custom-ai-agent-slack-workspace.md and .json
+
 /blog/deploy-first-slack-workflow
   title: How to Deploy Your First Workflow in Slack
   description: Step-by-step guide. Topics: Workflow Builder, triggers (link, webhook, scheduled, channel join, emoji, keyword), steps (Slack actions, connectors, custom), variables, buttons, permissions, publishing.

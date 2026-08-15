@@ -1,0 +1,34 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Benefits of a Custom AI Agent Inside Your Slack Workspace: Tool Calling and Semantic Kernel",
+  "description": "Learn how a custom AI agent in Slack uses tool calling and Semantic Kernel to query CRMs, create tasks, and execute actions — turning Slack into an operational layer over your existing stack.",
+  "url": "https://getboldstudio.com/blog/custom-ai-agent-slack-workspace",
+  "image": "https://getboldstudio.com/opengraph-image",
+  "author": {
+    "@type": "Organization",
+    "name": "Bold Studio",
+    "url": "https://getboldstudio.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Bold Studio",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://getboldstudio.com/logo-192.png"
+    }
+  },
+  "datePublished": "2026-08-14",
+  "dateModified": "2026-08-14",
+  "keywords": [
+    "custom AI agent Slack",
+    "Slack AI agent tool calling",
+    "Semantic Kernel Slack",
+    "centralize tools in Slack",
+    "Slack workspace AI agent",
+    "Slack CRM agent",
+    "human-in-the-loop Slack agent",
+    "Slack operational layer"
+  ],
+  "articleBody": "Slack has evolved far beyond a communication platform. For many organizations, it is where decisions are made, projects are coordinated, documents are shared, and internal processes are executed. The next step is turning that workspace into an intelligent interface capable of understanding requests, retrieving information, and executing actions.\n\nA custom AI agent inside Slack is more valuable than a traditional chatbot. A conventional chatbot answers from a predefined set of information. An AI agent understands user intent, determines what information it needs, accesses external tools, and executes actions across the company's existing systems.\n\nExample: an employee asks \"Show me the leads waiting for follow-up and create a task for the sales team.\" The agent interprets the request, queries the CRM, identifies the relevant leads, and creates the tasks — all without leaving Slack. Slack becomes an intelligent interaction layer over the existing technology stack.\n\nTool calling gives the model controlled access to functions that connect to APIs, databases, CRMs, Jira, Salesforce, HubSpot, and internal systems. Typical tools include search_customer(), create_ticket(), get_sales_pipeline(), update_crm_record(), schedule_meeting(), and generate_report(). The model chooses the tool, generates parameters, and uses the result before continuing. Permissions and validation rules prevent unrestricted access.\n\nSemantic Kernel serves as an orchestration layer that connects the language model with plugins, functions, prompts, memory, and connectors. Architecture: User → Slack → AI Agent → Semantic Kernel → Tool Calling → Business Systems → Response in Slack. This separates reasoning from underlying systems so the solution is easier to maintain.\n\nA custom agent can be configured for internal processes, team tools, user permissions, company terminology, policies, authorized sources, and department workflows. It is not another generic assistant — it is an intelligent layer adapted to how the organization operates.\n\nThe goal is not to replace every application. It is to create a unified interface for interacting with the systems teams already use, with a human-in-the-loop model for sensitive writes such as CRM updates or external emails.\n\nAt Bold Studio, we design and build custom AI agents for Slack, connected to existing tools, APIs, and workflows."
+}

@@ -50,6 +50,8 @@
 - /design: Dev stack (Block Kit, Slack API, TypeScript, Slack CLI, Sandbox Testing)
 - /pricing: 3 plans + setup fee ($6,500) + 45-day refund guarantee
 - /blog: Blog index listing articles
+- /blog/fine-tune-ai-brain-muse-glimmer-slack: Guide — Fine-tune Meta's Muse Glimmer as a company AI brain inside Slack (Article + HowTo + FAQPage JSON-LD). Machine-readable: /aeo/fine-tune-ai-brain-muse-glimmer-slack.md and .json
+- /blog/custom-ai-agent-slack-workspace: Guide — Benefits of a custom AI agent in Slack with tool calling and Semantic Kernel (Article + HowTo + FAQPage JSON-LD). Machine-readable: /aeo/custom-ai-agent-slack-workspace.md and .json
 - /blog/deploy-first-slack-workflow: Tutorial — How to Deploy Your First Workflow in Slack (Article + HowTo JSON-LD)
 - /blog/slack-mcp-server-guide: Guide — How to Use Slack's MCP Server with AI Agents (Article + HowTo JSON-LD). Covers MCP Slack, Slack AI agents orchestation, Slack mobile AI agent, and Hermes Agent Slack integration.
 - /blog/connect-hermes-agent: Guide — Connect Hermes Agent to Your Slack Workspace (Article JSON-LD)

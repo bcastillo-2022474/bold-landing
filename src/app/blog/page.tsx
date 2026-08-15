@@ -28,6 +28,22 @@ export const metadata: Metadata = {
 const posts = [
   {
     title:
+      "The Benefits of Fine-Tuning Your Own AI Brain: Using Meta's Muse Glimmer Inside Slack",
+    excerpt:
+      "Fine-tune an open-weight agentic model like Muse Glimmer so your Slack AI agent understands company terminology, workflows, and approvals — then execute actions with tool calling.",
+    slug: "fine-tune-ai-brain-muse-glimmer-slack",
+    date: "August 14, 2026",
+  },
+  {
+    title:
+      "Benefits of a Custom AI Agent Inside Your Slack Workspace: Tool Calling and Semantic Kernel",
+    excerpt:
+      "A custom Slack AI agent can understand intent, call CRM and Jira tools, and execute actions with Semantic Kernel — turning Slack into an operational layer over your existing stack.",
+    slug: "custom-ai-agent-slack-workspace",
+    date: "August 14, 2026",
+  },
+  {
+    title:
       "The End of Infinite Tabs: Why Your Next Software Shouldn't Be a Web App — It Should Be a Slack Bot",
     excerpt:
       "The web app portal paradigm is ending. Learn why Slack-native bots eliminate context friction, reduce context switching, and ship software people actually use.",

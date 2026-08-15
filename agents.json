@@ -26,6 +26,8 @@
     { "path": "/about", "title": "About", "type": "info" },
     { "path": "/design", "title": "Design", "type": "info" },
     { "path": "/blog", "title": "Blog", "type": "blog_index" },
+    { "path": "/blog/fine-tune-ai-brain-muse-glimmer-slack", "title": "The Benefits of Fine-Tuning Your Own AI Brain: Muse Glimmer in Slack", "type": "blog_article" },
+    { "path": "/blog/custom-ai-agent-slack-workspace", "title": "Benefits of a Custom AI Agent Inside Your Slack Workspace", "type": "blog_article" },
     { "path": "/blog/deploy-first-slack-workflow", "title": "How to Deploy Your First Workflow in Slack", "type": "blog_article" },
     { "path": "/blog/connect-hermes-agent", "title": "Connect Hermes Agent to Your Slack Workspace", "type": "blog_article" },
     { "path": "/blog/slack-ai-agent-vs-custom-agents", "title": "Slack AI Agent vs Custom Agents", "type": "blog_article" },
@@ -121,6 +123,8 @@
     { "page": "/about", "schemas": ["Organization", "BreadcrumbList"] },
     { "page": "/design", "schemas": ["WebApplication", "BreadcrumbList"] },
     { "page": "/blog", "schemas": ["CollectionPage", "BreadcrumbList"] },
+    { "page": "/blog/fine-tune-ai-brain-muse-glimmer-slack", "schemas": ["Article", "HowTo", "FAQPage", "BreadcrumbList"] },
+    { "page": "/blog/custom-ai-agent-slack-workspace", "schemas": ["Article", "HowTo", "FAQPage", "BreadcrumbList"] },
     { "page": "/blog/deploy-first-slack-workflow", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
     { "page": "/blog/connect-hermes-agent", "schemas": ["Article", "BreadcrumbList"] },
     { "page": "/blog/slack-mcp-server-guide", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
@@ -175,6 +179,18 @@
     "includes": "custom Slack AI agents LLM integration"
   },
   "blogArticles": [
+    {
+      "slug": "fine-tune-ai-brain-muse-glimmer-slack",
+      "title": "The Benefits of Fine-Tuning Your Own AI Brain: Using Meta's Muse Glimmer Inside Slack",
+      "date": "August 14, 2026",
+      "topics": ["fine-tune AI Slack", "Muse Glimmer", "open-weight AI agent", "company AI brain", "fine-tuning vs prompt engineering", "Slack AI operating layer", "tool calling"]
+    },
+    {
+      "slug": "custom-ai-agent-slack-workspace",
+      "title": "Benefits of a Custom AI Agent Inside Your Slack Workspace: Tool Calling and Semantic Kernel",
+      "date": "August 14, 2026",
+      "topics": ["custom AI agent Slack", "tool calling", "Semantic Kernel", "centralize tools in Slack", "Slack workspace AI agent", "CRM agent", "human-in-the-loop", "Slack operational layer", "Jira", "Salesforce", "HubSpot"]
+    },
     {
       "slug": "deploy-first-slack-workflow",
       "title": "How to Deploy Your First Workflow in Slack",
