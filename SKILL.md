@@ -17,7 +17,7 @@ Use this skill when working with Bold Studio's website, blog articles about Slac
 - **Slack AI agents orchestation:** Multi-step AI workflows chaining search, messages, canvases, and member actions
 - **Slack mobile AI agent:** AI agents accessible from mobile devices via MCP
 - **Hermes Agent Slack:** Custom AI agent platform extending MCP with scheduled tasks and event-driven triggers
-- **Subscription model:** Monthly plans ($999–$5,999) covering Slack workflows, custom apps, and AI agents
+- **Subscription model:** Pilot $1,950 one-time, then Build $1,999/mo, Growth $3,995/mo, Dedicated $7,500/mo, or Run $399/mo. No minimum commitment.
 
 ## Pages
 

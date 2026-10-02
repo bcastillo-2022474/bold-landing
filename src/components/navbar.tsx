@@ -62,7 +62,7 @@ export function Navbar() {
           ))}
           <BookingModal
             variant="link"
-            label="Book a Call"
+            label="Book a fit call"
             style="black"
             className="text-sm"
           />
@@ -85,7 +85,7 @@ export function Navbar() {
             <div className="px-6 pt-2 pb-4">
               <BookingModal
                 variant="link"
-                label="Book a Call"
+                label="Book a fit call"
                 style="black"
                 className="text-sm text-center inline-flex"
               />

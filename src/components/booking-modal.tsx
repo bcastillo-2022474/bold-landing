@@ -54,7 +54,7 @@ function CloseIcon() {
 
 export function BookingModal({
   variant = "button",
-  label = "Book a Call",
+  label = "Book a fit call",
   style = "yellow",
   className = "",
 }: BookingModalProps) {

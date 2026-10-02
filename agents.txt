@@ -4,8 +4,8 @@
 
 SITE_NAME: Bold Studio
 SITE_URL: https://getboldstudio.com
-SITE_DESCRIPTION: Your dedicated dev team on Slack. Get custom software, MVPs, internal tools, and automations via monthly subscription. Skip hiring — start building today.
-SITE_TAGLINE: Your Dedicated Dev Team. On Demand. On Slack.
+SITE_DESCRIPTION: We build Slack apps, AI agents, workflows and integrations that bring your pipelines into Slack. For startups, fintech and ecommerce. 10-day pilot, money back.
+SITE_TAGLINE: Stop switching tools. Run your work in Slack.
 LANGUAGE: English
 FRAMEWORK: Next.js 16 + TypeScript + Tailwind CSS v4
 
@@ -13,7 +13,7 @@ FRAMEWORK: Next.js 16 + TypeScript + Tailwind CSS v4
 
 / (home)
   title: Home
-  description: Main landing page. Sections: Hero (Slack UI mockup), Justification (why traditional dev is broken), Solution (Bold Studio model), Testimonial (video), How It Works (4 steps), Pricing (4 plans), CTA (Tally form).
+  description: Main landing page. Sections: Hero, context-switching problem, five Slack services, ecommerce case study, startups/fintech/ecommerce, how it works (fit call, pilot, subscribe, ship), pricing, visible FAQ, booking CTA.
 
 /about
   title: About
@@ -61,7 +61,7 @@ FRAMEWORK: Next.js 16 + TypeScript + Tailwind CSS v4
 
 /pricing
   title: Pricing
-  description: Subscription plans. Launch $999/mo ($0 setup, 3-month min). Build $1,999/mo ($2,500 setup, no min). Scale $3,499/mo ($4,000 setup, no min). Operate $5,999/mo ($6,500 setup, no min).
+  description: Pilot $1,950 one-time. Build $1,999/mo. Growth $3,995/mo. Dedicated $7,500/mo. Run $399/mo. No setup fee. No minimum commitment. Pause or cancel anytime.
 
 /privacy
   title: Privacy Policy
@@ -72,17 +72,28 @@ FRAMEWORK: Next.js 16 + TypeScript + Tailwind CSS v4
   description: Legal document. Service terms, subscription terms, intellectual property, liability, termination, contact.
 
 # PRICING PLANS
-PLAN: Launch ($999/mo, $0 setup, 3-month minimum = $2,997 all-in)
-  features: 1 workflow automation, Slack workspace setup, 1 integration (CRM or DB), async Slack support, 1 revision per week
+PLAN: Pilot ($1,950 one-time, no minimum)
+  features: One workflow or agent live in 10 business days, built in the client's workspace and GitHub, 100% refund if it is not live by day 10, fee credited to month 1 if they subscribe
 
-PLAN: Build ($1,999/mo, $2,500 setup, no minimum contract) [MOST POPULAR]
-  features: Up to 3 workflows, custom Slack app (basic), up to 2 integrations, simple AI agent (1 pipeline), async + 1 sync call/month, pause or cancel anytime
+PLAN: Build ($1,999/mo, no setup fee, no minimum) [MOST POPULAR]
+  features: 1 active request at a time, workflows or a custom Slack app or an AI agent (1 pipeline), up to 2 integrations, async support + 1 sync call/month, pause or cancel anytime
 
-PLAN: Scale ($3,499/mo, $4,000 setup, no minimum contract)
-  features: Unlimited workflows, full custom Slack apps, multi-pipeline AI agents, CRM + internal systems, weekly iterations, priority support, pause or cancel anytime
+PLAN: Growth ($3,995/mo, no setup fee, no minimum)
+  features: 2 active requests, full custom Slack apps, multi-pipeline AI agents, CRM + internal systems, weekly iterations, priority support
 
-PLAN: Operate ($5,999/mo, $6,500 setup, no minimum contract)
-  features: Micro-app ecosystem, custom AI agents + security, unlimited integrations, real-time data in Slack, SLA + 24/7 support, dedicated engineer, pause or cancel anytime
+PLAN: Dedicated ($7,500/mo, no setup fee, no minimum)
+  features: Dedicated engineer during business hours with US Eastern overlap, unlimited integrations, micro-app ecosystem. 24/7 support with SLA is a +$1,500/mo add-on, not included.
+
+PLAN: Run ($399/mo)
+  features: Maintenance, monitoring and small tweaks of what we built. A step-down instead of cancelling.
+
+ADDONS:
+  - 24/7 support + SLA: +$1,500/mo on Growth or Dedicated
+  - AI and paid API usage included up to $25/mo, above that billed at cost
+  - Workspace Health Audit
+  - Slack migrations (Discord, Teams, Google Chat) as fixed-scope projects after paid discovery
+
+TERMS: 5% off quarterly prepay, 15% off annual. Pause or cancel anytime. No minimum commitment. Code in the client's GitHub. IP assigned to the client on payment.
 
 # STRUCTURED DATA
 - ProfessionalService (homepage)

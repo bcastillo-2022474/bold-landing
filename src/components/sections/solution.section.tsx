@@ -1,7 +1,8 @@
 import Image from "next/image";
 import LightningIcon from "../../../public/icons/lightning.svg";
+import NodesIcon from "../../../public/icons/nodes.svg";
 import RocketIcon from "../../../public/icons/rocket.svg";
-import ShieldIcon from "../../../public/icons/shield.svg";
+import ShieldIcon from "../../../public/icons/shield-mark.svg";
 import UserPlusIcon from "../../../public/icons/user-plus.svg";
 
 type FeatureCard = {
@@ -13,7 +14,7 @@ type FeatureCard = {
 
 function FeatureCard(card: FeatureCard) {
   return (
-    <article className="flex flex-col items-start gap-3 p-6 rounded-[32px] border border-black/5">
+    <article className="flex flex-col items-start gap-3 p-6 rounded-[32px] border border-black/5 h-full">
       <Image alt={card.altImage} src={card.image} height={20} />
       <h3 className="font-bold">{card.title}</h3>
       <p className="text-sm text-muted leading-relaxed">{card.description}</p>
@@ -24,82 +25,85 @@ function FeatureCard(card: FeatureCard) {
 export function SolutionSection() {
   const features: FeatureCard[] = [
     {
-      title: "Dedicated Team",
+      title: "Workspace management",
       description:
-        "Your own developers who learn your stack, build custom Slack apps, and own your project over time",
-      altImage: "Lightning bolt icon representing speed and quick delivery",
+        "Channel structure, permissions, app approvals, retention and naming that stay clean as you grow.",
+      altImage: "Shield icon for Slack workspace management",
+      image: ShieldIcon,
+    },
+    {
+      title: "AI agents",
+      description:
+        "Agents that answer from your docs, triage requests and draft replies, with a person approving anything customer-facing.",
+      altImage: "Lightning icon for AI agents in Slack",
       image: LightningIcon,
     },
     {
-      title: "Slack-First",
+      title: "Slack apps",
       description:
-        "Submit requests, get updates, and review builds — all in Slack without leaving your workspace",
-      altImage: "Rocket icon representing fast deployment and launch",
+        "Custom apps with buttons, forms and App Home views, built on Slack's official frameworks.",
+      altImage: "Rocket icon for custom Slack apps",
       image: RocketIcon,
     },
     {
-      title: "Flexible Scope",
-      description: "Build one thing or fifty. Pause or cancel anytime.",
-      altImage: "User plus icon representing team growth and onboarding",
+      title: "Workflows",
+      description:
+        "Workflow Builder automations your ops team can edit, plus code where Workflow Builder stops.",
+      altImage: "People icon for workflows your team can edit",
       image: UserPlusIcon,
     },
     {
-      title: "Fully Managed",
-      description: "We handle hosting, security, deployment, and maintenance.",
-      altImage:
-        "Shield icon representing security and fully managed protection",
-      image: ShieldIcon,
+      title: "Integrations",
+      description:
+        "Stripe, HubSpot, Linear, Shopify, your database and more, posting to the right channel with the right owner.",
+      altImage: "Connected nodes icon for Slack integrations",
+      image: NodesIcon,
     },
   ];
 
   const capabilities = [
-    "Custom Slack Apps",
-    "Slack Workflows & Automations",
-    "AI Slack Agents",
-    "SaaS MVPs",
-    "Internal Tools",
-    "API Integrations",
+    "Lead routing",
+    "Payment and revenue alerts",
+    "Support triage",
+    "Incident and deploy alerts",
+    "Approvals",
+    "Weekly digests",
   ];
 
   return (
     <section className="w-full px-4 md:px-10 lg:px-30 flex flex-col items-center gap-12 py-16 md:py-24">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center w-full gap-10 md:gap-16">
-        <div className="flex flex-col gap-5 items-start">
-          <div className="flex flex-col gap-1">
-            <h3 className="text-[#FFD200] uppercase font-semibold text-sm tracking-wider">
-              The Bold Studio Model
-            </h3>
-            <h2 className="flex flex-col text-2xl md:text-3xl font-bold">
-              <span>Your dedicated dev team.</span>
-              <span>One flat monthly fee.</span>
-            </h2>
-          </div>
-          <p className="text-muted text-sm md:text-base leading-relaxed">
-            Skip the hiring process. Get a dedicated development team that
-            builds custom Slack apps, automates Slack workflows, and creates AI
-            agents — communicated entirely through Slack. Request features, ask
-            for updates, and deploy changes without ever leaving your workspace.
-          </p>
+      <div className="flex flex-col gap-5 items-start w-full max-w-[62ch]">
+        <div className="flex flex-col gap-1">
+          <h3 className="text-[#FFD200] uppercase font-semibold text-sm tracking-wider">
+            What we do
+          </h3>
+          <h2 className="text-2xl md:text-3xl font-bold">
+            We move your pipelines into Slack and keep them running.
+          </h2>
         </div>
-        <div className="grid grid-cols-2 gap-4">
-          {features.map((card: FeatureCard) => (
-            <FeatureCard
-              key={card.title}
-              image={card.image}
-              altImage={card.altImage}
-              title={card.title}
-              description={card.description}
-            />
-          ))}
-        </div>
+        <p className="text-muted text-sm md:text-base leading-relaxed">
+          One Slack-focused team for everything that should happen in Slack. You
+          ask for it in a Slack thread. We build it in your workspace and your
+          GitHub, then maintain it.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 w-full">
+        {features.map((card) => (
+          <FeatureCard
+            key={card.title}
+            image={card.image}
+            altImage={card.altImage}
+            title={card.title}
+            description={card.description}
+          />
+        ))}
       </div>
 
       <div className="flex flex-col gap-5 items-center w-full pt-6">
-        <h3 className="font-bold text-lg">What you can build</h3>
-        <p className="text-muted text-sm text-center max-w-[50ch] leading-relaxed">
-          From MVPs to internal tools, automations to integrations — if you can
-          describe it, we can build it.
-        </p>
+        <h3 className="font-bold text-lg">
+          Examples of pipelines we bring into Slack:
+        </h3>
         <div className="flex flex-wrap justify-center gap-3">
           {capabilities.map((cap) => (
             <span

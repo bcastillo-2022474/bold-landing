@@ -19,17 +19,18 @@ export function TestimonialSection() {
 
         <div className="flex flex-col gap-5">
           <h2 className="text-xl md:text-3xl font-bold">
-            A real onboarding agent we built for an ecommerce platform.
+            Ecommerce: onboarding and first-line support, handled inside Slack.
           </h2>
           <p className="text-muted text-sm md:text-base leading-relaxed">
-            This agent handles user onboarding, product education and early
-            support — reducing manual intervention and improving first-time user
-            activation.
+            An ecommerce platform was answering new-user questions by hand. We
+            built a Slack agent that onboards new users, answers product
+            questions and hands off to a person when it should. The team runs
+            and improves it from Slack.
           </p>
           <ul className="flex flex-col gap-3">
             <li className="flex items-center gap-3 text-sm">
               <span className="w-2 h-2 rounded-full bg-[#FFD200] shrink-0"></span>
-              Built with custom logic and integrations
+              Hands off to a person when it should
             </li>
             <li className="flex items-center gap-3 text-sm">
               <span className="w-2 h-2 rounded-full bg-[#FFD200] shrink-0"></span>
@@ -37,7 +38,7 @@ export function TestimonialSection() {
             </li>
             <li className="flex items-center gap-3 text-sm">
               <span className="w-2 h-2 rounded-full bg-[#FFD200] shrink-0"></span>
-              Managed and iterated through Slack
+              Changes requested and shipped in a Slack thread
             </li>
           </ul>
         </div>

@@ -5,10 +5,10 @@
 
 export const SITE = {
   name: "Bold Studio",
-  title: "Bold Studio — Dedicated Dev Team on Slack | Custom Software",
+  title: "Slack Apps, AI Agents & Workflows for Startups | Bold Studio",
   description:
-    "Your dedicated dev team on Slack. Build custom Slack apps, automate Slack workflows, and deploy AI Slack agents via monthly subscription. Skip the hiring process — start building today.",
-  tagline: "Your Dedicated Dev Team. On Demand. On Slack.",
+    "We build Slack apps, AI agents, workflows and integrations that bring your pipelines into Slack. For startups, fintech and ecommerce. 10-day pilot, money back.",
+  tagline: "Stop switching tools. Run your work in Slack.",
   url: "https://getboldstudio.com",
 } as const;
 
@@ -58,6 +58,121 @@ export const ROUTES = {
   notFound: "/404",
 } as const;
 
+export type PricingPlan = {
+  name: string;
+  price: string;
+  priceLabel: string;
+  cadenceLabel: string;
+  description: string;
+  features: string[];
+  isPopular: boolean;
+  ctaLabel: string;
+};
+
+export const PRICING_PLANS: PricingPlan[] = [
+  {
+    name: "Pilot",
+    price: "1950",
+    priceLabel: "$1,950",
+    cadenceLabel: "one-time",
+    description:
+      "One workflow or agent live in your Slack in 10 business days, or a 100% refund. The fee is credited to month 1 if you subscribe.",
+    features: [
+      "One workflow or agent live in 10 business days",
+      "Built in your workspace and your GitHub",
+      "100% refund if it isn't live by day 10",
+      "Fee credited to month 1 if you subscribe",
+    ],
+    isPopular: false,
+    ctaLabel: "Start a pilot",
+  },
+  {
+    name: "Build",
+    price: "1999",
+    priceLabel: "$1,999",
+    cadenceLabel: "/mo",
+    description:
+      "1 active request at a time. Workflows, a custom Slack app, or an AI agent (1 pipeline). Up to 2 integrations. Async support and 1 sync call a month.",
+    features: [
+      "1 active request at a time",
+      "Workflows, a custom Slack app, or an AI agent (1 pipeline)",
+      "Up to 2 integrations",
+      "Async support + 1 sync call/month",
+      "Pause or cancel anytime",
+    ],
+    isPopular: true,
+    ctaLabel: "Talk to us",
+  },
+  {
+    name: "Growth",
+    price: "3995",
+    priceLabel: "$3,995",
+    cadenceLabel: "/mo",
+    description:
+      "2 active requests. Full custom Slack apps, multi-pipeline AI agents, CRM and internal systems, weekly iterations, and priority support.",
+    features: [
+      "2 active requests at a time",
+      "Full custom Slack apps",
+      "Multi-pipeline AI agents",
+      "CRM + internal systems",
+      "Weekly iterations",
+      "Priority support",
+    ],
+    isPopular: false,
+    ctaLabel: "Talk to us",
+  },
+  {
+    name: "Dedicated",
+    price: "7500",
+    priceLabel: "$7,500",
+    cadenceLabel: "/mo",
+    description:
+      "A dedicated engineer during business hours with US Eastern overlap, unlimited integrations, and a micro-app ecosystem. 24/7 support with SLA is a separate add-on.",
+    features: [
+      "Dedicated engineer during business hours",
+      "US Eastern hours overlap",
+      "Unlimited integrations",
+      "Micro-app ecosystem",
+      "24/7 support with SLA is a +$1,500/mo add-on",
+    ],
+    isPopular: false,
+    ctaLabel: "Talk to us",
+  },
+];
+
+export const PRICING_RUN: PricingPlan = {
+  name: "Run",
+  price: "399",
+  priceLabel: "$399",
+  cadenceLabel: "/mo",
+  description:
+    "Maintenance, monitoring and small tweaks of what we built. A step-down instead of cancelling.",
+  features: [
+    "Maintenance, monitoring and small tweaks of what we built",
+    "A step-down instead of cancelling",
+  ],
+  isPopular: false,
+  ctaLabel: "Talk to us",
+};
+
+export const PRICING_ADDONS = [
+  "24/7 support + SLA: +$1,500/mo on Growth or Dedicated",
+  "AI and paid API usage included up to $25/mo. Above that, billed at cost",
+  "Workspace Health Audit",
+  "Slack migrations from Discord, Teams, or Google Chat, as a fixed-scope project after paid discovery",
+] as const;
+
+export const PRICING_FINE_PRINT =
+  "Save 5% paying quarterly, 15% paying annually. Pause or cancel anytime, no minimum commitment. Code lives in your GitHub. Client-specific code and IP are assigned to you on payment.";
+
+export const PRICING_OFFERS = [...PRICING_PLANS, PRICING_RUN].map((plan) => ({
+  "@type": "Offer" as const,
+  name: plan.name,
+  price: plan.price,
+  priceCurrency: "USD",
+  description: plan.description,
+}));
+
 export const META = {
   keywords: [
     "ai slack agent",
@@ -78,6 +193,11 @@ export const META = {
     "Slack mobile AI agent",
     "Hermes Agent Slack",
     "AI agents orchestration",
+    "Slack workspace management",
+    "Slack integrations for startups",
+    "Slack automation fintech",
+    "Slack ecommerce automation",
+    "reduce context switching",
   ] as string[],
   ogImage: "/opengraph-image",
   favicon: "/favicon.ico",
@@ -99,34 +219,39 @@ export const META = {
   },
   faq: [
     {
-      question: "What exactly do you build?",
+      question: "What happens if the pilot isn't live by day 10?",
       answer:
-        "We build custom software — Slack workflows, AI Slack agents, custom Slack apps, internal tools, API integrations, and automations. If you can describe it, we can build it.",
-    },
-    {
-      question: "How does the subscription model work?",
-      answer:
-        "You subscribe to a monthly plan and submit development requests through Slack. We build, you review, we iterate. Cancel or pause anytime.",
-    },
-    {
-      question: "Is there a minimum commitment?",
-      answer:
-        "Only the Launch plan requires a 3-month minimum ($2,997 all-in). Build, Scale, and Operate have no minimum contract — pause or cancel whenever you want.",
-    },
-    {
-      question: "What if I only need one thing built?",
-      answer:
-        "You can subscribe, get it built, then pause your subscription immediately. You only pay for the months you're active.",
+        "You get your $1,950 back. Live means the agreed workflow or agent runs in your Slack workspace, as defined in writing at kickoff.",
     },
     {
       question: "Who owns the code?",
       answer:
-        "You do. All custom code built for your project is your property. We retain rights to underlying frameworks and reusable internal components.",
+        "You do. We build in your GitHub and your Slack workspace from day one, and client-specific code and IP are assigned to you on payment. We only keep our generic templates.",
     },
     {
-      question: "How do I submit requests?",
+      question: "What counts as a request?",
       answer:
-        "Simply send us a message in Slack describing what you need. No formal specs required — just explain the problem and desired outcome.",
+        'One piece of work with a clear outcome, like "route Book a Call leads to #inbound-leads with a Claim button." Big projects are split into requests.',
+    },
+    {
+      question: "What hours do you work?",
+      answer:
+        "We're based in Guatemala (UTC-6 all year) and overlap with US Eastern business hours. We reply in Slack during those hours.",
+    },
+    {
+      question: "Is there a minimum commitment?",
+      answer:
+        "No. Plans are monthly. Pause or cancel anytime. Prepay quarterly for 5% off, or annually for 15% off.",
+    },
+    {
+      question: "Do you work with fintech data?",
+      answer:
+        "Yes, with care: least-privilege access, no sensitive data in Slack messages unless your policy allows it, and an audit trail in threads.",
+    },
+    {
+      question: "What tools do you integrate?",
+      answer:
+        "Anything with an API. Common ones: Stripe, HubSpot, Linear, Shopify, Notion, Google Workspace, your database.",
     },
   ],
   pages: {
@@ -145,7 +270,7 @@ export const META = {
     pricing: {
       title: "Pricing",
       description:
-        "Simple, predictable pricing for Slack workflows, custom Slack apps, and AI agents. Launch at $999/mo, Build at $1,999/mo, Scale at $3,499/mo, Operate at $5,999/mo. No hidden fees — cancel or pause anytime.",
+        "Start with a $1,950 10-day pilot, money back if it isn't live. Then Build $1,999/mo, Growth $3,995/mo or a Dedicated engineer at $7,500/mo. Cancel anytime.",
       canonical: "/pricing",
     },
   },
