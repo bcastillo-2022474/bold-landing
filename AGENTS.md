@@ -50,12 +50,13 @@ Guide to using Slack's Model Context Protocol (MCP) server. Topics: MCP open-sou
 
 Four subscription plans:
 
-| Plan | Monthly | Setup | Commitment |
-|------|---------|-------|------------|
-| Launch | $999 | $0 | 3-month minimum ($2,997 all-in) |
-| Build (Most Popular) | $1,999 | $2,500 | None |
-| Scale | $3,499 | $4,000 | None |
-| Operate | $5,999 | $6,500 | None |
+| Plan | Price | Commitment |
+|------|-------|------------|
+| Pilot | $1,950 one-time | None. Live in 10 business days or 100% refund. Fee credited to month 1 if they subscribe. |
+| Build (Most Popular) | $1,999/mo | None. 1 active request. |
+| Growth | $3,995/mo | None. 2 active requests. |
+| Dedicated | $7,500/mo | None. Dedicated engineer, business hours, US Eastern overlap. 24/7 + SLA is +$1,500/mo. |
+| Run | $399/mo | None. Maintenance of what we built. |
 
 ### Legal
 
@@ -86,7 +87,7 @@ Four subscription plans:
 ### Components
 - **Cards:** `rounded-[32px]` with `border border-black/5` — no shadows
 - **Buttons:** `rounded-full` — black bg + yellow text, or yellow bg + black text
-- **Navbar:** Sticky white, `border-b border-black/5`, logo + nav links + "Book a Call" anchor
+- **Navbar:** Sticky white, `border-b border-black/5`, logo + nav links + "Book a fit call" anchor
 - **Footer:** White, two-column grid (Company + Legal), `border-t border-black/5` separator
 - **Section spacing:** `py-16 md:py-24`, container `gap-20 md:gap-28`
 

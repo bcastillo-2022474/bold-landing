@@ -1,18 +1,19 @@
 # Bold Studio Landing Page
 
-> Marketing website for Bold Studio — a Slack-native software development studio.
-> We centralize pipelines inside Slack, develop AI agents, manage workspaces as services,
-> and build custom software (Slack apps, MVPs, internal tools, automations) via monthly subscription.
+> Marketing website for Bold Studio, a Slack-focused studio.
+> We manage workspaces, build AI agents, Slack apps, workflows and integrations,
+> and eliminate context switching by running pipelines inside Slack.
+> Built for startups, fintech and ecommerce.
 > Built with Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4.
 > Deployed on Netlify.
 
 ## Core Services
 
-- **Pipeline Centralization:** Deploy, monitor, and manage CI/CD pipelines, data pipelines, and workflow orchestration directly inside Slack — no context switching to external dashboards.
-- **AI Agent Development:** Build custom AI agents and intelligent automation that live inside your Slack workspace — from support bots to decision-making assistants.
+- **Pipeline Centralization:** Deploy, monitor, and manage CI/CD pipelines, data pipelines, and workflow orchestration directly inside Slack, so teams are not switching to external dashboards.
+- **AI Agent Development:** Build custom AI agents and intelligent automation that live inside your Slack workspace, from support bots to decision-making assistants.
 - **MCP Slack Integration:** Connect Hermes Agent and custom AI agents to Slack's Model Context Protocol server. Enables secure, scoped AI access for Slack AI agents orchestation, Slack mobile AI agent usage, and advanced multi-step workflows.
-- **Workspace as a Service:** Full lifecycle management of Slack workspaces — architecture, provisioning, governance, security, and ongoing maintenance.
-- **Custom Software Subscription:** SaaS MVPs, internal tools, API integrations, and automation — all delivered through Slack with a simple monthly subscription.
+- **Workspace as a Service:** Full lifecycle management of Slack workspaces: architecture, provisioning, governance, security, and ongoing maintenance.
+- **Integrations:** Stripe, HubSpot, Linear, Shopify, databases and other APIs, posting into the right Slack channel with a clear owner.
 
 ## Development Tools
 
@@ -39,16 +40,18 @@
 - src/components/sections/solution.section.tsx: Solution/features section
 - src/components/sections/testimonial.section.tsx: Video testimonial
 - src/components/sections/how-it-works.section.tsx: 4-step process
-- src/components/sections/pricing.section.tsx: 3 pricing cards + embedded customers section
+- src/components/sections/pricing.section.tsx: Pilot, Build, Growth, Dedicated cards, plus Run and add-ons
+- src/components/sections/customers.section.tsx: Startups, fintech and ecommerce
+- src/components/sections/faq.section.tsx: Visible FAQ (same copy as META.faq)
 - src/components/sections/call-to-action.tsx: Final CTA
 - src/app/globals.css: Tailwind v4 imports + custom theme
 
 ## Pages
 
-- / (home): 7 sections — hero, problem, solution, testimonial, how it works, pricing, final CTA
+- / (home): hero, problem, services, case study, startups/fintech/ecommerce, how it works, pricing, FAQ, booking CTA
 - /about: Company mission + 3 founders (Rodrigo Queche, Guillermo Julca, Joaquin Ladd)
 - /design: Dev stack (Block Kit, Slack API, TypeScript, Slack CLI, Sandbox Testing)
-- /pricing: 3 plans + setup fee ($6,500) + 45-day refund guarantee
+- /pricing: Pilot $1,950 one-time, Build $1,999/mo, Growth $3,995/mo, Dedicated $7,500/mo, Run $399/mo. No setup fee. No minimum commitment. Pause or cancel anytime.
 - /blog: Blog index listing articles
 - /blog/fine-tune-ai-brain-muse-glimmer-slack: Guide — Fine-tune Meta's Muse Glimmer as a company AI brain inside Slack (Article + HowTo + FAQPage JSON-LD). Machine-readable: /aeo/fine-tune-ai-brain-muse-glimmer-slack.md and .json
 - /blog/custom-ai-agent-slack-workspace: Guide — Benefits of a custom AI agent in Slack with tool calling and Semantic Kernel (Article + HowTo + FAQPage JSON-LD). Machine-readable: /aeo/custom-ai-agent-slack-workspace.md and .json
@@ -69,17 +72,20 @@ JSON-LD schemas used: ProfessionalService, FAQPage, Organization, WebApplication
 
 ## Subscription Model
 
-- **Slack AI Agents Subscription:** Monthly subscription covering AI agents, workflow automation, and custom development. A dedicated team for slack AI agents — no hiring, no long-term contracts.
-- **Custom Slack AI Agents LLM:** Build custom agents with your choice of LLM provider. Integrate LLMs as agents in Slack with full control over model, behavior, and data governance.
-- **Slack Workflows with AI Agents Monthly:** Unlimited Slack workflow automation with AI agent support. One monthly price covers development, iteration, and maintenance.
+- **Capacity, not hours:** Plans are sized by how many requests are in progress at once.
+- **Pilot:** $1,950 one-time. One workflow or agent live in 10 business days, or a 100% refund. Fee credited to month 1 if you subscribe.
+- **Run:** $399/mo keeps what we built maintained. It is a step-down instead of cancelling.
+- **Terms:** 5% off quarterly prepay, 15% off annual. Pause or cancel anytime. No minimum commitment. Code in the client's GitHub. IP assigned to the client on payment.
+- **Add-ons:** 24/7 support + SLA is +$1,500/mo on Growth or Dedicated. AI and paid API usage is included up to $25/mo, then billed at cost. Workspace Health Audit. Slack migrations (Discord, Teams, Google Chat) are fixed-scope projects after paid discovery.
 
 ## Pricing
 
-- Launch: $999/mo (1 workflow, 1 integration, 3-month min)
-- Build: $1,999/mo (up to 3 workflows, custom Slack app, simple AI agent) — Most Popular
-- Scale: $3,499/mo (unlimited workflows, full Slack apps, multi AI agents)
-- Operate: $5,999/mo (micro-app ecosystem, unlimited integrations, 24/7 SLA)
+- Pilot: $1,950 one-time (one workflow or agent, 10 business days, 100% refund if not live, fee credited to month 1)
+- Build: $1,999/mo (most popular; 1 active request; workflows, a custom Slack app, or an AI agent with 1 pipeline; up to 2 integrations; async support + 1 sync call/month)
+- Growth: $3,995/mo (2 active requests; full custom Slack apps; multi-pipeline AI agents; CRM + internal systems; weekly iterations; priority support)
+- Dedicated: $7,500/mo (dedicated engineer during business hours with US Eastern overlap; unlimited integrations; micro-app ecosystem). 24/7 support with SLA is an add-on, not included.
+- Run: $399/mo (maintenance, monitoring and small tweaks of what we built)
 
 ## How to book
 
-Visit / (homepage) and click "Start your subscription" or "Book a call" — both open a demo request form. Direct email: info@getboldstudio.com
+Visit / (homepage) and use "Book a 20-min fit call" or "Start a pilot". Both open the same request form. Direct email: info@getboldstudio.com
