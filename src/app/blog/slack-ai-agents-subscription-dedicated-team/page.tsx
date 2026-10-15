@@ -90,7 +90,7 @@ const faqJsonLd = {
       name: "What if I only need one Slack workflow built?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can subscribe, get it built, then pause your subscription immediately. You only pay for the months you're active. There's no minimum commitment on Build, Scale, and Operate plans.",
+        text: "Start with the $1,950 10-day pilot, or subscribe and pause when the work is done. There is no minimum commitment. Run at $399/mo keeps what we built maintained if you are not ready to cancel.",
       },
     },
     {
@@ -98,7 +98,7 @@ const faqJsonLd = {
       name: "How is a Slack AI agents subscription different from hiring a developer?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No hiring process, no interviewing, no benefits, no onboarding. A dedicated team for slack AI agents starts building on day one. You get full team coverage — development, testing, deployment, and maintenance — for a single monthly price.",
+        text: "No hiring process, no interviewing, no benefits, no onboarding. A dedicated team for slack AI agents starts building on day one. You get development, testing, deployment, and maintenance for a single monthly price.",
       },
     },
   ],
@@ -294,32 +294,41 @@ export default function SlackAiAgentsSubscriptionPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="p-5 rounded-[32px] border border-black/5 flex flex-col gap-2">
-                <h3 className="font-bold text-lg">Launch — $999/mo</h3>
+                <h3 className="font-bold text-lg">Pilot · $1,950 one-time</h3>
                 <p className="text-muted text-sm">
-                  1 workflow automation, Slack workspace setup, 1 integration,
-                  async support, 1 revision per week, 3-month minimum.
+                  One workflow or agent live in 10 business days, or a 100%
+                  refund. The fee is credited to month 1 if you subscribe.
                 </p>
               </div>
               <div className="p-5 rounded-[32px] border border-yellow-300 bg-yellow-50 flex flex-col gap-2">
-                <h3 className="font-bold text-lg">Build — $1,999/mo</h3>
+                <h3 className="font-bold text-lg">Build · $1,999/mo</h3>
                 <p className="text-muted text-sm">
-                  Up to 3 workflows, custom Slack app, up to 2 integrations,
-                  simple AI agent, async + sync support, pause or cancel
-                  anytime.
+                  1 active request at a time. Workflows, a custom Slack app, or
+                  an AI agent (1 pipeline). Up to 2 integrations. Async support
+                  and 1 sync call a month.
                 </p>
               </div>
               <div className="p-5 rounded-[32px] border border-black/5 flex flex-col gap-2">
-                <h3 className="font-bold text-lg">Scale — $3,499/mo</h3>
+                <h3 className="font-bold text-lg">Growth · $3,995/mo</h3>
                 <p className="text-muted text-sm">
-                  Unlimited workflows, full custom Slack apps, multi-pipeline AI
-                  agents, CRM integrations, weekly iterations, priority support.
+                  2 active requests. Full custom Slack apps, multi-pipeline AI
+                  agents, CRM and internal systems, weekly iterations, priority
+                  support.
                 </p>
               </div>
               <div className="p-5 rounded-[32px] border border-black/5 flex flex-col gap-2">
-                <h3 className="font-bold text-lg">Operate — $5,999/mo</h3>
+                <h3 className="font-bold text-lg">Dedicated · $7,500/mo</h3>
                 <p className="text-muted text-sm">
-                  Micro-app ecosystem, custom AI agents, unlimited integrations,
-                  real-time data, SLA + 24/7 support, dedicated engineer.
+                  Dedicated engineer during business hours with US Eastern
+                  overlap, unlimited integrations, and a micro-app ecosystem.
+                  24/7 support with SLA is a +$1,500/mo add-on.
+                </p>
+              </div>
+              <div className="p-5 rounded-[32px] border border-black/5 flex flex-col gap-2 md:col-span-2">
+                <h3 className="font-bold text-lg">Run · $399/mo</h3>
+                <p className="text-muted text-sm">
+                  Maintenance, monitoring and small tweaks of what we built. A
+                  step-down instead of cancelling.
                 </p>
               </div>
             </div>
@@ -354,9 +363,9 @@ export default function SlackAiAgentsSubscriptionPage() {
                   What if I only need one Slack workflow built?
                 </h3>
                 <p className="text-muted text-sm mt-1">
-                  Subscribe, get it built, pause immediately. You only pay for
-                  active months. No minimum commitment on Build, Scale, and
-                  Operate plans.
+                  Start with the $1,950 pilot, or subscribe and pause when you
+                  are done. There is no minimum commitment. Run at $399/mo keeps
+                  what we built maintained.
                 </p>
               </div>
               <div className="p-4 rounded-[32px] border border-black/5">

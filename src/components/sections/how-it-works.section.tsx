@@ -1,7 +1,7 @@
 import Image from "next/image";
 import IconLightning from "../../../public/icons/lightning.svg";
 import IconRocket from "../../../public/icons/rocket.svg";
-import IconShield from "../../../public/icons/shield.svg";
+import IconShield from "../../../public/icons/shield-mark.svg";
 import IconUserPlus from "../../../public/icons/user-plus.svg";
 
 type Step = {
@@ -18,7 +18,7 @@ function StepCard({ stepNumber, title, description, icon }: Step) {
         {stepNumber}
       </div>
       <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center">
-        <Image alt={title} src={icon} width={20} height={20} />
+        <Image alt="" aria-hidden src={icon} width={20} height={20} />
       </div>
       <h3 className="font-bold text-base">{title}</h3>
       <p className="text-muted text-sm leading-relaxed">{description}</p>
@@ -30,30 +30,30 @@ export function HowItWorksSection() {
   const steps: Step[] = [
     {
       stepNumber: "01",
-      title: "Subscribe",
+      title: "Fit call (20 min)",
       description:
-        "Choose a plan that fits your needs. Cancel or pause anytime.",
+        "Tell us which pipeline you want in Slack first. We say yes, no, or what it takes.",
       icon: IconShield,
     },
     {
       stepNumber: "02",
-      title: "Send tasks in Slack",
+      title: "10-day pilot",
       description:
-        "Describe what you need in a message. No formal specs required.",
+        "We build one workflow or agent in your Slack workspace and your GitHub. Live by day 10, or your money back.",
       icon: IconLightning,
     },
     {
       stepNumber: "03",
-      title: "We build and iterate",
+      title: "Subscribe if it works",
       description:
-        "Our team develops your feature and shares progress updates in the same thread.",
+        "Your pilot fee is credited to month 1. Pick a plan by how many requests you want in progress at once.",
       icon: IconRocket,
     },
     {
       stepNumber: "04",
-      title: "You review and deploy",
+      title: "Ask in Slack, we ship",
       description:
-        "Test the build, request changes if needed, then deploy when ready.",
+        "Post a request in our shared channel. We share progress in the same thread.",
       icon: IconUserPlus,
     },
   ];
@@ -62,7 +62,7 @@ export function HowItWorksSection() {
     <section className="flex flex-col gap-10 px-4 md:px-10 lg:px-30 items-center py-16 md:py-24">
       <h2 className="text-2xl md:text-3xl font-bold">How it works</h2>
       <p className="text-muted text-center max-w-[50ch] leading-relaxed">
-        Four simple steps. No project managers, no long meetings, no chaos.
+        Start small, prove it in your own Slack, then keep going.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 w-full max-w-[1000px]">
         {steps.map((step) => (

@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         url: META.ogImage,
         width: 1200,
         height: 630,
-        alt: `${SITE.name} - Custom Slack Apps & Automation`,
+        alt: `${SITE.name} - ${SITE.tagline}`,
       },
     ],
   },
@@ -77,6 +77,7 @@ export default function RootLayout({
         <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: third-party analytics snippet
           dangerouslySetInnerHTML={{
             __html: `
               (function(c,l,a,r,i,t,y){

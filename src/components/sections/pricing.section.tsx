@@ -1,57 +1,45 @@
-import type { JSX } from "react";
 import { BookingModal } from "@/components/booking-modal";
+import {
+  PRICING_ADDONS,
+  PRICING_FINE_PRINT,
+  PRICING_PLANS,
+  PRICING_RUN,
+  type PricingPlan,
+} from "@/constants/site";
 import { cn } from "@/utils/cn";
 
-function Chip({ title }: { title: string }) {
+function Check({ available = true }: { available?: boolean }) {
   return (
-    <span className="rounded-full px-5 py-2 border border-black/10 text-sm">
-      {title}
-    </span>
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="shrink-0 mt-0.5"
+      aria-hidden="true"
+    >
+      <circle cx="7" cy="7" r="7" fill={available ? "#FFD200" : "#E5E7EB"} />
+      <path
+        d="M4 7L6 9L10 5"
+        stroke={available ? "black" : "#9CA3AF"}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 }
 
-export function CustomersSection() {
-  const chips = [
-    "Founders",
-    "Startup Teams",
-    "Product Managers",
-    "Operations Leads",
-    "Growing Companies",
-    "Internal Tools Teams",
-  ];
-
-  return (
-    <div className="w-full flex flex-col items-center gap-4">
-      <h3 className="uppercase text-muted font-bold text-xs md:text-sm text-center tracking-wider">
-        Built for teams who need ongoing development
-      </h3>
-      <div className="flex flex-wrap justify-center gap-3">
-        {chips.map((chip) => (
-          <Chip title={chip} key={chip} />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-type Feature = [string, boolean];
-
-type Plan = {
-  title: string;
-  pricePerMonth: JSX.Element;
-  features: Feature[];
-  isPopular: boolean;
-};
-
-function Card({ title, pricePerMonth, features, isPopular }: Plan) {
+function PlanCard({ plan }: { plan: PricingPlan }) {
   return (
     <article
       className={cn(
-        "w-full max-w-[400px] md:max-w-[500px] lg:max-w-none lg:min-w-[280px] p-8 flex flex-col gap-6 rounded-[32px] bg-white relative border border-black/5",
-        isPopular && "border-2 border-[#FFD200]",
+        "w-full p-8 flex flex-col gap-6 rounded-[32px] bg-white relative border border-black/5 h-full",
+        plan.isPopular && "border-2 border-[#FFD200]",
       )}
     >
-      {isPopular && (
+      {plan.isPopular && (
         <div className="absolute w-full left-0 -top-3 flex justify-center">
           <span className="bg-[#FFD200] rounded-full px-5 py-1 text-[10px] uppercase font-bold tracking-wider">
             Most Popular
@@ -59,153 +47,106 @@ function Card({ title, pricePerMonth, features, isPopular }: Plan) {
         </div>
       )}
       <div>
-        <h3 className="font-bold text-base md:text-lg">{title}</h3>
-        {pricePerMonth}
+        <h3 className="font-bold text-base md:text-lg">{plan.name}</h3>
+        <p className="font-bold text-3xl md:text-4xl mt-1">
+          <span>{plan.priceLabel}</span>
+          <span className="text-base text-muted font-normal">
+            {plan.cadenceLabel}
+          </span>
+        </p>
       </div>
       <div className="flex flex-col gap-3">
-        {features.map(([feature, isAvailable]: Feature) => (
-          <div className="flex items-center gap-3" key={feature}>
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="shrink-0"
-              aria-hidden="true"
-            >
-              <circle
-                cx="7"
-                cy="7"
-                r="7"
-                fill={isAvailable ? "#FFD200" : "#E5E7EB"}
-              />
-              <path
-                d="M4 7L6 9L10 5"
-                stroke={isAvailable ? "black" : "#9CA3AF"}
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+        {plan.features.map((feature) => (
+          <div className="flex items-start gap-3" key={feature}>
+            <Check />
             <span className="text-sm">{feature}</span>
           </div>
         ))}
       </div>
       <BookingModal
         variant="link"
-        label="Book a Call"
-        style={isPopular ? "black" : "outline-light"}
-        className="w-full text-center justify-center"
+        label={plan.ctaLabel}
+        style={plan.isPopular ? "black" : "outline-light"}
+        className="w-full text-center justify-center mt-auto"
       />
     </article>
   );
 }
 
-export function PricingSection() {
-  const plans: Plan[] = [
-    {
-      title: "Launch",
-      pricePerMonth: (
-        <h3 className="font-bold text-3xl md:text-4xl mt-1">
-          <span>$999</span>
-          <span className="text-base text-muted font-normal">/mo</span>
-        </h3>
-      ),
-      features: [
-        ["1 active Slack workflow", true],
-        ["Slack workspace setup", true],
-        ["1 integration (CRM or DB)", true],
-        ["Async support in Slack", true],
-        ["1 review / iteration per week", true],
-        ["3-month minimum = $2,997 all-in", true],
-      ],
-      isPopular: false,
-    },
-    {
-      title: "Build",
-      pricePerMonth: (
-        <h3 className="font-bold text-3xl md:text-4xl mt-1">
-          <span>$1,999</span>
-          <span className="text-base text-muted font-normal">/mo</span>
-        </h3>
-      ),
-      features: [
-        ["Up to 3 active workflows", true],
-        ["Custom Slack app + workflows", true],
-        ["Up to 2 integrations", true],
-        ["AI Slack agent (1 pipeline)", true],
-        ["Async support + 1 sync call/month", true],
-        ["Pause or cancel anytime", true],
-      ],
-      isPopular: true,
-    },
-    {
-      title: "Scale",
-      pricePerMonth: (
-        <h3 className="font-bold text-3xl md:text-4xl mt-1">
-          <span>$3,499</span>
-          <span className="text-base text-muted font-normal">/mo</span>
-        </h3>
-      ),
-      features: [
-        ["Unlimited workflows", true],
-        ["Custom Slack apps (full)", true],
-        ["AI agents multi-pipeline", true],
-        ["CRM + internal systems", true],
-        ["Weekly iterations", true],
-        ["Priority support", true],
-        ["Pause or cancel anytime", true],
-      ],
-      isPopular: false,
-    },
-    {
-      title: "Operate",
-      pricePerMonth: (
-        <h3 className="font-bold text-3xl md:text-4xl mt-1">
-          <span>$5,999</span>
-          <span className="text-base text-muted font-normal">/mo</span>
-        </h3>
-      ),
-      features: [
-        ["Micro-app ecosystem", true],
-        ["Custom AI agents + security", true],
-        ["Unlimited integrations", true],
-        ["Real-time data in Slack", true],
-        ["SLA + 24/7 support", true],
-        ["Dedicated engineer", true],
-        ["Pause or cancel anytime", true],
-      ],
-      isPopular: false,
-    },
-  ];
-
+export function PricingPlans() {
   return (
-    <section className="w-full px-4 md:px-10 lg:px-30 flex flex-col items-center gap-10 py-16 md:py-24">
-      <CustomersSection />
-
-      <div className="flex flex-col items-center gap-8 w-full">
-        <div className="flex flex-col gap-2 items-center text-center">
-          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
-            Plans that scale with you
-          </h2>
-          <p className="text-muted text-sm md:text-base">
-            Flat monthly fee. Cancel or pause anytime.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-          {plans.map((plan) => (
-            <Card
-              isPopular={plan.isPopular}
-              key={plan.title}
-              title={plan.title}
-              pricePerMonth={plan.pricePerMonth}
-              features={plan.features}
-            />
-          ))}
-        </div>
+    <div className="flex flex-col gap-6 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 w-full pt-4">
+        {PRICING_PLANS.map((plan) => (
+          <PlanCard key={plan.name} plan={plan} />
+        ))}
       </div>
+
+      <article className="w-full rounded-[32px] border border-black/5 p-8 flex flex-col md:flex-row md:items-center gap-6">
+        <div className="flex flex-col gap-3 flex-1">
+          <div>
+            <h3 className="font-bold text-base md:text-lg">
+              {PRICING_RUN.name}
+            </h3>
+            <p className="font-bold text-3xl md:text-4xl mt-1">
+              <span>{PRICING_RUN.priceLabel}</span>
+              <span className="text-base text-muted font-normal">
+                {PRICING_RUN.cadenceLabel}
+              </span>
+            </p>
+          </div>
+          <ul className="flex flex-col gap-3">
+            {PRICING_RUN.features.map((feature) => (
+              <li className="flex items-start gap-3" key={feature}>
+                <Check />
+                <span className="text-sm">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <BookingModal
+          variant="link"
+          label={PRICING_RUN.ctaLabel}
+          style="outline-light"
+          className="text-center justify-center shrink-0"
+        />
+      </article>
+
+      <article className="w-full rounded-[32px] border border-black/5 p-8 flex flex-col gap-4">
+        <h3 className="font-bold text-base md:text-lg">Add-ons</h3>
+        <ul className="flex flex-col gap-3">
+          {PRICING_ADDONS.map((addon) => (
+            <li className="flex items-start gap-3" key={addon}>
+              <Check />
+              <span className="text-sm">{addon}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
+
+      <p className="text-sm text-muted text-center leading-relaxed max-w-[70ch] mx-auto">
+        {PRICING_FINE_PRINT}
+      </p>
+    </div>
+  );
+}
+
+export function PricingSection() {
+  return (
+    <section
+      id="pricing"
+      className="w-full px-4 md:px-10 lg:px-30 flex flex-col items-center gap-10 py-16 md:py-24"
+    >
+      <div className="flex flex-col gap-2 items-center text-center max-w-[62ch]">
+        <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl">
+          Pay for capacity, not hours.
+        </h2>
+        <p className="text-muted text-sm md:text-base leading-relaxed">
+          Start with a pilot. Then choose how many requests you want in progress
+          at once. Monthly, cancel or pause anytime, no minimums.
+        </p>
+      </div>
+      <PricingPlans />
     </section>
   );
 }

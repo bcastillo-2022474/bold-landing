@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { SITE } from "@/constants/site";
 
 export const runtime = "edge";
-export const alt = `${SITE.name} - Custom Slack Apps & Automation`;
+export const alt = `${SITE.name} - ${SITE.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -49,26 +49,24 @@ export default function OGImage() {
       {/* Headline */}
       <div
         style={{
-          fontSize: "72px",
+          fontSize: "56px",
           fontWeight: 900,
           color: "#000000",
           lineHeight: 1.1,
           marginBottom: "24px",
-          maxWidth: "800px",
+          maxWidth: "980px",
         }}
       >
-        Custom Slack Apps.{" "}
-        <span style={{ color: "#FFD200", WebkitTextStroke: "2px #000" }}>
-          Subscription simple.
-        </span>
+        Stop switching tools.{" "}
+        <span style={{ color: "#FFD200" }}>Run your work in Slack.</span>
       </div>
 
       {/* Subtext */}
       <div
         style={{
-          fontSize: "28px",
+          fontSize: "22px",
           color: "#6B7280",
-          maxWidth: "700px",
+          maxWidth: "900px",
           lineHeight: 1.4,
         }}
       >
@@ -100,7 +98,7 @@ export default function OGImage() {
             color: "#000000",
           }}
         >
-          Get Started
+          Book a fit call
         </div>
       </div>
     </div>,

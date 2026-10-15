@@ -3,8 +3,8 @@
   "site": {
     "name": "Bold Studio",
     "url": "https://getboldstudio.com",
-    "tagline": "Your Dedicated Dev Team. On Demand. On Slack.",
-    "description": "Your dedicated dev team on Slack. Get custom software, MVPs, internal tools, and automations via monthly subscription. Skip hiring — start building today.",
+    "tagline": "Stop switching tools. Run your work in Slack.",
+    "description": "We build Slack apps, AI agents, workflows and integrations that bring your pipelines into Slack. For startups, fintech and ecommerce. 10-day pilot, money back.",
     "language": "en",
     "framework": "Next.js 16",
     "language_tech": "TypeScript",
@@ -26,53 +26,143 @@
     { "path": "/about", "title": "About", "type": "info" },
     { "path": "/design", "title": "Design", "type": "info" },
     { "path": "/blog", "title": "Blog", "type": "blog_index" },
-    { "path": "/blog/fine-tune-ai-brain-muse-glimmer-slack", "title": "The Benefits of Fine-Tuning Your Own AI Brain: Muse Glimmer in Slack", "type": "blog_article" },
-    { "path": "/blog/custom-ai-agent-slack-workspace", "title": "Benefits of a Custom AI Agent Inside Your Slack Workspace", "type": "blog_article" },
-    { "path": "/blog/deploy-first-slack-workflow", "title": "How to Deploy Your First Workflow in Slack", "type": "blog_article" },
-    { "path": "/blog/connect-hermes-agent", "title": "Connect Hermes Agent to Your Slack Workspace", "type": "blog_article" },
-    { "path": "/blog/slack-ai-agent-vs-custom-agents", "title": "Slack AI Agent vs Custom Agents", "type": "blog_article" },
-    { "path": "/blog/develop-ai-agents-bolt-slack", "title": "How to Develop AI Agents with Bolt for Slack", "type": "blog_article" },
-    { "path": "/blog/slack-mcp-server-guide", "title": "How to Use Slack's MCP Server with AI Agents", "type": "blog_article" },
-    { "path": "/blog/slack-ai-agents-subscription-dedicated-team", "title": "Slack AI Agents Subscription", "type": "blog_article" },
-    { "path": "/blog/salesforce-agentforce-slack", "title": "Salesforce Agentforce in Slack", "type": "blog_article" },
-    { "path": "/blog/slack-whatsapp-ecommerce-case-study", "title": "Slack + WhatsApp API for Ecommerce Case Study", "type": "blog_article" },
+    {
+      "path": "/blog/fine-tune-ai-brain-muse-glimmer-slack",
+      "title": "The Benefits of Fine-Tuning Your Own AI Brain: Muse Glimmer in Slack",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/custom-ai-agent-slack-workspace",
+      "title": "Benefits of a Custom AI Agent Inside Your Slack Workspace",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/deploy-first-slack-workflow",
+      "title": "How to Deploy Your First Workflow in Slack",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/connect-hermes-agent",
+      "title": "Connect Hermes Agent to Your Slack Workspace",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/slack-ai-agent-vs-custom-agents",
+      "title": "Slack AI Agent vs Custom Agents",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/develop-ai-agents-bolt-slack",
+      "title": "How to Develop AI Agents with Bolt for Slack",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/slack-mcp-server-guide",
+      "title": "How to Use Slack's MCP Server with AI Agents",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/slack-ai-agents-subscription-dedicated-team",
+      "title": "Slack AI Agents Subscription",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/salesforce-agentforce-slack",
+      "title": "Salesforce Agentforce in Slack",
+      "type": "blog_article"
+    },
+    {
+      "path": "/blog/slack-whatsapp-ecommerce-case-study",
+      "title": "Slack + WhatsApp API for Ecommerce Case Study",
+      "type": "blog_article"
+    },
     { "path": "/pricing", "title": "Pricing", "type": "pricing" },
     { "path": "/privacy", "title": "Privacy Policy", "type": "legal" },
     { "path": "/terms", "title": "Terms of Service", "type": "legal" }
   ],
   "pricing": {
+    "currency": "USD",
+    "terms": "5% off quarterly prepay, 15% off annual. Pause or cancel anytime, no minimum commitment. Code in the client's GitHub. IP assigned to the client on payment.",
     "plans": [
       {
-        "name": "Launch",
-        "priceMonthly": 999,
-        "setupFee": 0,
-        "minimumCommitment": "3 months ($2,997 all-in)",
+        "name": "Pilot",
+        "price": 1950,
+        "cadence": "one-time",
+        "minimumCommitment": "None",
         "isPopular": false,
-        "features": ["1 workflow automation activo", "Slack workspace setup", "1 integración (CRM o DB)", "Soporte async en Slack", "1 revisión/iteración por semana", "3 meses mínimo = $2,997 all-in"]
+        "features": [
+          "One workflow or agent live in 10 business days",
+          "Built in your workspace and your GitHub",
+          "100% refund if it isn't live by day 10",
+          "Fee credited to month 1 if you subscribe"
+        ]
       },
       {
         "name": "Build",
         "priceMonthly": 1999,
-        "setupFee": 2500,
         "minimumCommitment": "None",
         "isPopular": true,
-        "features": ["Hasta 3 workflows activos", "Custom Slack app (básica)", "Hasta 2 integraciones", "AI agent simple (1 pipeline)", "Soporte async + 1 sync call/mes", "Pausa o cancela cuando quieras"]
+        "features": [
+          "1 active request at a time",
+          "Workflows, a custom Slack app, or an AI agent (1 pipeline)",
+          "Up to 2 integrations",
+          "Async support + 1 sync call/month",
+          "Pause or cancel anytime"
+        ]
       },
       {
-        "name": "Scale",
-        "priceMonthly": 3499,
-        "setupFee": 4000,
+        "name": "Growth",
+        "priceMonthly": 3995,
         "minimumCommitment": "None",
         "isPopular": false,
-        "features": ["Workflows ilimitados", "Custom Slack apps (full)", "AI agents multi-pipeline", "CRM + sistemas internos", "Iteraciones semanales", "Soporte prioritario", "Pausa o cancela cuando quieras"]
+        "features": [
+          "2 active requests at a time",
+          "Full custom Slack apps",
+          "Multi-pipeline AI agents",
+          "CRM + internal systems",
+          "Weekly iterations",
+          "Priority support"
+        ]
       },
       {
-        "name": "Operate",
-        "priceMonthly": 5999,
-        "setupFee": 6500,
+        "name": "Dedicated",
+        "priceMonthly": 7500,
         "minimumCommitment": "None",
         "isPopular": false,
-        "features": ["Ecosistema de micro-apps", "AI agents custom + seguridad", "Integraciones ilimitadas", "Data real-time en Slack", "SLA + soporte 24/7", "Dedicated engineer", "Pausa o cancela cuando quieras"]
+        "features": [
+          "Dedicated engineer during business hours with US Eastern overlap",
+          "Unlimited integrations",
+          "Micro-app ecosystem",
+          "24/7 support with SLA is a +$1,500/mo add-on"
+        ]
+      },
+      {
+        "name": "Run",
+        "priceMonthly": 399,
+        "minimumCommitment": "None",
+        "isPopular": false,
+        "features": [
+          "Maintenance, monitoring and small tweaks of what we built",
+          "A step-down instead of cancelling"
+        ]
+      }
+    ],
+    "addons": [
+      {
+        "name": "24/7 support + SLA",
+        "priceMonthly": 1500,
+        "appliesTo": ["Growth", "Dedicated"]
+      },
+      {
+        "name": "AI and paid API usage",
+        "includedMonthlyUsd": 25,
+        "aboveIncluded": "billed at cost"
+      },
+      { "name": "Workspace Health Audit" },
+      {
+        "name": "Slack migrations",
+        "from": ["Discord", "Teams", "Google Chat"],
+        "commercials": "Fixed-scope project after paid discovery"
       }
     ]
   },
@@ -119,24 +209,56 @@
     { "name": "Joaquin Ladd" }
   ],
   "structuredData": [
-    { "page": "/", "schemas": ["ProfessionalService", "FAQPage", "OfferCatalog"] },
+    {
+      "page": "/",
+      "schemas": ["ProfessionalService", "FAQPage", "OfferCatalog"]
+    },
     { "page": "/about", "schemas": ["Organization", "BreadcrumbList"] },
     { "page": "/design", "schemas": ["WebApplication", "BreadcrumbList"] },
     { "page": "/blog", "schemas": ["CollectionPage", "BreadcrumbList"] },
-    { "page": "/blog/fine-tune-ai-brain-muse-glimmer-slack", "schemas": ["Article", "HowTo", "FAQPage", "BreadcrumbList"] },
-    { "page": "/blog/custom-ai-agent-slack-workspace", "schemas": ["Article", "HowTo", "FAQPage", "BreadcrumbList"] },
-    { "page": "/blog/deploy-first-slack-workflow", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
-    { "page": "/blog/connect-hermes-agent", "schemas": ["Article", "BreadcrumbList"] },
-    { "page": "/blog/slack-mcp-server-guide", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
-    { "page": "/blog/salesforce-agentforce-slack", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
-    { "page": "/blog/slack-whatsapp-ecommerce-case-study", "schemas": ["Article", "HowTo", "BreadcrumbList"] },
-    { "page": "/pricing", "schemas": ["Product", "AggregateOffer", "FAQPage", "BreadcrumbList"] },
+    {
+      "page": "/blog/fine-tune-ai-brain-muse-glimmer-slack",
+      "schemas": ["Article", "HowTo", "FAQPage", "BreadcrumbList"]
+    },
+    {
+      "page": "/blog/custom-ai-agent-slack-workspace",
+      "schemas": ["Article", "HowTo", "FAQPage", "BreadcrumbList"]
+    },
+    {
+      "page": "/blog/deploy-first-slack-workflow",
+      "schemas": ["Article", "HowTo", "BreadcrumbList"]
+    },
+    {
+      "page": "/blog/connect-hermes-agent",
+      "schemas": ["Article", "BreadcrumbList"]
+    },
+    {
+      "page": "/blog/slack-mcp-server-guide",
+      "schemas": ["Article", "HowTo", "BreadcrumbList"]
+    },
+    {
+      "page": "/blog/salesforce-agentforce-slack",
+      "schemas": ["Article", "HowTo", "BreadcrumbList"]
+    },
+    {
+      "page": "/blog/slack-whatsapp-ecommerce-case-study",
+      "schemas": ["Article", "HowTo", "BreadcrumbList"]
+    },
+    {
+      "page": "/pricing",
+      "schemas": ["Product", "AggregateOffer", "FAQPage", "BreadcrumbList"]
+    },
     { "page": "/privacy", "schemas": ["WebPage", "BreadcrumbList"] },
     { "page": "/terms", "schemas": ["WebPage", "BreadcrumbList"] }
   ],
   "services": {
     "development": {
-      "tools": ["Slack CLI", "Bolt for JavaScript", "Bolt for Python", "Deno Slack SDK"],
+      "tools": [
+        "Slack CLI",
+        "Bolt for JavaScript",
+        "Bolt for Python",
+        "Deno Slack SDK"
+      ],
       "keywords": [
         "Develop AI agents bolt Slack",
         "Slack Bolt framework development",
@@ -183,61 +305,198 @@
       "slug": "fine-tune-ai-brain-muse-glimmer-slack",
       "title": "The Benefits of Fine-Tuning Your Own AI Brain: Using Meta's Muse Glimmer Inside Slack",
       "date": "August 14, 2026",
-      "topics": ["fine-tune AI Slack", "Muse Glimmer", "open-weight AI agent", "company AI brain", "fine-tuning vs prompt engineering", "Slack AI operating layer", "tool calling"]
+      "topics": [
+        "fine-tune AI Slack",
+        "Muse Glimmer",
+        "open-weight AI agent",
+        "company AI brain",
+        "fine-tuning vs prompt engineering",
+        "Slack AI operating layer",
+        "tool calling"
+      ]
     },
     {
       "slug": "custom-ai-agent-slack-workspace",
       "title": "Benefits of a Custom AI Agent Inside Your Slack Workspace: Tool Calling and Semantic Kernel",
       "date": "August 14, 2026",
-      "topics": ["custom AI agent Slack", "tool calling", "Semantic Kernel", "centralize tools in Slack", "Slack workspace AI agent", "CRM agent", "human-in-the-loop", "Slack operational layer", "Jira", "Salesforce", "HubSpot"]
+      "topics": [
+        "custom AI agent Slack",
+        "tool calling",
+        "Semantic Kernel",
+        "centralize tools in Slack",
+        "Slack workspace AI agent",
+        "CRM agent",
+        "human-in-the-loop",
+        "Slack operational layer",
+        "Jira",
+        "Salesforce",
+        "HubSpot"
+      ]
     },
     {
       "slug": "deploy-first-slack-workflow",
       "title": "How to Deploy Your First Workflow in Slack",
       "date": "June 16, 2026",
-      "topics": ["Workflow Builder", "triggers", "link", "webhook", "scheduled", "channel join", "emoji reaction", "keyword", "Slack actions", "connector steps", "custom steps", "variables", "buttons", "permissions", "publishing"]
+      "topics": [
+        "Workflow Builder",
+        "triggers",
+        "link",
+        "webhook",
+        "scheduled",
+        "channel join",
+        "emoji reaction",
+        "keyword",
+        "Slack actions",
+        "connector steps",
+        "custom steps",
+        "variables",
+        "buttons",
+        "permissions",
+        "publishing"
+      ]
     },
     {
       "slug": "connect-hermes-agent",
       "title": "Connect Hermes Agent to Your Slack Workspace",
       "date": "June 16, 2026",
-      "topics": ["Slack app creation", "OAuth scopes", "chat:write", "channels:history", "im:history", "app_mentions:read", "token storage", "gateway config", "Socket Mode", "channel restrictions", "response batching", "troubleshooting"]
+      "topics": [
+        "Slack app creation",
+        "OAuth scopes",
+        "chat:write",
+        "channels:history",
+        "im:history",
+        "app_mentions:read",
+        "token storage",
+        "gateway config",
+        "Socket Mode",
+        "channel restrictions",
+        "response batching",
+        "troubleshooting"
+      ]
     },
     {
       "slug": "slack-ai-agent-vs-custom-agents",
       "title": "Slack AI Agent vs Custom Agents: LangGraph, Hermes, and When to Build Your Own",
       "date": "June 17, 2026",
-      "topics": ["Slackbot", "Slack AI agent", "LangGraph", "Hermes", "custom AI agents", "AI Slack agents", "autonomous agents", "LLM integration", "Slack agent builder"]
+      "topics": [
+        "Slackbot",
+        "Slack AI agent",
+        "LangGraph",
+        "Hermes",
+        "custom AI agents",
+        "AI Slack agents",
+        "autonomous agents",
+        "LLM integration",
+        "Slack agent builder"
+      ]
     },
     {
       "slug": "develop-ai-agents-bolt-slack",
       "title": "How to Develop AI Agents with Bolt for Slack: A Complete Guide",
       "date": "June 17, 2026",
-      "topics": ["Slack CLI", "Bolt for JavaScript", "Bolt for Python", "custom functions", "triggers", "link trigger", "webhook trigger", "scheduled trigger", "event trigger", "slack run", "developer sandbox", "slack deploy", "CI/CD", "GitHub Actions"]
+      "topics": [
+        "Slack CLI",
+        "Bolt for JavaScript",
+        "Bolt for Python",
+        "custom functions",
+        "triggers",
+        "link trigger",
+        "webhook trigger",
+        "scheduled trigger",
+        "event trigger",
+        "slack run",
+        "developer sandbox",
+        "slack deploy",
+        "CI/CD",
+        "GitHub Actions"
+      ]
     },
     {
       "slug": "slack-mcp-server-guide",
       "title": "How to Use Slack's MCP Server with AI Agents: A Complete Guide",
       "date": "June 18, 2026",
-      "topics": ["MCP Slack", "Model Context Protocol", "Slack MCP server", "AI assistants", "Claude", "Perplexity", "OpenAI", "Cursor", "Hermes Agent Slack", "Slack AI agents orchestation", "Slack mobile AI agent", "canvases", "member info", "OAuth", "natural language search"]
+      "topics": [
+        "MCP Slack",
+        "Model Context Protocol",
+        "Slack MCP server",
+        "AI assistants",
+        "Claude",
+        "Perplexity",
+        "OpenAI",
+        "Cursor",
+        "Hermes Agent Slack",
+        "Slack AI agents orchestation",
+        "Slack mobile AI agent",
+        "canvases",
+        "member info",
+        "OAuth",
+        "natural language search"
+      ]
     },
     {
       "slug": "slack-ai-agents-subscription-dedicated-team",
       "title": "Slack AI Agents Subscription: What You Get with a Dedicated Team",
       "date": "June 17, 2026",
-      "topics": ["Slack AI agents subscription", "dedicated team", "Slack agentforce", "custom agents", "Salesforce", "workflow automation", "AI agents", "monthly subscription", "developer sandbox", "testing environment"]
+      "topics": [
+        "Slack AI agents subscription",
+        "dedicated team",
+        "Slack agentforce",
+        "custom agents",
+        "Salesforce",
+        "workflow automation",
+        "AI agents",
+        "monthly subscription",
+        "developer sandbox",
+        "testing environment"
+      ]
     },
     {
       "slug": "salesforce-agentforce-slack",
       "title": "Salesforce Agentforce in Slack: AI Agents That Work Alongside Your Team",
       "date": "June 22, 2026",
-      "topics": ["Salesforce Agentforce", "AI agents Slack", "Slack AI agents", "Einstein Trust Layer", "HR agent", "IT agent", "Sales agent", "Service agent", "Marketing agent", "Legal agent", "Engineering agent", "Supply Chain agent", "conversational data", "RAG", "Slack API assistants", "third-party AI assistants", "Slack Marketplace", "generative AI", "Slack actions", "agent templates"]
+      "topics": [
+        "Salesforce Agentforce",
+        "AI agents Slack",
+        "Slack AI agents",
+        "Einstein Trust Layer",
+        "HR agent",
+        "IT agent",
+        "Sales agent",
+        "Service agent",
+        "Marketing agent",
+        "Legal agent",
+        "Engineering agent",
+        "Supply Chain agent",
+        "conversational data",
+        "RAG",
+        "Slack API assistants",
+        "third-party AI assistants",
+        "Slack Marketplace",
+        "generative AI",
+        "Slack actions",
+        "agent templates"
+      ]
     },
     {
       "slug": "slack-whatsapp-ecommerce-case-study",
       "title": "Slack + WhatsApp API for Ecommerce: A Case Study in Customer Service Automation",
       "date": "June 22, 2026",
-      "topics": ["Slack WhatsApp integration", "WhatsApp Business API", "ecommerce customer service", "2chat", "Slack customer service", "WhatsApp Slack", "customer service automation", "bootstrapped ecommerce", "team efficiency", "Slack webhook", "WhatsApp API", "case study", "Slack integration", "customer support"]
+      "topics": [
+        "Slack WhatsApp integration",
+        "WhatsApp Business API",
+        "ecommerce customer service",
+        "2chat",
+        "Slack customer service",
+        "WhatsApp Slack",
+        "customer service automation",
+        "bootstrapped ecommerce",
+        "team efficiency",
+        "Slack webhook",
+        "WhatsApp API",
+        "case study",
+        "Slack integration",
+        "customer support"
+      ]
     }
   ]
 }

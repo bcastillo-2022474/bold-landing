@@ -51,8 +51,7 @@ const posts = [
     date: "July 13, 2026",
   },
   {
-    title:
-      "Custom Slack App vs Buying Another Tool: When to Build vs Buy",
+    title: "Custom Slack App vs Buying Another Tool: When to Build vs Buy",
     excerpt:
       "A framework for deciding when to build a custom Slack app instead of buying another SaaS tool. Learn when custom Slack apps, workflows, and automation make sense for fintech and ecommerce teams.",
     slug: "custom-slack-app-vs-buy",
@@ -246,13 +245,13 @@ export default function BlogPage() {
             Need a custom workflow or AI agent?
           </h2>
           <p className="text-muted max-w-[60ch] text-sm md:text-base">
-            We build custom Slack workflows, AI Slack agents, and automation for
-            teams that want to move faster. Book a call and tell us what you
-            need.
+            We build Slack apps, AI agents, workflows and integrations so your
+            team can stop switching tools. Book a fit call and tell us which
+            pipeline you want in Slack first.
           </p>
           <BookingModal
             variant="link"
-            label="Book a Call"
+            label="Book a fit call"
             style="black-white"
           />
         </section>
